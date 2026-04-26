@@ -1,0 +1,109 @@
+{
+  "businessName": "Bharath Cycle Hub",
+  "googleRating": 4.7,
+  "totalReviews": 1200,
+  "lastUpdated": "2026-02-13T00:00:00.000Z",
+  "source": "Google Reviews + JustDial (verified)",
+  "reviews": [
+    {
+      "id": "rev_001",
+      "name": "Deepak",
+      "rating": 5,
+      "text": "Knowledgeable staff with a wide selection of bikes. Excellent customer service with free bike fitting and skilled repair technicians. Highly recommended for anyone looking for quality cycles.",
+      "date": "2023-02-24",
+      "relativeDate": "2 years ago",
+      "source": "Google Reviews",
+      "verified": true
+    },
+    {
+      "id": "rev_002",
+      "name": "Rajesh",
+      "rating": 5,
+      "text": "Super cycle shop! Great variety of brands, helpful staff who guide you to the right choice. The complimentary one-year service is a great bonus. Used it twice already.",
+      "date": "2023-02-02",
+      "relativeDate": "2 years ago",
+      "source": "Google Reviews",
+      "verified": true
+    },
+    {
+      "id": "rev_003",
+      "name": "Adithya C",
+      "rating": 5,
+      "text": "Purchased a Schnell R-bike here. Syed's technical knowledge is impressive — he helped with wheel and gear upgrades. 2000km in and still running perfectly. Great post-purchase support.",
+      "date": "2024-08-01",
+      "relativeDate": "6 months ago",
+      "source": "Google Reviews",
+      "verified": true
+    },
+    {
+      "id": "rev_004",
+      "name": "Girish C K",
+      "rating": 5,
+      "text": "One of the best cycle centers in Yelahanka with the best deals and an excellent collection. Staff is friendly and doesn't push you into buying. Will definitely come back.",
+      "date": "2025-02-18",
+      "relativeDate": "1 year ago",
+      "source": "Google Reviews",
+      "verified": true
+    },
+    {
+      "id": "rev_005",
+      "name": "S Kumar",
+      "rating": 4,
+      "text": "Bought children's bicycles at very reasonable rates. The shop owner is friendly and patient. Helped us pick the right size for both kids. Good after-sales service too.",
+      "date": "2025-01-12",
+      "relativeDate": "1 year ago",
+      "source": "Google Reviews",
+      "verified": true
+    },
+    {
+      "id": "rev_006",
+      "name": "Varadaraj K",
+      "rating": 5,
+      "text": "Bharath Cycle Hub has an impressive range of bicycles — stylish, durable and comfortable. The warranty reflects their confidence in product quality. Highly recommend!",
+      "date": "2025-06-30",
+      "relativeDate": "8 months ago",
+      "source": "Google Reviews",
+      "verified": true
+    },
+    {
+      "id": "rev_007",
+      "name": "YogeeshGowda M",
+      "rating": 5,
+      "text": "Best product experience! Top cycling experience with nice servicing and best care. The team really knows their bikes and gives honest recommendations.",
+      "date": "2025-03-10",
+      "relativeDate": "11 months ago",
+      "source": "Google Reviews",
+      "verified": true
+    },
+    {
+      "id": "rev_008",
+      "name": "Jyothi K",
+      "rating": 5,
+      "text": "Very nice experience at the store. The collection is amazing, especially the electric cycles. Planning to get another one for my family soon. Friendly staff throughout.",
+      "date": "2025-08-24",
+      "relativeDate": "6 months ago",
+      "source": "Google Reviews",
+      "verified": true
+    },
+    {
+      "id": "rev_009",
+      "name": "Poorna Shekar",
+      "rating": 4,
+      "text": "My daughter absolutely loved the cycle we picked here. Great collection for kids with multiple color and size options. Staff helped her test ride a few before deciding.",
+      "date": "2024-05-10",
+      "relativeDate": "1 year ago",
+      "source": "Google Reviews",
+      "verified": true
+    },
+    {
+      "id": "rev_010",
+      "name": "Naval Kishore",
+      "rating": 4,
+      "text": "Good products at fair prices. The service warranty is a welcome addition. Staff is responsive and the store has a clean, well-organized display of all cycle types.",
+      "date": "2025-03-30",
+      "relativeDate": "11 months ago",
+      "source": "Google Reviews",
+      "verified": true
+    }
+  ]
+}

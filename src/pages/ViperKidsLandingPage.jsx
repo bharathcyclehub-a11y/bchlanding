@@ -21,7 +21,7 @@ function Section({ children, className = '', id }) {
 }
 
 // ─── Lead Form Component ──────────────────────────────────────────
-function LeadForm({ variant = 'dark', source = 'hero', buttonText = 'Book Free Test Ride for My Child' }) {
+function LeadForm({ variant = 'light', source = 'hero', buttonText = 'Book Free Test Ride for My Child' }) {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -50,11 +50,11 @@ function LeadForm({ variant = 'dark', source = 'hero', buttonText = 'Book Free T
     <form onSubmit={handleSubmit} className="space-y-3">
       <input
         type="text" placeholder="Parent's Name" value={name} onChange={(e) => setName(e.target.value)} required
-        className={`w-full px-4 py-3 rounded-lg text-sm transition-all ${isDark ? 'bg-white/10 border border-white/10 text-white placeholder-gray-400 focus:border-orange-500/50' : 'bg-white border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-orange-500'} focus:outline-none focus:ring-1 focus:ring-orange-500/30`}
+        className={`w-full px-4 py-3 rounded-lg text-sm transition-all ${isDark ? 'bg-white/10 border border-white/10 text-white placeholder-gray-400 focus:border-orange-500/50' : 'bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-orange-500'} focus:outline-none focus:ring-1 focus:ring-orange-500/30`}
       />
       <input
         type="tel" placeholder="Phone Number" value={phone} onChange={(e) => setPhone(e.target.value)} required pattern="[0-9]{10}" maxLength={10}
-        className={`w-full px-4 py-3 rounded-lg text-sm transition-all ${isDark ? 'bg-white/10 border border-white/10 text-white placeholder-gray-400 focus:border-orange-500/50' : 'bg-white border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-orange-500'} focus:outline-none focus:ring-1 focus:ring-orange-500/30`}
+        className={`w-full px-4 py-3 rounded-lg text-sm transition-all ${isDark ? 'bg-white/10 border border-white/10 text-white placeholder-gray-400 focus:border-orange-500/50' : 'bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-orange-500'} focus:outline-none focus:ring-1 focus:ring-orange-500/30`}
       />
       <button type="submit" className="w-full py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-orange-500/25 text-sm">
         {buttonText}
@@ -92,19 +92,19 @@ function AutoPopup() {
     <AnimatePresence>
       <motion.div
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+        className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm p-4"
         onClick={() => { setShow(false); setDismissed(true); }}
       >
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-          className="bg-[#111] border border-white/10 rounded-2xl p-6 sm:p-8 max-w-sm w-full relative"
+          className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 max-w-sm w-full relative shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
-          <button onClick={() => { setShow(false); setDismissed(true); }} className="absolute top-3 right-3 text-gray-500 hover:text-white text-xl">×</button>
+          <button onClick={() => { setShow(false); setDismissed(true); }} className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-xl">×</button>
           <div className="text-center mb-5">
-            <span className="inline-block px-3 py-1 bg-orange-500/10 text-orange-400 text-xs font-medium rounded-full mb-3">Only 5 Kids' Test Rides Left This Week</span>
-            <h3 className="text-white text-xl font-bold mb-1">Let Your Child Test Ride Free</h3>
-            <p className="text-gray-400 text-sm">Safe, supervised ride at BCH Yelahanka</p>
+            <span className="inline-block px-3 py-1 bg-orange-50 text-orange-600 text-xs font-medium rounded-full mb-3">Only 5 Kids' Test Rides Left This Week</span>
+            <h3 className="text-gray-900 text-xl font-bold mb-1">Let Your Child Test Ride Free</h3>
+            <p className="text-gray-500 text-sm">Safe, supervised ride at BCH Yelahanka</p>
           </div>
           <LeadForm source="popup" buttonText="Book My Child's Free Test Ride →" />
         </motion.div>
@@ -122,41 +122,40 @@ function HeroSection() {
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 bg-black" />
-      <motion.div className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 opacity-40" style={{ backgroundImage: "url('/viper-section-hero.jpg')", y: bgY }} />
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/40" />
+      <div className="absolute inset-0 bg-white" />
+      <motion.div className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 opacity-10" style={{ backgroundImage: "url('/viper-section-hero.jpg')", y: bgY }} />
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/60" />
 
       <motion.div style={{ opacity }} className="relative z-10 w-full max-w-7xl mx-auto px-5 py-20 sm:py-28">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
-            <motion.span variants={fadeUp} initial="hidden" animate="visible" custom={0.1} className="inline-block px-3 py-1 bg-orange-500/10 border border-orange-500/30 rounded text-orange-400 text-xs font-medium tracking-wider uppercase mb-5">
+            <motion.span variants={fadeUp} initial="hidden" animate="visible" custom={0.1} className="inline-block px-3 py-1 bg-orange-50 border border-orange-200 rounded text-orange-600 text-xs font-medium tracking-wider uppercase mb-5">
               EMotorad Viper × For Your Child
             </motion.span>
 
-            <motion.h1 variants={fadeUp} initial="hidden" animate="visible" custom={0.3} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-              Your Child Spends <span className="text-orange-400">6+ Hours on Screens.</span>
+            <motion.h1 variants={fadeUp} initial="hidden" animate="visible" custom={0.3} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+              Your Child Spends <span className="text-orange-500">6+ Hours on Screens.</span>
               <br />
-              <span className="text-gray-300 text-2xl sm:text-3xl lg:text-4xl">Give Them the Outdoors Back.</span>
+              <span className="text-gray-500 text-2xl sm:text-3xl lg:text-4xl">Give Them the Outdoors Back.</span>
             </motion.h1>
 
-            {/* Kannada line */}
-            <motion.p variants={fadeUp} initial="hidden" animate="visible" custom={0.4} className="text-orange-400/80 text-base sm:text-lg font-medium mb-4">
+            <motion.p variants={fadeUp} initial="hidden" animate="visible" custom={0.4} className="text-orange-600 text-base sm:text-lg font-medium mb-4">
               ನಿಮ್ಮ ಮಕ್ಕಳಿಗೆ ಸ್ವಾತಂತ್ರ್ಯ ಕೊಡಿ — ಸ್ಕ್ರೀನ್ ಅಲ್ಲ, ಸೈಕಲ್.
             </motion.p>
 
             <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0.5} className="flex flex-wrap items-center gap-3 mb-6">
               {['🔒 25 km/h Speed Lock', '🛑 Hydraulic Disc Brakes', '💡 420 Lux Lights', '🛡️ 2-Year Warranty'].map((t) => (
-                <span key={t} className="px-2.5 py-1 bg-white/5 border border-white/10 rounded text-white/70 text-xs">{t}</span>
+                <span key={t} className="px-2.5 py-1 bg-gray-50 border border-gray-200 rounded text-gray-600 text-xs">{t}</span>
               ))}
             </motion.div>
 
-            <motion.p variants={fadeUp} initial="hidden" animate="visible" custom={0.6} className="text-gray-400 text-sm leading-relaxed mb-6 max-w-lg">
+            <motion.p variants={fadeUp} initial="hidden" animate="visible" custom={0.6} className="text-gray-500 text-sm leading-relaxed mb-6 max-w-lg">
               The EMotorad Viper is the e-cycle 300+ Bangalore parents chose for their teenagers.
               Speed-locked at 25 km/h. Hydraulic brakes that stop in 1 second. Front & rear lights.
               Not a toy — a real vehicle with real safety built in.
             </motion.p>
 
-            <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0.7} className="flex flex-wrap gap-4 mb-6 text-xs text-gray-400">
+            <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0.7} className="flex flex-wrap gap-4 mb-6 text-xs text-gray-500">
               <span>⭐ 4.7/5 (2,122 reviews)</span>
               <span>👨‍👩‍👧 300+ Parents Trust BCH</span>
               <span>🔧 8 Full-Time Mechanics</span>
@@ -168,9 +167,9 @@ function HeroSection() {
             </motion.div>
           </div>
 
-          <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0.5} className="bg-white/[0.04] border border-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur-sm">
-            <h3 className="text-white text-lg font-bold mb-1">Book a FREE Test Ride for Your Child</h3>
-            <p className="text-gray-400 text-sm mb-5">Safe, supervised ride. We'll call you in 5 minutes to confirm.</p>
+          <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0.5} className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-lg">
+            <h3 className="text-gray-900 text-lg font-bold mb-1">Book a FREE Test Ride for Your Child</h3>
+            <p className="text-gray-500 text-sm mb-5">Safe, supervised ride. We'll call you in 5 minutes to confirm.</p>
             <LeadForm source="hero" />
           </motion.div>
         </div>
@@ -189,19 +188,19 @@ function AuthorityBar() {
   ];
 
   return (
-    <section className="bg-[#0a0a0a] border-y border-white/5 py-8">
+    <section className="bg-gray-50 border-y border-gray-100 py-8">
       <div className="max-w-6xl mx-auto px-5">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {stats.map((s, i) => (
             <motion.div key={s.label} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
-              <div className="text-2xl sm:text-3xl font-bold text-orange-400">{s.value}</div>
-              <div className="text-white text-xs font-medium uppercase tracking-wider mt-1">{s.label}</div>
-              <div className="text-gray-500 text-[10px] mt-0.5">{s.sub}</div>
+              <div className="text-2xl sm:text-3xl font-bold text-orange-500">{s.value}</div>
+              <div className="text-gray-800 text-xs font-medium uppercase tracking-wider mt-1">{s.label}</div>
+              <div className="text-gray-400 text-[10px] mt-0.5">{s.sub}</div>
             </motion.div>
           ))}
         </div>
-        <p className="text-center text-gray-500 text-xs mt-5">
-          Questions? Call <a href={`tel:${PHONE}`} className="text-orange-400 hover:underline">{PHONE}</a>
+        <p className="text-center text-gray-400 text-xs mt-5">
+          Questions? Call <a href={`tel:${PHONE}`} className="text-orange-500 hover:underline">{PHONE}</a>
         </p>
       </div>
     </section>
@@ -220,27 +219,27 @@ function PainSection() {
   ];
 
   return (
-    <Section className="py-16 sm:py-20 bg-[#111]" id="pain">
+    <Section className="py-16 sm:py-20 bg-white" id="pain">
       <div className="max-w-5xl mx-auto px-5">
         <div className="text-center mb-12">
-          <span className="text-orange-400 text-xs font-medium tracking-[0.15em] uppercase">ಇದು ನಿಮ್ಮ ಮನೆಯ ಕಥೆನಾ?</span>
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">Is This Happening in Your Home?</h2>
+          <span className="text-orange-500 text-xs font-medium tracking-[0.15em] uppercase">ಇದು ನಿಮ್ಮ ಮನೆಯ ಕಥೆನಾ?</span>
+          <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">Is This Happening in Your Home?</h2>
           <div className="w-12 h-0.5 bg-orange-500 mx-auto" />
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {pains.map((p, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
-              className="p-5 rounded-xl bg-white/[0.03] border border-white/5 hover:border-red-500/20 transition-colors">
+              className="p-5 rounded-xl bg-gray-50 border border-gray-100 hover:border-red-200 transition-colors">
               <div className="text-2xl mb-3">{p.icon}</div>
-              <h3 className="text-white font-semibold text-sm mb-1">{p.title}</h3>
+              <h3 className="text-gray-900 font-semibold text-sm mb-1">{p.title}</h3>
               <p className="text-gray-500 text-xs leading-relaxed">{p.desc}</p>
             </motion.div>
           ))}
         </div>
 
         <div className="text-center mt-10">
-          <p className="text-gray-300 text-sm mb-4">If you said YES to even ONE — <span className="text-orange-400 font-semibold">the Viper is the answer.</span></p>
+          <p className="text-gray-700 text-sm mb-4">If you said YES to even ONE — <span className="text-orange-500 font-semibold">the Viper is the answer.</span></p>
           <a href={`tel:${PHONE}`} className="inline-block px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-all text-sm">
             📞 Call {PHONE} — Talk to a Parent Expert
           </a>
@@ -262,30 +261,30 @@ function TransformationSection() {
   ];
 
   return (
-    <Section className="py-16 sm:py-20 bg-[#0a0a0a]">
+    <Section className="py-16 sm:py-20 bg-gray-50">
       <div className="max-w-5xl mx-auto px-5">
         <div className="text-center mb-12">
-          <span className="text-orange-400 text-xs font-medium tracking-[0.15em] uppercase">ಬದಲಾವಣೆ ಕಲ್ಪಿಸಿಕೊಳ್ಳಿ</span>
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">Imagine Your Child Like This Instead</h2>
+          <span className="text-orange-500 text-xs font-medium tracking-[0.15em] uppercase">ಬದಲಾವಣೆ ಕಲ್ಪಿಸಿಕೊಳ್ಳಿ</span>
+          <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">Imagine Your Child Like This Instead</h2>
           <div className="w-12 h-0.5 bg-orange-500 mx-auto" />
         </div>
 
         <div className="space-y-3">
           {aspirations.map((a, i) => (
             <motion.div key={i} initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-              className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/5">
+              className="flex items-center gap-4 p-4 rounded-xl bg-white border border-gray-100 shadow-sm">
               <span className="text-2xl shrink-0">{a.icon}</span>
               <div className="flex-1 flex items-center gap-3 flex-wrap">
-                <span className="text-red-400/80 text-sm line-through">{a.before}</span>
-                <span className="text-gray-600">→</span>
-                <span className="text-green-400 text-sm font-medium">{a.after}</span>
+                <span className="text-red-400 text-sm line-through">{a.before}</span>
+                <span className="text-gray-300">→</span>
+                <span className="text-green-600 text-sm font-medium">{a.after}</span>
               </div>
             </motion.div>
           ))}
         </div>
 
         <div className="text-center mt-10">
-          <p className="text-gray-300 text-sm mb-4">300+ Bangalore parents saw this transformation in their kids.</p>
+          <p className="text-gray-600 text-sm mb-4">300+ Bangalore parents saw this transformation in their kids.</p>
           <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-all text-sm">
             💬 WhatsApp Us — Ask Any Question
           </a>
@@ -307,21 +306,21 @@ function SafetySection() {
   ];
 
   return (
-    <Section className="py-16 sm:py-20 bg-[#111]">
+    <Section className="py-16 sm:py-20 bg-white">
       <div className="max-w-5xl mx-auto px-5">
         <div className="text-center mb-12">
-          <span className="text-orange-400 text-xs font-medium tracking-[0.15em] uppercase">ನಿಮ್ಮ ಮಗುವಿನ ಸುರಕ್ಷತೆ ಮೊದಲು</span>
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">Built for Safety. Designed for Parents' Peace of Mind.</h2>
+          <span className="text-orange-500 text-xs font-medium tracking-[0.15em] uppercase">ನಿಮ್ಮ ಮಗುವಿನ ಸುರಕ್ಷತೆ ಮೊದಲು</span>
+          <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">Built for Safety. Designed for Parents' Peace of Mind.</h2>
           <div className="w-12 h-0.5 bg-orange-500 mx-auto" />
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {features.map((f, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
-              className="p-5 rounded-xl bg-white/[0.03] border border-green-500/10 hover:border-green-500/30 transition-colors">
+              className="p-5 rounded-xl bg-green-50 border border-green-100 hover:border-green-300 transition-colors">
               <div className="text-2xl mb-3">{f.icon}</div>
-              <h3 className="text-white font-semibold text-sm mb-1">{f.title}</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">{f.desc}</p>
+              <h3 className="text-gray-900 font-semibold text-sm mb-1">{f.title}</h3>
+              <p className="text-gray-500 text-xs leading-relaxed">{f.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -346,26 +345,26 @@ function WhoIsThisFor() {
   ];
 
   return (
-    <Section className="py-16 sm:py-20 bg-[#0a0a0a]">
+    <Section className="py-16 sm:py-20 bg-gray-50">
       <div className="max-w-5xl mx-auto px-5">
         <div className="text-center mb-12">
-          <span className="text-orange-400 text-xs font-medium tracking-[0.15em] uppercase">Is This You?</span>
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">This E-Cycle Is For Your Child If...</h2>
+          <span className="text-orange-500 text-xs font-medium tracking-[0.15em] uppercase">Is This You?</span>
+          <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">This E-Cycle Is For Your Child If...</h2>
           <div className="w-12 h-0.5 bg-orange-500 mx-auto" />
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
           {personas.map((p, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-              className="p-5 rounded-xl bg-white/[0.03] border border-white/5 hover:border-orange-500/20 transition-colors">
+              className="p-5 rounded-xl bg-white border border-gray-100 hover:border-orange-200 transition-colors shadow-sm">
               <div className="flex items-start gap-3">
                 <div className="w-5 h-5 mt-0.5 rounded border-2 border-orange-500 flex items-center justify-center shrink-0">
                   <div className="w-2.5 h-2.5 bg-orange-500 rounded-sm" />
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold text-sm mb-1">{p.title}</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed mb-2">{p.desc}</p>
-                  <span className="text-orange-400/60 text-[10px] uppercase tracking-wider">{p.match}</span>
+                  <h3 className="text-gray-900 font-semibold text-sm mb-1">{p.title}</h3>
+                  <p className="text-gray-500 text-xs leading-relaxed mb-2">{p.desc}</p>
+                  <span className="text-orange-400 text-[10px] uppercase tracking-wider">{p.match}</span>
                 </div>
               </div>
             </motion.div>
@@ -392,36 +391,36 @@ function SocialProofSection() {
   ];
 
   return (
-    <Section className="py-16 sm:py-20 bg-[#111]">
+    <Section className="py-16 sm:py-20 bg-white">
       <div className="max-w-5xl mx-auto px-5">
         <div className="text-center mb-12">
-          <span className="text-orange-400 text-xs font-medium tracking-[0.15em] uppercase">ನಿಜವಾದ ಪೋಷಕರು. ನಿಜವಾದ ಫಲಿತಾಂಶ.</span>
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">300+ Bangalore Parents Made This Choice</h2>
-          <p className="text-gray-400 text-sm">⭐ 4.7/5 average rating from 2,122 reviews</p>
+          <span className="text-orange-500 text-xs font-medium tracking-[0.15em] uppercase">ನಿಜವಾದ ಪೋಷಕರು. ನಿಜವಾದ ಫಲಿತಾಂಶ.</span>
+          <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">300+ Bangalore Parents Made This Choice</h2>
+          <p className="text-gray-500 text-sm">⭐ 4.7/5 average rating from 2,122 reviews</p>
           <div className="w-12 h-0.5 bg-orange-500 mx-auto mt-4" />
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
           {testimonials.map((t, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-              className="p-5 rounded-xl bg-white/[0.03] border border-white/5">
+              className="p-5 rounded-xl bg-gray-50 border border-gray-100">
               <div className="flex gap-0.5 mb-3">{[...Array(t.rating)].map((_, j) => <span key={j} className="text-orange-400 text-sm">⭐</span>)}</div>
-              <p className="text-gray-300 text-sm leading-relaxed mb-3">"{t.text}"</p>
-              <p className="text-gray-500 text-xs">— {t.name}</p>
+              <p className="text-gray-700 text-sm leading-relaxed mb-3">"{t.text}"</p>
+              <p className="text-gray-400 text-xs">— {t.name}</p>
             </motion.div>
           ))}
         </div>
 
         <div className="grid grid-cols-3 gap-2 mt-8 rounded-xl overflow-hidden">
           {['/viper-frame-5.jpg', '/viper-frame-7.jpg', '/viper-frame-8.jpg'].map((src, i) => (
-            <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="aspect-video bg-gray-900">
-              <img src={src} alt="Viper e-cycle" loading="lazy" className="w-full h-full object-cover" />
+            <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="aspect-video bg-gray-100">
+              <img src={src} alt="Viper e-cycle" loading="lazy" className="w-full h-full object-cover rounded-lg" />
             </motion.div>
           ))}
         </div>
 
         <div className="text-center mt-8">
-          <p className="text-gray-400 text-sm mb-4">Want the same transformation for your child?</p>
+          <p className="text-gray-500 text-sm mb-4">Want the same transformation for your child?</p>
           <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-all text-sm">
             💬 WhatsApp {PHONE} — Talk to a Parent Expert
           </a>
@@ -440,11 +439,11 @@ function HowItWorks() {
   ];
 
   return (
-    <Section className="py-16 sm:py-20 bg-[#0a0a0a]">
+    <Section className="py-16 sm:py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-5">
         <div className="text-center mb-12">
-          <span className="text-orange-400 text-xs font-medium tracking-[0.15em] uppercase">ಸರಳ 3 ಹಂತಗಳು</span>
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">3 Simple Steps</h2>
+          <span className="text-orange-500 text-xs font-medium tracking-[0.15em] uppercase">ಸರಳ 3 ಹಂತಗಳು</span>
+          <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">3 Simple Steps</h2>
           <div className="w-12 h-0.5 bg-orange-500 mx-auto" />
         </div>
 
@@ -452,17 +451,17 @@ function HowItWorks() {
           {steps.map((s, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }}
               className="text-center">
-              <div className="w-14 h-14 rounded-full bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mx-auto mb-4">
+              <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-200 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">{s.icon}</span>
               </div>
-              <div className="text-orange-400 text-xs font-bold uppercase tracking-wider mb-2">Step {s.num}</div>
-              <h3 className="text-white font-semibold text-sm mb-2">{s.title}</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">{s.desc}</p>
+              <div className="text-orange-500 text-xs font-bold uppercase tracking-wider mb-2">Step {s.num}</div>
+              <h3 className="text-gray-900 font-semibold text-sm mb-2">{s.title}</h3>
+              <p className="text-gray-500 text-xs leading-relaxed">{s.desc}</p>
             </motion.div>
           ))}
         </div>
 
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-12 rounded-xl overflow-hidden bg-white">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-12 rounded-xl overflow-hidden border border-gray-200">
           <img src="/viper-section-decoding.jpg" alt="EMotorad Viper - Component breakdown" className="w-full h-auto" loading="lazy" />
         </motion.div>
 
@@ -479,16 +478,16 @@ function HowItWorks() {
 // ─── S9: BCH STORE STORY ──────────────────────────────────────────
 function StoreStory() {
   return (
-    <Section className="py-16 sm:py-20 bg-[#111]">
+    <Section className="py-16 sm:py-20 bg-white">
       <div className="max-w-5xl mx-auto px-5">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <span className="text-orange-400 text-xs font-medium tracking-[0.15em] uppercase">Why Parents Choose BCH</span>
-            <h2 className="text-white text-2xl sm:text-3xl font-bold mt-2 mb-4">25 Years. 300+ Parents.<br />One Promise: Your Child's Safety.</h2>
-            <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
-              <p>Bharath Cycle Hub isn't an online store that ships a box. <span className="text-white font-medium">We sit with you and your child</span>, adjust the seat height, teach them braking, and make sure they're confident before they ride out.</p>
-              <p><span className="text-white font-medium">6,500 sqft showroom. 300+ cycles on display. 8 full-time mechanics.</span> When something needs fixing — call us. Even at 10 PM on a Sunday. We've been here since 1999.</p>
-              <p><span className="text-white font-medium">300+ parents chose BCH this year</span> for their child's e-cycle. Not because we're cheapest — we charge ₹2,000 more than online stores. Because when it's your child riding, you don't compromise on after-sales.</p>
+            <span className="text-orange-500 text-xs font-medium tracking-[0.15em] uppercase">Why Parents Choose BCH</span>
+            <h2 className="text-gray-900 text-2xl sm:text-3xl font-bold mt-2 mb-4">25 Years. 300+ Parents.<br />One Promise: Your Child's Safety.</h2>
+            <div className="space-y-4 text-gray-500 text-sm leading-relaxed">
+              <p>Bharath Cycle Hub isn't an online store that ships a box. <span className="text-gray-900 font-medium">We sit with you and your child</span>, adjust the seat height, teach them braking, and make sure they're confident before they ride out.</p>
+              <p><span className="text-gray-900 font-medium">6,500 sqft showroom. 300+ cycles on display. 8 full-time mechanics.</span> When something needs fixing — call us. Even at 10 PM on a Sunday. We've been here since 1999.</p>
+              <p><span className="text-gray-900 font-medium">300+ parents chose BCH this year</span> for their child's e-cycle. Not because we're cheapest — we charge ₹2,000 more than online stores. Because when it's your child riding, you don't compromise on after-sales.</p>
             </div>
             <div className="mt-6">
               <a href={`tel:${PHONE}`} className="inline-block px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-all text-sm">
@@ -497,10 +496,10 @@ function StoreStory() {
             </div>
           </div>
           <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <img src="/viper-bike.jpg" alt="EMotorad Viper at BCH" className="w-full rounded-xl" loading="lazy" />
+            <img src="/viper-bike.jpg" alt="EMotorad Viper at BCH" className="w-full rounded-xl shadow-md" loading="lazy" />
             <div className="grid grid-cols-3 gap-3 mt-4">
               {['/viper-frame-10.jpg', '/viper-frame-12.jpg', '/viper-gallery-1.jpg'].map((src, i) => (
-                <img key={i} src={src} alt="BCH store" className="w-full aspect-video object-cover rounded-lg" loading="lazy" />
+                <img key={i} src={src} alt="BCH store" className="w-full aspect-video object-cover rounded-lg shadow-sm" loading="lazy" />
               ))}
             </div>
           </motion.div>
@@ -513,43 +512,42 @@ function StoreStory() {
 // ─── S10: PRICING (Gift framing) ─────────────────────────────────
 function PricingSection() {
   return (
-    <Section className="py-16 sm:py-20 bg-[#0a0a0a]" id="pricing">
+    <Section className="py-16 sm:py-20 bg-gray-50" id="pricing">
       <div className="max-w-3xl mx-auto px-5">
         <div className="text-center mb-10">
-          <span className="text-orange-400 text-xs font-medium tracking-[0.15em] uppercase">The Best Gift You'll Ever Give</span>
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">Less Than ₹36/Day for Your Child's Freedom</h2>
+          <span className="text-orange-500 text-xs font-medium tracking-[0.15em] uppercase">The Best Gift You'll Ever Give</span>
+          <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">Less Than ₹36/Day for Your Child's Freedom</h2>
           <div className="w-12 h-0.5 bg-orange-500 mx-auto" />
         </div>
 
-        <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-6 sm:p-8">
+        <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-lg">
           <div className="flex items-baseline gap-3 mb-2">
-            <span className="text-gray-500 text-lg line-through">₹79,999</span>
-            <span className="text-white text-4xl sm:text-5xl font-bold">₹66,999</span>
+            <span className="text-gray-400 text-lg line-through">₹79,999</span>
+            <span className="text-gray-900 text-4xl sm:text-5xl font-bold">₹66,999</span>
           </div>
-          <span className="inline-block bg-green-500/10 text-green-400 text-xs font-semibold px-3 py-1 rounded-full mb-6">Save ₹13,000</span>
+          <span className="inline-block bg-green-50 text-green-600 text-xs font-semibold px-3 py-1 rounded-full mb-6">Save ₹13,000</span>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-6">
-            <div className="p-4 rounded-lg bg-white/[0.03]">
-              <div className="text-orange-400 text-2xl font-bold">₹36/day</div>
-              <div className="text-gray-400 text-xs">Over 5 years. Less than one auto ride.</div>
+            <div className="p-4 rounded-lg bg-orange-50">
+              <div className="text-orange-500 text-2xl font-bold">₹36/day</div>
+              <div className="text-gray-500 text-xs">Over 5 years. Less than one auto ride.</div>
             </div>
-            <div className="p-4 rounded-lg bg-white/[0.03]">
-              <div className="text-orange-400 text-2xl font-bold">₹999/mo EMI</div>
-              <div className="text-gray-400 text-xs">Less than your child's monthly mobile recharge</div>
+            <div className="p-4 rounded-lg bg-orange-50">
+              <div className="text-orange-500 text-2xl font-bold">₹999/mo EMI</div>
+              <div className="text-gray-500 text-xs">Less than your child's monthly mobile recharge</div>
             </div>
           </div>
 
-          {/* Compare: what parents spend */}
-          <div className="p-4 rounded-lg bg-orange-500/5 border border-orange-500/10 mb-6">
-            <p className="text-orange-400 text-xs font-semibold uppercase tracking-wider mb-3">What You're Already Spending on Your Child:</p>
+          <div className="p-4 rounded-lg bg-gray-50 border border-gray-100 mb-6">
+            <p className="text-orange-500 text-xs font-semibold uppercase tracking-wider mb-3">What You're Already Spending on Your Child:</p>
             <div className="space-y-2 text-sm">
-              <div className="flex justify-between text-gray-400"><span>PlayStation 5</span><span className="text-white font-medium">₹49,990</span></div>
-              <div className="flex justify-between text-gray-400"><span>iPhone</span><span className="text-white font-medium">₹59,900+</span></div>
-              <div className="flex justify-between text-gray-400"><span>Auto fares (1 year)</span><span className="text-white font-medium">₹30,000</span></div>
-              <div className="flex justify-between text-gray-400"><span>Tuition + hobby classes</span><span className="text-white font-medium">₹60,000+</span></div>
-              <div className="border-t border-white/10 my-2" />
-              <div className="flex justify-between text-orange-400 font-bold"><span>EMotorad Viper E-Cycle</span><span>₹66,999</span></div>
-              <p className="text-gray-500 text-xs mt-1">Gives them freedom, fitness, real friends, and 5+ years of daily use.</p>
+              <div className="flex justify-between text-gray-500"><span>PlayStation 5</span><span className="text-gray-800 font-medium">₹49,990</span></div>
+              <div className="flex justify-between text-gray-500"><span>iPhone</span><span className="text-gray-800 font-medium">₹59,900+</span></div>
+              <div className="flex justify-between text-gray-500"><span>Auto fares (1 year)</span><span className="text-gray-800 font-medium">₹30,000</span></div>
+              <div className="flex justify-between text-gray-500"><span>Tuition + hobby classes</span><span className="text-gray-800 font-medium">₹60,000+</span></div>
+              <div className="border-t border-gray-200 my-2" />
+              <div className="flex justify-between text-orange-500 font-bold"><span>EMotorad Viper E-Cycle</span><span>₹66,999</span></div>
+              <p className="text-gray-400 text-xs mt-1">Gives them freedom, fitness, real friends, and 5+ years of daily use.</p>
             </div>
           </div>
 
@@ -562,8 +560,8 @@ function PricingSection() {
               'Speed lock at 25 km/h — built-in safety',
               'Free first service + seat height adjustment',
             ].map((item) => (
-              <li key={item} className="flex items-start gap-2 text-gray-300 text-sm">
-                <svg className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <li key={item} className="flex items-start gap-2 text-gray-700 text-sm">
+                <svg className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                 {item}
               </li>
             ))}
@@ -577,7 +575,7 @@ function PricingSection() {
               💬 WhatsApp Us
             </a>
           </div>
-          <p className="text-gray-500 text-xs text-center mt-4">Test ride is free. No obligation. Bring your child and let them decide.</p>
+          <p className="text-gray-400 text-xs text-center mt-4">Test ride is free. No obligation. Bring your child and let them decide.</p>
         </div>
       </div>
     </Section>
@@ -597,11 +595,11 @@ function FAQSection() {
   ];
 
   return (
-    <Section className="py-16 sm:py-20 bg-[#111]" id="faq">
+    <Section className="py-16 sm:py-20 bg-white" id="faq">
       <div className="max-w-3xl mx-auto px-5">
         <div className="text-center mb-12">
-          <span className="text-orange-400 text-xs font-medium tracking-[0.15em] uppercase">ನಿಮ್ಮ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರ</span>
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">Every Parent Asks These Questions</h2>
+          <span className="text-orange-500 text-xs font-medium tracking-[0.15em] uppercase">ನಿಮ್ಮ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರ</span>
+          <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3">Every Parent Asks These Questions</h2>
           <div className="w-12 h-0.5 bg-orange-500 mx-auto" />
         </div>
 
@@ -609,18 +607,18 @@ function FAQSection() {
           {faqs.map((faq, i) => (
             <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}>
               <button onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between p-4 rounded-xl bg-white/[0.03] border border-white/5 hover:border-white/10 transition-colors text-left">
-                <span className="text-white text-sm font-medium pr-4">{faq.q}</span>
-                <span className="text-orange-400 text-lg shrink-0">{open === i ? '−' : '+'}</span>
+                className="w-full flex items-center justify-between p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-gray-200 transition-colors text-left">
+                <span className="text-gray-900 text-sm font-medium pr-4">{faq.q}</span>
+                <span className="text-orange-500 text-lg shrink-0">{open === i ? '−' : '+'}</span>
               </button>
               <AnimatePresence>
                 {open === i && (
                   <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }}
                     className="overflow-hidden">
-                    <div className="px-4 py-3 text-gray-400 text-sm leading-relaxed">
+                    <div className="px-4 py-3 text-gray-600 text-sm leading-relaxed">
                       {faq.a}
                       <div className="mt-3">
-                        <a href={`tel:${PHONE}`} className="text-orange-400 text-xs hover:underline">📞 Still have doubts? Call {PHONE}</a>
+                        <a href={`tel:${PHONE}`} className="text-orange-500 text-xs hover:underline">📞 Still have doubts? Call {PHONE}</a>
                       </div>
                     </div>
                   </motion.div>
@@ -640,27 +638,27 @@ function UrgencyClose() {
     <section className="relative py-16 sm:py-24 overflow-hidden">
       <div className="absolute inset-0">
         <img src="/viper-frame-3.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
-        <div className="absolute inset-0 bg-black/80" />
+        <div className="absolute inset-0 bg-white/85" />
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-5">
         <div className="flex flex-wrap justify-center gap-3 mb-10">
           {['🔒 25 km/h Speed Lock', '🛡️ 2-Year Warranty', '🔧 8 Mechanics', '🎁 Free Helmet + Lock', '💳 EMI ₹999/mo'].map((b) => (
-            <span key={b} className="px-3 py-1.5 bg-white/10 backdrop-blur-sm text-white text-xs rounded-full border border-white/10">{b}</span>
+            <span key={b} className="px-3 py-1.5 bg-white/80 backdrop-blur-sm text-gray-700 text-xs rounded-full border border-gray-200 shadow-sm">{b}</span>
           ))}
         </div>
 
         <div className="text-center mb-10">
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-3">Only 5 Kids' Test Ride Slots Left This Week</h2>
-          <p className="text-orange-400/80 text-base font-medium mb-2">ನಿಮ್ಮ ಮಗುವಿಗೆ ಸ್ವಾತಂತ್ರ್ಯ ಕೊಡಿ — ಇಂದೇ ಬುಕ್ ಮಾಡಿ.</p>
-          <p className="text-gray-300 text-sm max-w-lg mx-auto">
+          <h2 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold mb-3">Only 5 Kids' Test Ride Slots Left This Week</h2>
+          <p className="text-orange-600 text-base font-medium mb-2">ನಿಮ್ಮ ಮಗುವಿಗೆ ಸ್ವಾತಂತ್ರ್ಯ ಕೊಡಿ — ಇಂದೇ ಬುಕ್ ಮಾಡಿ.</p>
+          <p className="text-gray-600 text-sm max-w-lg mx-auto">
             Bring your child to BCH Yelahanka. Supervised test ride. 5 minutes.
             If they don't love it — shake hands and leave. No pressure.
           </p>
         </div>
 
-        <div className="max-w-sm mx-auto bg-white/[0.06] border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
-          <h3 className="text-white text-lg font-bold mb-1 text-center">Book Your Child's Free Test Ride</h3>
+        <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-2xl p-6 shadow-xl">
+          <h3 className="text-gray-900 text-lg font-bold mb-1 text-center">Book Your Child's Free Test Ride</h3>
           <p className="text-gray-400 text-xs text-center mb-5">100% Free. Supervised. Your number is safe.</p>
           <LeadForm source="final" buttonText="Book My Child's Test Ride — Free" />
         </div>
@@ -695,7 +693,7 @@ function StickyFooter() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#111]/95 backdrop-blur-md border-t border-white/10 p-2 sm:p-3 lg:hidden safe-bottom">
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 p-2 sm:p-3 lg:hidden safe-bottom">
       <div className="flex gap-2 max-w-lg mx-auto">
         <a href={`tel:${PHONE}`} className="flex-1 py-2.5 bg-orange-500 text-white font-bold rounded-lg text-center text-sm">
           📞 Call Now
@@ -711,7 +709,7 @@ function StickyFooter() {
 // ─── MAIN PAGE ────────────────────────────────────────────────────
 export default function ViperKidsLandingPage() {
   return (
-    <div className="bg-[#0a0a0a]">
+    <div className="bg-white">
       <AutoPopup />
       <HeroSection />
       <AuthorityBar />

@@ -73,8 +73,8 @@ export default function PrivacyPolicy() {
                 </h2>
                 <p className="text-gray-text leading-relaxed">
                   You have the right to access, correct, or delete your personal information at any time. Contact us at{' '}
-                  <a href="mailto:support@bharathcyclehub.store" className="text-primary hover:text-primary-dark font-medium">
-                    support@bharathcyclehub.store
+                  <a href="mailto:bharathcyclehub@gmail.com" className="text-primary hover:text-primary-dark font-medium">
+                    bharathcyclehub@gmail.com
                   </a>{' '}
                   for any privacy-related requests.
                 </p>
@@ -89,7 +89,7 @@ export default function PrivacyPolicy() {
                     If you have any questions about this Privacy Policy, please contact us:
                   </p>
                   <div className="space-y-2 text-sm">
-                    <p className="text-dark"><strong>Email:</strong> <a href="mailto:support@bharathcyclehub.store" className="text-primary hover:text-primary-dark">support@bharathcyclehub.store</a></p>
+                    <p className="text-dark"><strong>Email:</strong> <a href="mailto:bharathcyclehub@gmail.com" className="text-primary hover:text-primary-dark">bharathcyclehub@gmail.com</a></p>
                     <p className="text-dark"><strong>Address:</strong> Main Road, Chikka Bommasandra, Yelahanka, Bengaluru, Karnataka 560064</p>
                   </div>
                 </div>

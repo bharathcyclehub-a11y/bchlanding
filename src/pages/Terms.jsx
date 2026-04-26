@@ -111,7 +111,7 @@ export default function Terms() {
                     For questions about these terms or to modify your booking:
                   </p>
                   <div className="space-y-2 text-sm">
-                    <p className="text-dark"><strong>Email:</strong> <a href="mailto:support@bharathcyclehub.store" className="text-primary hover:text-primary-dark">support@bharathcyclehub.store</a></p>
+                    <p className="text-dark"><strong>Email:</strong> <a href="mailto:bharathcyclehub@gmail.com" className="text-primary hover:text-primary-dark">bharathcyclehub@gmail.com</a></p>
                     <p className="text-dark"><strong>Address:</strong> Main Road, Chikka Bommasandra, Yelahanka, Bengaluru, Karnataka 560064</p>
                   </div>
                 </div>

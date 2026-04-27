@@ -138,7 +138,7 @@ function HeroSection() {
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center overflow-hidden bg-gray-900">
-      <motion.div className="absolute inset-0 bg-cover bg-center scale-110 opacity-30" style={{ backgroundImage: "url('/viper-kids-outdoor.jpg')", y: bgY }} />
+      <motion.div className="absolute inset-0 bg-cover bg-center scale-110 opacity-30" style={{ backgroundImage: "url('/viper-kids-hero.jpg')", y: bgY }} />
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/60 to-gray-900/90" />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-5 py-20 sm:py-28">
@@ -172,10 +172,16 @@ function HeroSection() {
               ))}
             </div>
 
-            <div className="flex gap-3 lg:hidden">
+            <div className="flex gap-3 lg:hidden mb-6">
               <a href={`tel:${PHONE}`} className="flex-1 py-3.5 bg-orange-500 text-white font-bold rounded-xl text-center text-sm">📞 Call Now</a>
               <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex-1 py-3.5 bg-green-600 text-white font-bold rounded-xl text-center text-sm">💬 WhatsApp</a>
             </div>
+
+            {/* Hero image visible on mobile */}
+            <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0.6}
+              className="lg:hidden rounded-xl overflow-hidden shadow-lg mb-6">
+              <img src="/viper-kids-hero.jpg" alt="Teen riding Viper e-cycle at golden hour" className="w-full h-auto" />
+            </motion.div>
           </motion.div>
 
           <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0.5}
@@ -302,6 +308,17 @@ function TurningPointSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Group riding image */}
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+          className="mt-14 relative rounded-2xl overflow-hidden shadow-xl">
+          <img src="/viper-kids-group.jpg" alt="5 teenagers riding e-cycles together in Bangalore" className="w-full h-auto" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8">
+            <p className="text-white font-bold text-lg sm:text-2xl">This could be your child's squad.</p>
+            <p className="text-gray-300 text-sm">Every evening. Every weekend. Real friendships, built on the road.</p>
+          </div>
+        </motion.div>
 
         <CTABlock text="300+ Bangalore parents saw this transformation." />
       </div>
@@ -474,6 +491,17 @@ function SafetySection() {
             ))}
           </div>
         </div>
+
+        {/* Night safety image */}
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+          className="relative rounded-2xl overflow-hidden shadow-xl mb-10">
+          <img src="/viper-kids-safety-light.jpg" alt="E-cycle lights illuminating dark road at dusk" className="w-full h-auto" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8">
+            <p className="text-white font-bold text-lg sm:text-xl">420 Lux. Visible from 200+ meters.</p>
+            <p className="text-gray-300 text-sm">Your child is seen — even when the sun goes down.</p>
+          </div>
+        </motion.div>
 
         <div className="bg-green-50 border border-green-200 rounded-2xl p-6 sm:p-8 text-center">
           <p className="text-green-800 text-lg font-bold mb-2">The Safety Promise</p>
@@ -678,6 +706,17 @@ function GiftSection() {
         <p className="text-center text-gray-600 text-base sm:text-lg max-w-2xl mx-auto mb-14">
           {"Birthday? 10th pass? Exam reward? Don't give them another screen. Give them the outdoors."}
         </p>
+
+        {/* Gift moment image */}
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+          className="relative rounded-2xl overflow-hidden shadow-xl mb-14">
+          <img src="/viper-kids-gift.jpg" alt="Girl surprised by e-cycle gift with red ribbon in showroom" className="w-full h-auto" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8">
+            <p className="text-white font-bold text-lg sm:text-2xl">The moment that changes everything.</p>
+            <p className="text-gray-300 text-sm">Not a phone. Not a PlayStation. Something that gets them outside.</p>
+          </div>
+        </motion.div>
 
         {/* Comparison: What you already spend */}
         <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 mb-10">

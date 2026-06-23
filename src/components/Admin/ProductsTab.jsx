@@ -266,7 +266,7 @@ export default function ProductsTab() {
     });
   };
 
-  // Upload images to Firebase Storage in batches, returns imageMap { filename: url }
+  // Upload images to Supabase Storage in batches, returns imageMap { filename: url }
   const uploadImagesBatch = async (images, token) => {
     const imageMap = {};
     let uploaded = 0;

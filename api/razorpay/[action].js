@@ -9,7 +9,7 @@
 import Razorpay from 'razorpay';
 import crypto from 'crypto';
 import { handleCors } from '../_lib/auth-middleware.js';
-import { getLeadById, updateLeadPayment } from '../_lib/firestore-service.js';
+import { getLeadById, updateLeadPayment } from '../_lib/db-service.js';
 
 // Initialize Razorpay instance lazily
 let razorpay = null;
@@ -44,8 +44,13 @@ export default async function handler(req, res) {
   if (action === 'create-order') {
     try {
       const { leadId } = req.body;
-      const amount = 99;
       const currency = 'INR';
+
+      // Server-side amount whitelist — never trust the amount sent by the client.
+      // 99  = test-ride booking fee, 999 = Viper pre-booking token.
+      const ALLOWED_AMOUNTS = [99, 999];
+      const requestedAmount = Number(req.body.amount);
+      const amount = ALLOWED_AMOUNTS.includes(requestedAmount) ? requestedAmount : 99;
 
       if (!leadId) {
         return res.status(400).json({ success: false, error: 'leadId is required' });

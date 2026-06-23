@@ -1,4 +1,4 @@
-import { createLead, getLeads, getLeadsStats } from '../_lib/firestore-service.js';
+import { createLead, getLeads, getLeadsStats } from '../_lib/db-service.js';
 import { requireAdmin, handleCors } from '../_lib/auth-middleware.js';
 
 // Simple in-memory rate limiter for lead creation (per IP)
@@ -74,7 +74,9 @@ function validateLeadInput(data) {
     message: data.message ? String(data.message).trim() : undefined,
     quizAnswers: data.quizAnswers || {},
     source: data.source || undefined,
-    category: data.category || undefined
+    category: data.category || undefined,
+    area: data.area ? String(data.area).trim().slice(0, 80) : undefined,
+    childName: data.childName ? String(data.childName).trim().slice(0, 80) : undefined
   };
 }
 

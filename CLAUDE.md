@@ -42,36 +42,38 @@ vercel env pull .env.vercel.production --environment=production
 ### Tech Stack
 - **Frontend**: React 18 + Vite + Tailwind CSS + Framer Motion
 - **Backend**: Vercel Serverless Functions (Node.js)
-- **Database**: Firebase Firestore (Admin SDK in backend only)
-- **Authentication**: Firebase Auth (client in frontend, Admin SDK in backend)
+- **Database**: Supabase (Postgres) — service-role client, backend only
+- **Authentication**: Supabase Auth (anon client in frontend, service-role in backend)
+- **Storage**: Supabase Storage (`product-images` bucket)
 - **Payments**: Razorpay (live)
 - **Hosting**: Vercel
 
 ### Backend/Frontend Separation Pattern
 
-**CRITICAL ARCHITECTURE RULE**: Firebase Admin SDK is ONLY used in backend serverless functions (`/api` directory). The frontend uses Firebase Client SDK ONLY for authentication.
+**CRITICAL ARCHITECTURE RULE**: the Supabase service-role key is ONLY used in backend serverless functions (`/api` directory) — it bypasses Row Level Security. The frontend uses the Supabase anon client ONLY for authentication.
 
 ```
 Frontend (React)                    Backend (Vercel Functions)
-├── Firebase Client SDK             ├── Firebase Admin SDK
-│   └── Authentication only         │   ├── Firestore operations
-├── API calls to /api/*             │   ├── User verification
-└── No direct database access       │   └── Custom claims management
+├── Supabase anon client            ├── Supabase service-role client
+│   └── Authentication only         │   ├── All DB reads/writes (RLS bypass)
+├── API calls to /api/*             │   ├── Token verification (getUser)
+└── No direct database access       │   └── Storage uploads
                                     └── Payment gateway integrations
 ```
 
 **Why this pattern?**
-- Security: Admin SDK credentials never exposed to frontend
-- Firestore: All database operations centralized in backend
-- Validation: Server-side validation of all data operations
+- Security: the service-role key is never exposed to the frontend
+- All DB operations are centralized in the backend and go through RLS-protected tables
+- Validation: server-side validation of all data operations
+- RLS is ON for every table with NO policies → only the service-role key can read/write
 
 ### API Directory Structure
 
 ```
 api/
 ├── _lib/                           # Shared backend utilities
-│   ├── firebase-admin.js           # Firebase Admin SDK initialization (singleton)
-│   ├── firestore-service.js        # Database operations layer
+│   ├── supabase-admin.js           # Supabase service-role client + token verify (singleton)
+│   ├── db-service.js               # Database operations layer (DbService + named fns)
 │   └── auth-middleware.js          # JWT verification & RBAC
 ├── leads/
 │   ├── index.js                    # POST: Create lead (public), GET: List leads (admin)
@@ -89,72 +91,46 @@ Routes defined in [src/main.jsx](src/main.jsx):
 
 - `/` - Main landing page (general bicycle sales)
 - `/test-ride` - **Primary conversion funnel** (₹99 test ride booking with quiz → payment → lead creation)
-- `/admin` - Admin dashboard (Firebase Auth protected)
+- `/admin` - Admin dashboard (Supabase Auth protected)
 - `/privacy-policy`, `/terms`, `/disclaimer` - Legal pages
 
 ## Critical Environment Variable Setup
 
-### Firebase Admin Private Key Formatting
+### Supabase
 
-**MOST COMMON PRODUCTION ERROR**: The `FIREBASE_ADMIN_PRIVATE_KEY` environment variable in Vercel is extremely sensitive to formatting issues.
-
-#### Correct Format in Vercel
-```
------BEGIN PRIVATE KEY-----\nMIIEvQIBADANBg...(full key)...\n-----END PRIVATE KEY-----\n
-```
-
-**Key points:**
-- Must use `\n` (literal backslash-n), NOT actual newlines
-- NO quotes around the value in Vercel UI
-- Must include trailing `\n` after `-----END PRIVATE KEY-----`
-- NO extra whitespace or newlines at start/end
-
-#### Common Mistakes That Cause "UNAUTHENTICATED" Errors
-```bash
-# ❌ WRONG: Double quotes
-""-----BEGIN PRIVATE KEY-----\n...""
-
-# ❌ WRONG: Missing trailing \n
------BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----
-
-# ❌ WRONG: Actual newlines instead of \n
------BEGIN PRIVATE KEY-----
-MIIEvQI...
-
-# ❌ WRONG: Wrong project ID in client email
-firebase-adminsdk-fbsvc@bchlanding.iam.gserviceaccount.com
-# Should be: @bchlanding-eaebb.iam.gserviceaccount.com
-```
-
-#### Fixing Environment Variables in Vercel
-```bash
-# Remove incorrect variable
-vercel env rm FIREBASE_ADMIN_PRIVATE_KEY production --yes
-
-# Add correct variable (reads from .env.local)
-vercel env add FIREBASE_ADMIN_PRIVATE_KEY production < <(grep "FIREBASE_ADMIN_PRIVATE_KEY" .env.local | cut -d'=' -f2-)
-
-# Verify client email
-echo "firebase-adminsdk-fbsvc@bchlanding-eaebb.iam.gserviceaccount.com" | vercel env add FIREBASE_ADMIN_CLIENT_EMAIL production
-
-# Redeploy
-vercel --prod
-```
+Dedicated project ref **`whrakxbrisgxilwdqpvk`** (region ap-south-1, Postgres 17).
+DB access is server-side only via the service-role key; the frontend uses the anon key for auth.
 
 ### Required Environment Variables
 
-See [.env.local](.env.local) for template. Key variables:
+See [.env.local](.env.local) / [.env.example](.env.example) for the template. Key variables:
 
 **Frontend (VITE_* variables - safe to expose):**
-- `VITE_FIREBASE_*` - Firebase client SDK config
+- `VITE_SUPABASE_URL` - Supabase project URL
+- `VITE_SUPABASE_ANON_KEY` - Supabase anon (public) key
 - `VITE_RAZORPAY_KEY_ID` - Razorpay public key
 
 **Backend (NEVER expose to frontend):**
-- `FIREBASE_ADMIN_PROJECT_ID` - Must match Firebase project
-- `FIREBASE_ADMIN_CLIENT_EMAIL` - Service account email
-- `FIREBASE_ADMIN_PRIVATE_KEY` - Service account private key (see formatting above)
+- `SUPABASE_URL` - Supabase project URL
+- `SUPABASE_SERVICE_ROLE_KEY` - Service-role key — bypasses RLS (CRITICAL SECRET)
 - `RAZORPAY_KEY_ID` - Razorpay merchant key
 - `RAZORPAY_KEY_SECRET` - Razorpay secret (CRITICAL)
+
+#### Setting them in Vercel
+```bash
+# Add each (repeat for preview/development as needed)
+vercel env add SUPABASE_URL production
+vercel env add SUPABASE_SERVICE_ROLE_KEY production
+vercel env add VITE_SUPABASE_URL production
+vercel env add VITE_SUPABASE_ANON_KEY production
+vercel --prod   # redeploy
+```
+
+### Admin users
+
+Supabase Auth, admin flagged via `app_metadata.role = 'admin'` (set server-side only).
+Create or promote an admin: `node scripts/create-admin.mjs <email> <password>`.
+The schema lives in [scripts/supabase/schema.sql](scripts/supabase/schema.sql).
 
 ## Payment System Architecture
 
@@ -168,7 +144,7 @@ User completes quiz in /test-ride
     ↓
 User enters contact details (UserDataForm.jsx)
     ↓
-Lead created in Firestore (status: UNPAID)
+Lead created in Supabase (status: UNPAID)
     ↓
 POST /api/razorpay/create-order (creates Razorpay order)
     ↓
@@ -178,7 +154,7 @@ User pays ₹99
     ↓
 POST /api/razorpay/verify-payment (validates signature)
     ↓
-Lead updated in Firestore (status: PAID)
+Lead updated in Supabase (status: PAID)
     ↓
 Success screen with WhatsApp redirect
 ```
@@ -189,63 +165,56 @@ Success screen with WhatsApp redirect
 - [api/razorpay/create-order.js](api/razorpay/create-order.js) - Order creation
 - [api/razorpay/verify-payment.js](api/razorpay/verify-payment.js) - Signature verification
 
-## Database Schema (Firestore)
+## Database Schema (Supabase / Postgres)
 
-### Collections
+**doc-jsonb pattern**: each former Firestore "document" is stored in a `doc jsonb`
+column, preserving the exact object shapes the API + admin UI already consume.
+Generated columns (immutable casts from `doc`) power filtering/sorting, plus real
+`created_at`/`updated_at`. All tables have RLS ON with no policies (service-role only).
 
-**leads**
+Tables (public schema): `leads`, `products`, `categories`, `app_settings`,
+`engagement`, `visitor_events`, `admin_users`. Full DDL: [scripts/supabase/schema.sql](scripts/supabase/schema.sql).
+
+**leads** — `(id text pk, doc jsonb, category, payment_status, source, lead_status [generated], created_at, updated_at)`. The `doc` shape:
 ```javascript
 {
   id: "lead_1234567890_abc123",
   name: "Customer Name",
   phone: "9876543210",
   email: "customer@example.com",
-  quizAnswers: {
-    userType: "teen",
-    height: "5-2",
-    timeline: "1-month",
-    priority: "style"
-  },
+  area: "Yelahanka", childName: null, buyingFor: "child" | "self",
+  quizAnswers: { userType: "teen", height: "5-2", timeline: "1-month", priority: "style" },
   payment: {
     status: "PAID" | "UNPAID" | "PENDING" | "FAILED",
-    transactionId: "razorpay_payment_id",
-    orderId: "razorpay_order_id",
-    amount: 9900,  // paise (₹99)
-    currency: "INR",
-    method: "RAZORPAY",
-    paidAt: Timestamp
+    transactionId, orderId,
+    amount: 999,        // rupees
+    currency: "INR", method: "RAZORPAY",
+    paidAt: "ISO string" | null
   },
-  source: "test-ride-landing",
+  source: "viper-kids" | "test-ride-landing" | ...,
+  category: "Pre-Booking" | "Test Ride" | "General" | ...,
   status: "NEW" | "CONTACTED" | "SCHEDULED" | "COMPLETED" | "CANCELLED",
-  createdAt: Timestamp,
-  updatedAt: Timestamp
+  createdAt: "ISO string", updatedAt: "ISO string"
 }
 ```
 
-**users** (admin users)
+**admin_users** — `(id uuid pk = auth.users id, doc jsonb, email [generated])`. The `doc` shape:
 ```javascript
-{
-  uid: "firebase_auth_uid",
-  email: "admin@example.com",
-  role: "admin",
-  permissions: ["view_leads", "edit_leads"],
-  isActive: true,
-  lastLogin: Timestamp
-}
+{ uid, email, role: "admin", permissions: ["view_leads","edit_leads"], isActive: true, lastLogin: "ISO" }
 ```
 
 ## Key Files to Know
 
 ### Backend Critical Files
-- [api/_lib/firebase-admin.js](api/_lib/firebase-admin.js) - Firebase Admin initialization (singleton pattern, handles key formatting)
-- [api/_lib/firestore-service.js](api/_lib/firestore-service.js) - Database abstraction layer (createLead, updateLeadPayment, etc.)
-- [api/_lib/auth-middleware.js](api/_lib/auth-middleware.js) - JWT verification, admin role checking
+- [api/_lib/supabase-admin.js](api/_lib/supabase-admin.js) - Supabase service-role client (singleton) + `verifyIdToken` + auth-admin helpers
+- [api/_lib/db-service.js](api/_lib/db-service.js) - Database abstraction layer (createLead, updateLeadPayment, etc.; exports `DbService` class + named fns)
+- [api/_lib/auth-middleware.js](api/_lib/auth-middleware.js) - Token verification, admin role checking
 
 ### Frontend Critical Files
 - [src/pages/TestRideLandingPage.jsx](src/pages/TestRideLandingPage.jsx) - Main conversion funnel (quiz + payment flow)
 - [src/components/UserDataForm.jsx](src/components/UserDataForm.jsx) - Lead capture form
 - [src/components/Quiz/QuizContainer.jsx](src/components/Quiz/QuizContainer.jsx) - Quiz state management
-- [src/config/firebase.js](src/config/firebase.js) - Firebase Client SDK initialization
+- [src/config/supabase.js](src/config/supabase.js) - Supabase anon client (auth only)
 
 ### Configuration Files
 - [dev-server.js](dev-server.js) - Custom Express + Vite dev server
@@ -266,17 +235,17 @@ Success screen with WhatsApp redirect
    - Expiry: Any future date
 
 ### Testing Admin Panel
-1. Create admin user in Firebase Console → Authentication
+1. Create/promote an admin: `node scripts/create-admin.mjs <email> <password>`
 2. Visit `http://localhost:5175/admin`
 3. Login with admin credentials
 4. View leads (requires backend to be running)
 
 ## Common Issues & Solutions
 
-### "UNAUTHENTICATED" Error in Production
-**Symptom**: Error creating leads, "Request had invalid authentication credentials"
-**Cause**: Malformed `FIREBASE_ADMIN_PRIVATE_KEY` in Vercel
-**Solution**: Follow "Firebase Admin Private Key Formatting" section above
+### "Supabase admin keys are missing" / 500 on data APIs
+**Symptom**: Errors creating/listing leads or products
+**Cause**: `SUPABASE_URL` or `SUPABASE_SERVICE_ROLE_KEY` not set in Vercel/.env.local
+**Solution**: Set both backend vars (see "Required Environment Variables") and redeploy
 
 ### API Endpoints Return 404 in Local Dev
 **Symptom**: `/api/*` routes not found
@@ -288,9 +257,9 @@ Success screen with WhatsApp redirect
 **Cause**: Signature verification failing (wrong `RAZORPAY_KEY_SECRET`)
 **Solution**: Verify secret in Vercel matches Razorpay Dashboard
 
-### Firebase Initialization Failed
-**Symptom**: Console error "Missing required Firebase environment variables"
-**Cause**: `.env.local` not loaded or missing `VITE_FIREBASE_*` variables
+### Supabase Auth not configured (frontend)
+**Symptom**: Console error "Missing Supabase env variables"
+**Cause**: `.env.local` not loaded or missing `VITE_SUPABASE_*` variables
 **Solution**: Copy `.env.example` to `.env.local` and fill in values
 
 ## Design System

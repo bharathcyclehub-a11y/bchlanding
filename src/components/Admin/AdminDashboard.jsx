@@ -177,6 +177,10 @@ export default function AdminDashboard() {
         classes: 'bg-blue-100 text-blue-800 border-blue-300',
         label: 'TEST RIDE'
       },
+      'Pre-Booking': {
+        classes: 'bg-amber-100 text-amber-800 border-amber-400',
+        label: 'VIPER ₹999'
+      },
       'Contact': {
         classes: 'bg-red-100 text-red-800 border-red-400',
         label: 'CONTACT'
@@ -493,7 +497,8 @@ export default function AdminDashboard() {
                         className="w-full px-4 py-2.5 rounded-full border-2 border-dark/10 focus:border-primary focus:outline-none text-sm font-medium"
                       >
                         <option value="all">All Categories</option>
-                        <option value="Test Ride">Test Ride</option>
+                        <option value="Pre-Booking">Viper Pre-Booking (₹999)</option>
+                        <option value="Test Ride">Test Ride (₹99)</option>
                         <option value="Contact">Contact</option>
                         <option value="EMI">EMI Inquiry</option>
                         <option value="Exchange">Exchange</option>
@@ -568,7 +573,7 @@ export default function AdminDashboard() {
           <div className="mt-6 text-center text-sm text-gray-text">
             <p>Showing {leads.length} lead{leads.length !== 1 ? 's' : ''}</p>
             <p className="mt-2">
-              🔒 Secured with Firebase Authentication
+              🔒 Secured with Supabase Authentication
             </p>
           </div>
         )}

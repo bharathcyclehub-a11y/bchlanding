@@ -9,8 +9,8 @@ export default function BottomNav() {
   const navigate = useNavigate();
   const [contactOpen, setContactOpen] = useState(false);
 
-  // Hide on admin, test-ride success, and desktop
-  if (location.pathname.startsWith('/admin')) return null;
+  // Hide on admin, and on the Viper pre-booking landings (they have their own sticky Reserve CTA)
+  if (location.pathname.startsWith('/admin') || location.pathname.startsWith('/viper')) return null;
 
   const isActive = (path) => {
     if (path === '/' && location.pathname === '/') return true;

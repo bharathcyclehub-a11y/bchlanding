@@ -24,19 +24,25 @@
     <!-- Performance: DNS prefetch for external domains -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://api.fontshare.com">
+    <link rel="dns-prefetch" href="https://cdn.fontshare.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com">
+    <link rel="dns-prefetch" href="https://whrakxbrisgxilwdqpvk.supabase.co">
     <link rel="dns-prefetch" href="https://checkout.razorpay.com">
 
     <!-- Performance: Preconnect to critical origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://firebasestorage.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+    <link rel="preconnect" href="https://whrakxbrisgxilwdqpvk.supabase.co" crossorigin>
     <link rel="preconnect" href="https://ar-euro.s3.ap-south-1.amazonaws.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.shopify.com">
 
-    <!-- Performance: Optimized font loading with display=swap -->
+    <!-- Site-wide type: Work Sans (body) + Bebas Neue (display) — used on the main site -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Premium type: Clash Display (headlines) + Satoshi (body) via Fontshare — Viper pages only -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
 
     <!-- Performance: Preload critical hero image -->
     <link rel="preload" as="image" href="/main2.jpg" fetchpriority="high">
@@ -100,7 +106,15 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSFHZ7PJ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
+    <div id="root">
+      <noscript>
+        <div style="max-width:640px;margin:15vh auto;padding:0 24px;font-family:system-ui,sans-serif;text-align:center;color:#111">
+          <h1 style="font-size:1.6rem;margin:0 0 12px">Bharath Cycle Hub — EMotorad Viper</h1>
+          <p style="color:#555;margin:0 0 20px">Reserve the limited-batch Viper for your child with a ₹999 refundable deposit. Please enable JavaScript to continue, or reach us directly:</p>
+          <p><a href="tel:+918892031480" style="color:#DC2626;font-weight:700">Call +91 88920 31480</a> &nbsp;·&nbsp; <a href="https://wa.me/918892031480" style="color:#DC2626;font-weight:700">WhatsApp us</a></p>
+        </div>
+      </noscript>
+    </div>
     <div id="loader-root"></div>
     <div id="modal-root"></div>
     <script type="module" src="/src/main.jsx"></script>

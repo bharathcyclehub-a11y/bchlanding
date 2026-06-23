@@ -1,57 +1,60 @@
 {
-  "fetched_at": "2026-02-11T11:02:55.420090+00:00",
+  "fetched_at": "2026-06-17T09:41:02.215796+00:00",
   "source": "https://www.suncrossbikes.com/brands/raleigh-bicycles?b_id=94&fcid=16&fbid=&fcol=&fs=&s=1",
   "count": 5,
   "products": [
     {
-      "name": "E-SURGE S/S ECO",
-      "sku": "E-SURGE S/S ECO",
-      "price": 30595.0,
+      "name": "E-SURGE PRO",
+      "sku": "E-SURGE PRO",
+      "price": 39495.0,
       "brand": "RALEIGH",
       "availability": "Out of stock",
-      "url": "https://www.suncrossbikes.com/product/raleigh-e-surge-bike-single-speed-eco/2/280",
+      "url": "https://www.suncrossbikes.com/product/raleigh-e-surge-bike-single-speed/2/258",
       "colors": [
-        "LIGHT EVERGREEN/BLACK"
+        "BLUE/BLACK",
+        "GREY/BLACK",
+        "DARK GREY/RED"
       ],
       "sizes": [
         {
           "size": "27.5 INCH",
-          "price": 30595.0,
+          "price": 39495.0,
           "in_stock": false
         },
         {
           "size": "29 INCH",
-          "price": 30595.0,
+          "price": 39895.0,
           "in_stock": false
         }
       ],
-      "description": "RALEIGH. is a Premium Quality Bicycle brand. E-SURGE S/S ECO Bike Shop Online, Buy E-SURGE S/S ECO E BIKES Cycle at best price in India.",
+      "description": "RALEIGH. is a Premium Quality Bicycle brand. E-SURGE PRO Bike Shop Online, Buy E-SURGE PRO E BIKES Cycle at best price in India.",
       "specifications": {
         "Frame": "Hi-Ten Steel with Internal Cable Routing & Detachable Battery",
-        "Fork": "Raleigh Suspension Fork E.N Standard",
+        "Fork": "Raleigh Suspension Fork",
         "Bottom Bracket": "Sealed Cartridge",
-        "Crank Set": "1/8x42T 170mm Steel PVC Plastified",
+        "Crank Set": "1/8x44T 170mm Steel PVC Plastified",
         "Pedal": "PVC",
         "Freewheel": "1/8 x 20T Full Ball",
-        "Chain": "1/2\" x 1/8\" KMC",
+        "Chain": "1/2\" x 1/8\"",
         "Rims": "Double Wall Alloy Rims 36H",
-        "Hub Motor": "Front Hub with Q/R & Rear Motor 250W Hub (Brushless)",
-        "Tires": "27.5 x 2.10\"",
+        "Hubs": "Front Hub with Q/R & Rear Motor 250W Hub (Brushless)",
+        "Tires": "24 x 2.40\" | 26 x 2.40\" | 27.5 x 2.40\" | 29 x 2.40\"",
         "Brake Set": "Mechanical Disc Brakes",
-        "Head Set": "Neco Threadless",
+        "Head Set": "Threadless",
         "Handle Bar": "Steel",
         "Handle Grips": "Soft Rubber Compound",
         "Handle Stem": "Alloy Threadless",
         "Seat Post": "Steel",
         "Saddle": "PU Foam",
         "Seat Clamp/Pin": "Seat Clamp with Q/R",
-        "Battery": "Li-Ion 7.8ah",
-        "Speed": "25 KM/H",
-        "Battery Range": "Upto 30 Km"
+        "Battery": "Li-Ion 7.8ah for 27.5\" and 29\""
       },
-      "other_features": "",
+      "other_features": "1. Hi-Ten Steel Frame with ICR2. Detachable Battery3. 250W Rear Hub Motor4. Suspension Fork5. Mechanical Disc Brakes6. Double Wall Alloy Rims7. 29 x 2.40 Tyres8. Sealed Bottom Bracket9. Threadless Headset10. Front Quick Release Hub11. Soft Rubber Grips12. PU Foam Saddle",
       "images": [
-        "https://www.suncrossbikes.com/uploads/bike-gallery/E-Surge 01.jpg"
+        "https://www.suncrossbikes.com/uploads/bike-gallery/PJB6DHgtzSzhjPiCDOWRsm7OA-c0tGP1smk8bw9BkADl3XaeqkgnTuNgHhwlKo_DhTH2CECdQv6sQ0XRAvwS6p4NQFjTjpr-lIOD81P6IBceK3BuRfzLriAR8Slery1mK3iwFuRWOzw_ (1).jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/0Yy5zKJu66yEOiMi7L03XZNgh6wU6k7blzfq4Xzg_0ck2MhaLxG0sIZPFAqrfoTn1B7VmWj0ygZlQdQxjecSfUZCUpdt3g16.jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/z3974hdsuSSDXBJ7aL2fCX15LZe5iQf-GOd3lmF5YJ0DuTU7BQHjsvYiIuLRl9u1zbyUmJGj67glZIHE7_i6kKELDtY1O0bXoYeIXsP6_P4_.jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/Ysh8G_pn2J4LC0hWIstp6Szn4dU7FcCkghHldF0FU8Z4zzUFCbb4FKb7wqyyoDYrDF2WFWIY8dsQHk-Xq2DjFnX4gPF6yze-B8ItYk5N2nDEFrgmQxoVtKgvfCg0OzbBH59ZaCqiJbM_.jpg"
       ]
     },
     {
@@ -66,11 +69,6 @@
         "SKY BLUE/BLACK"
       ],
       "sizes": [
-        {
-          "size": "27.5 INCH",
-          "price": 57500.0,
-          "in_stock": true
-        },
         {
           "size": "29 INCH",
           "price": 57500.0,
@@ -103,98 +101,52 @@
       },
       "other_features": "",
       "images": [
-        "https://www.suncrossbikes.com/uploads/bike-gallery/Overvolt 2.jpg",
-        "https://www.suncrossbikes.com/uploads/bike-gallery/Overvolt 1.jpg"
+        "https://www.suncrossbikes.com/uploads/bike-gallery/Untitled design (4).png",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/Untitled design (5).png"
       ]
     },
     {
-      "name": "E-SURGE S/S PRO",
-      "sku": "E-SURGE S/S PRO",
-      "price": 34995.0,
+      "name": "E-SURGE ECO",
+      "sku": "E-SURGE ECO",
+      "price": 31245.0,
       "brand": "RALEIGH",
       "availability": "Out of stock",
-      "url": "https://www.suncrossbikes.com/product/raleigh-e-suge-pro-singlespeed-bicycle/2/281",
+      "url": "https://www.suncrossbikes.com/product/raleigh-e-surge-bike-single-speed-eco/2/280",
       "colors": [
+        "BLUE/BLACK",
         "GREY/BLACK",
-        "DARK BLUE/BLACK",
-        "MILITARY GREEN/BLACK",
-        "LIGHT YELLOW/DARK BLUE",
-        "CHALK GREEN/BLACK"
-      ],
-      "sizes": [
-        {
-          "size": "27.5 INCH",
-          "price": 34995.0,
-          "in_stock": false
-        },
-        {
-          "size": "29 INCH",
-          "price": 35395.0,
-          "in_stock": false
-        }
-      ],
-      "description": "RALEIGH. is a Premium Quality Bicycle brand. E-SURGE S/S PRO Bike Shop Online, Buy E-SURGE S/S PRO E BIKES Cycle at best price in India.",
-      "specifications": {
-        "Tires": "27.5 x 2.20\"",
-        "Brake Set": "Mechanical Disc Brakes",
-        "Frame": "Hi-Ten Steel with Internal Cable Routing & Detachable Battery",
-        "Hub Motor": "Front Hub with Q/R & Rear Motor 250W Hub (Brushless)",
-        "Rims": "Double Wall Alloy Rims 36H",
-        "Chain": "1/2\" x 1/8\" KMC",
-        "Freewheel": "1/8 x 20T Full Ball",
-        "Pedal": "PVC",
-        "Crank Set": "1/8x42T 170mm Steel PVC Plastified",
-        "Bottom Bracket": "Sealed Cartridge",
-        "Fork": "Raleigh Suspension Lockout Fork E.N Standard",
-        "Head Set": "Neco Threadless",
-        "Handle Bar": "Steel",
-        "Handle Grips": "Soft Rubber Compound",
-        "Handle Stem": "Alloy Threadless",
-        "Seat Post": "Steel",
-        "Saddle": "Pu Foam with LIght",
-        "Seat Clamp/Pin": "Seat Clamp with Q/R",
-        "Battery": "Li-Ion 7.8ah",
-        "Speed": "25 KM/H",
-        "Battery Range": "Upto 30 Km"
-      },
-      "other_features": "",
-      "images": [
-        "https://www.suncrossbikes.com/uploads/bike-gallery/E Bike 1.jpg",
-        "https://www.suncrossbikes.com/uploads/bike-gallery/E Bike 4.jpg",
-        "https://www.suncrossbikes.com/uploads/bike-gallery/E-Surge 02.jpg",
-        "https://www.suncrossbikes.com/uploads/bike-gallery/E Bike 2.jpg",
-        "https://www.suncrossbikes.com/uploads/bike-gallery/E Bike 3.jpg"
-      ]
-    },
-    {
-      "name": "E-SURGE S/S PRO 24",
-      "sku": "E-SURGE S/S PRO 24",
-      "price": 31995.0,
-      "brand": "RALEIGH",
-      "availability": "In stock",
-      "url": "https://www.suncrossbikes.com/product/raleigh-e-suge-pro-singlespeed-bicycle-24INCH/2/342",
-      "colors": [
-        "GREY/BLACK/NEON GREEN"
+        "LIGHT YELLOW/BLACK",
+        "DARK GREY/RED"
       ],
       "sizes": [
         {
           "size": "24 INCH",
-          "price": 31995.0,
-          "in_stock": true
+          "price": 31245.0,
+          "in_stock": false
+        },
+        {
+          "size": "27.5 INCH",
+          "price": 33245.0,
+          "in_stock": false
+        },
+        {
+          "size": "29 INCH",
+          "price": 33845.0,
+          "in_stock": false
         }
       ],
-      "description": "RALEIGH. is a Premium Quality Bicycle brand. E-SURGE S/S PRO 24 Bike Shop Online, Buy E-SURGE S/S PRO 24 E BIKES Cycle at best price in India.",
+      "description": "RALEIGH. is a Premium Quality Bicycle brand. E-SURGE ECO Bike Shop Online, Buy E-SURGE ECO E BIKES Cycle at best price in India.",
       "specifications": {
-        "Frame": "Hi-Ten Steel with Internal Cable Routing  & Detachable Battery",
-        "Fork": "Raleigh Suspension Fork with Preload + MLO",
+        "Frame": "Hi-Ten Steel with Internal Cable Routing & Detachable Battery",
+        "Fork": "Raleigh Suspension Fork E.N Standard",
         "Bottom Bracket": "Sealed Cartridge",
-        "Crank Set": "1/8x40T 170mm Steel PVC Plastified",
+        "Crank Set": "1/8x42T 170mm Steel PVC Plastified",
         "Pedal": "PVC",
-        "Freewheel": "1/8 x 18T Full Ball",
-        "Chain": "1/2\" x 1/8\"",
+        "Freewheel": "1/8 x 20T Full Ball",
+        "Chain": "1/2\" x 1/8\" KMC",
         "Rims": "Double Wall Alloy Rims 36H",
         "Hub Motor": "Front Hub with Q/R & Rear Motor 250W Hub (Brushless)",
-        "Tires": "24 x 2.125",
+        "Tires": "24 x 2.40\" | 27.5 x 2.40\" | 29 x 2.40\"",
         "Brake Set": "Mechanical Disc Brakes",
         "Head Set": "Neco Threadless",
         "Handle Bar": "Steel",
@@ -203,39 +155,97 @@
         "Seat Post": "Steel",
         "Saddle": "PU Foam",
         "Seat Clamp/Pin": "Seat Clamp with Q/R",
-        "Battery": "Li-Ion 7.8ah",
+        "Battery": "Li-Ion 7.8ah for 27.5\" and 29\"",
         "Speed": "25 KM/H",
         "Battery Range": "Upto 30 Km"
       },
       "other_features": "",
       "images": [
-        "https://www.suncrossbikes.com/uploads/bike-gallery/24.jpeg"
+        "https://www.suncrossbikes.com/uploads/bike-gallery/7fab386b-6ab3-45fa-b07f-776726618fd1.jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/fba81b2e-2d9a-45b9-9278-54624e66914a.jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/d324991d-a64f-468c-9709-d0739f0a17f1.jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/d4e60def-1fb8-4583-bd12-fd98e288541c.jpg"
       ]
     },
     {
-      "name": "E-SURGE PRO (7SPEED)",
-      "sku": "E-SURGE PRO (7SPEED)",
-      "price": 36995.0,
+      "name": "E-SURGE PREMIUM 7 SPEED",
+      "sku": "E-SURGE PREMIUM 7 SPEED",
+      "price": 58665.0,
       "brand": "RALEIGH",
-      "availability": "Out of stock",
-      "url": "https://www.suncrossbikes.com/product/raleigh-e-surge-pro-7speed-bike/2/283",
+      "availability": "In stock",
+      "url": "https://www.suncrossbikes.com/product/raleigh-e-surge-premium-multi-speed/2/365",
       "colors": [
-        "GREEN/BLACK",
-        "GREY/BLACK"
+        "GREY/BLACK",
+        "DARK BLUE/BLACK",
+        "MILITARY GREEN/BLACK",
+        "DARK GREY/RED"
       ],
       "sizes": [
         {
           "size": "27.5 INCH",
-          "price": 36995.0,
+          "price": 58665.0,
+          "in_stock": true
+        }
+      ],
+      "description": "RALEIGH. is a Premium Quality Bicycle brand. E-SURGE PREMIUM 7 SPEED Bike Shop Online, Buy E-SURGE PREMIUM 7 SPEED E BIKES Cycle at best price in India.",
+      "specifications": {
+        "Frame": "Hi-Ten Steel E-Aero with Internal Cable Routing & Detachable Battery",
+        "Fork": "Raleigh Suspension Fork with Preload + MLO",
+        "Bottom Bracket": "Sealed Cartridge",
+        "Crank Set": "1/8x44T 170mm Steel PVC Plastified",
+        "Pedal": "PVC",
+        "Rear Derailleur": "Shimano Altus RD-M310",
+        "Shifters": "Shimano TX-50 (Right Side)",
+        "Freewheel": "7 Speed Freewheel",
+        "Chain": "KMC HV-500",
+        "Rims": "Double Wall Alloy Rims 36H",
+        "Hub Motor": "Bearing Front Hub with Q/R & Rear Motor 250W Hub (Brushless)",
+        "Tires": "27.5 x 2.40\" | 29 x 2.40\"",
+        "Brake Set": "Mechanical Disc Brakes",
+        "Head Set": "Neco Threadless",
+        "Handle Bar": "Steel",
+        "Handle Grips": "Soft Rubber Compound",
+        "Handle Stem": "Alloy Threadless",
+        "Seat Post": "Steel",
+        "Saddle": "PU Foam + Light",
+        "Seat Clamp/Pin": "Seat Clamp with Q/R",
+        "Battery": "Li-Ion 10.4 AH",
+        "Speed": "25 KM/H",
+        "Battery Range": "Upto 35 Kms."
+      },
+      "other_features": "",
+      "images": [
+        "https://www.suncrossbikes.com/uploads/bike-gallery/6947ddff-8d3e-4ea8-ba8a-dae801710074(1).jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/9340cdc7-1c19-4b34-8f2a-07724b14f053(1).jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/ec34c33f-3f13-46a3-a522-b6d64ef3683b(1).jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/27912632-2a01-4100-be15-e76486a2b24e(1).jpg"
+      ]
+    },
+    {
+      "name": "E-SURGE PRO 7 SPEED",
+      "sku": "E-SURGE PRO 7 SPEED",
+      "price": 41495.0,
+      "brand": "RALEIGH",
+      "availability": "Out of stock",
+      "url": "https://www.suncrossbikes.com/product/raleigh-e-surge-pro-7speed-bike/2/283",
+      "colors": [
+        "BLUE/BLACK",
+        "GREY/BLACK",
+        "DARK GREY/RED"
+      ],
+      "sizes": [
+        {
+          "size": "27.5 INCH",
+          "price": 41495.0,
           "in_stock": false
         },
         {
           "size": "29 INCH",
-          "price": 37295.0,
+          "price": 41795.0,
           "in_stock": false
         }
       ],
-      "description": "RALEIGH. is a Premium Quality Bicycle brand. E-SURGE PRO (7SPEED) Bike Shop Online, Buy E-SURGE PRO (7SPEED) E BIKES Cycle at best price in India.",
+      "description": "RALEIGH. is a Premium Quality Bicycle brand. E-SURGE PRO 7 SPEED Bike Shop Online, Buy E-SURGE PRO 7 SPEED E BIKES Cycle at best price in India.",
       "specifications": {
         "Frame": "Hi-Ten Steel with Internal Cable Routing & Detachable Battery",
         "Fork": "Raleigh Suspension Fork with Preload + MLO",
@@ -248,7 +258,7 @@
         "Chain": "KMC HV-500",
         "Rims": "Double Wall Alloy Rims 36H",
         "Hub Motor": "Bearing Front Hub with Q/R & Rear Motor 250W Hub (Brushless)",
-        "Tires": "27.5 x 2.35",
+        "Tires": "27.5 x 2.40\" | 29 x 2.40\"",
         "Brake Set": "RPT-320 Mechanical Disc Brakes",
         "Head Set": "Neco Threadless",
         "Handle Bar": "Steel",
@@ -263,8 +273,9 @@
       },
       "other_features": "",
       "images": [
-        "https://www.suncrossbikes.com/uploads/bike-gallery/E-Surge  M 01.jpg",
-        "https://www.suncrossbikes.com/uploads/bike-gallery/E-Surge  M 02.jpg"
+        "https://www.suncrossbikes.com/uploads/bike-gallery/8049a762-2d8e-4309-bfa6-2acf6dba0c36.jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/6(3).jpg",
+        "https://www.suncrossbikes.com/uploads/bike-gallery/0b658821-cf2a-4deb-a726-5dd6febac32d.jpg"
       ]
     }
   ]

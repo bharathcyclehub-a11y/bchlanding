@@ -15,6 +15,7 @@ const ProductsPage = lazy(() => import('./pages/ProductsPage'));
 const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage'));
 const ViperLandingPage = lazy(() => import('./pages/ViperLandingPage'));
 const ViperKidsLandingPage = lazy(() => import('./pages/ViperKidsLandingPage'));
+const ViperProductPage = lazy(() => import('./pages/ViperProductPage'));
 const AdminPanel = lazy(() => import('./AdminPanel'));
 
 // Lazy-load AuthProvider — only needed for /admin route
@@ -97,8 +98,18 @@ function AppRoutes() {
         <Route
           path="/viper-kids"
           element={
-            <Layout headerTransparent>
+            <Layout headerTransparent showExitPopup={false}>
               <LazyPage><ViperKidsLandingPage /></LazyPage>
+            </Layout>
+          }
+        />
+
+        {/* EMotorad Viper — product detail page (no price, ₹999 reservation) */}
+        <Route
+          path="/viper-kids/product"
+          element={
+            <Layout headerTransparent showExitPopup={false}>
+              <LazyPage><ViperProductPage /></LazyPage>
             </Layout>
           }
         />
@@ -135,7 +146,7 @@ function AppRoutes() {
           }
         />
 
-        {/* Admin Panel — AuthProvider loaded only here (no Firebase on public pages) */}
+        {/* Admin Panel — AuthProvider loaded only here (no auth SDK on public pages) */}
         <Route path="/admin" element={
           <Suspense fallback={<PageLoader />}>
             <LazyAuthProvider>

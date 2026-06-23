@@ -32,6 +32,7 @@ export default {
         },
       },
       fontFamily: {
+        // Site-wide default (main landing, products, etc.)
         sans: ['Work Sans', 'system-ui', 'sans-serif'],
         display: ['Bebas Neue', 'Impact', 'sans-serif'],
       },

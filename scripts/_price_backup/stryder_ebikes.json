@@ -1,0 +1,775 @@
+{
+  "fetched_at": "2026-02-11T09:54:23.450167+00:00",
+  "count": 14,
+  "source": "https://stryderbikes.com/collections/e-bikes/products.json",
+  "products": [
+    {
+      "id": 9093803639036,
+      "title": "27.5 DYNAMIQ E-Bike",
+      "handle": "27-5-dynamiq-e-bike",
+      "description": "DYNAMIQ features a durable Hi-Tensile Steel Frame with attractive Water Decals, a Quick-Fix Removable LI-ION NMC Battery (8.7Ah), and an Intelligent Digital SOC Throttle. It offers a range of up to 35 KM on PAS and 30 KM on Throttle under ideal conditions.",
+      "price": 35295.0,
+      "compare_at_price": null,
+      "available": true,
+      "colors": [
+        "Grey Red",
+        "Black Blue"
+      ],
+      "variants": [
+        {
+          "id": 48101168382204,
+          "title": "Grey Red",
+          "sku": "6015000055",
+          "price": 35295.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed.jpg?v=1770628566"
+        },
+        {
+          "id": 48101168414972,
+          "title": "Black Blue",
+          "sku": "6015000054",
+          "price": 35295.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27BlackBlue.jpg?v=1757415869"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27BlackBlue.jpg?v=1757415869",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27BlackBlue.jpg?v=1757415869",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ_27_Black_Blue_1_....jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ_27_Black_Blue_2_....jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ_27_Black_Blue_3_....jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ_27_Black_Blue_4_....jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ_27_Black_Blue_5_....jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ_27_Black_Blue_6_....jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ_27_Black_Blue_7_....jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ_27_Black_Blue_8_......jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ_27_Black_Blue_9_....jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27LHBlackBlue.jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27ISOBlackBlue.jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27LHISOBlackBlue.jpg?v=1770628289",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed_1.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed_2.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed_3.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed_4.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed_5.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed_6.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed_7.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed_8.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27GreyRed_9.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27LHGreyRed.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27LHISOGreyRed.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DynamiQ27ISOGreyRed.jpg?v=1770628566",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/DisplayCruiseControl.jpg?v=1770628566"
+      ]
+    },
+    {
+      "id": 9095933985020,
+      "title": "27.5 TORQ-X E-Bike",
+      "handle": "27-5-torq-x-e-bike",
+      "description": "TORQ Bike features a durable Hi-Tensile Steel Frame with attractive Water Decals, a Quick-Fix Removable 8.7Ah LI-ION NMC Battery, and an advanced LCD with 5 PAS levels plus walking mode for extra convenience. It offers a range of up to 40 KM on PAS and up to 30 KM on Throttle",
+      "price": 38495.0,
+      "compare_at_price": null,
+      "available": true,
+      "colors": [
+        "Grey",
+        "Red"
+      ],
+      "variants": [
+        {
+          "id": 48107957649660,
+          "title": "Grey",
+          "sku": "6015000056",
+          "price": 38495.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/TorqX27BlackDMCGrey-Corrected.jpg?v=1757592763"
+        },
+        {
+          "id": 48107957682428,
+          "title": "Red",
+          "sku": "6015000057",
+          "price": 38495.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/TorqX27LHRedCEGrey.jpg?v=1757592763"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/TorqX27RedCEGrey.jpg?v=1757592763",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/TorqX27RedCEGrey.jpg?v=1757592763",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/TorqX27LHRedCEGrey.jpg?v=1757592763",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/TorqX27LHISORedCEGrey.jpg?v=1757592763",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/TorqX27ISORedCEGrey.jpg?v=1757592763",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/TorqX27BlackDMCGrey-Corrected.jpg?v=1757592763",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/TorqX27ISOBlackDMCGrey.jpg?v=1757592764",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/TorqX27LHISOBlackDMCGrey.jpg?v=1757592763"
+      ]
+    },
+    {
+      "id": 8516778655996,
+      "title": "27.5 Zeeta Plus IC Electric Bicycle",
+      "handle": "27-5-zeeta-plus-ic-electric-bicycle",
+      "description": "Designed to seamlessly integrate into a truly magnificent experience as you explore the outdoors, Zeeta Plus IC is built to conquer. Comfortable and ergonomic geometry that goes rough on terrains but is easy on your body posture. Power the beast of endurance with a flawless 36V, 6Ah battery so you can feel the power and speed of bike.",
+      "price": 33495.0,
+      "compare_at_price": null,
+      "available": false,
+      "colors": [
+        "Black",
+        "Forest Green"
+      ],
+      "variants": [
+        {
+          "id": 45731019849980,
+          "title": "Black",
+          "sku": "6015000047",
+          "price": 33495.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaPlus27ICMBlk.jpg?v=1714986541"
+        },
+        {
+          "id": 45731019915516,
+          "title": "Forest Green",
+          "sku": "6015000048",
+          "price": 33495.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaPlusIC27ForestGreen.jpg?v=1714986553"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaPlus27ICMBlk.jpg?v=1714986541",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaPlus27ICMBlk.jpg?v=1714986541",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaPlusIC27ForestGreen.jpg?v=1714986553",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_0218a30e-056f-4ec6-b920-14fe80e9ad11.jpg?v=1741588906",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_4f3b3549-b763-40b8-809e-bda6727adca9.jpg?v=1741588905",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_7331ad2d-62b9-436e-8442-b41d8b0fd0b0.jpg?v=1741588905",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_e3f0e4a5-7cf2-49b0-8662-e6aefd26ab0f.jpg?v=1741588905",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_f756fe51-3ce4-4dc1-b15f-30804417ba9d.jpg?v=1741588905",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_37a128fb-4db1-431a-9783-de3c3145d064.jpg?v=1741588905",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_8.jpg?v=1741588905",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_661a9a33-6c6d-4f86-9e38-0566a383b874.jpg?v=1741588905",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_84e8bb0b-07d9-4a4c-b7a0-570fbe0d231c.jpg?v=1741588933",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_42204420-18c9-48e6-91bd-e97748257c34.jpg?v=1741588933",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_b4ee41d2-d96d-41bc-aaa0-1fd48019852e.jpg?v=1741588933",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_1645ed85-88f8-4e8e-a7a1-2c1f8dee876f.jpg?v=1741588933",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_a997fb61-399e-4404-9da3-c7d7abe146eb.jpg?v=1741588913",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_f90ba5fa-3839-46cf-b573-a9efc01ead47.jpg?v=1741588913",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_7.jpg?v=1741588913",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_ac5646d7-7fc5-42f3-b260-43f3c1ccf6d8.jpg?v=1741588913"
+      ]
+    },
+    {
+      "id": 9064745337084,
+      "title": "27.5T Amped Electric Bicycle",
+      "handle": "27-5t-amped-electric-bicycle",
+      "description": "Designed to seamlessly integrate into a truly magnificent experience as you explore the outdoors, Amped is built to conquer. Comfortable and ergonomic geometry that goes rough on terrains but is easy on your body posture. Power the beast of endurance with a flawless 36V, 8.7 Ah battery so you can feel the power and speed of bike. Amped is coming with max power, max comfort.",
+      "price": 38995.0,
+      "compare_at_price": null,
+      "available": true,
+      "colors": [
+        "Forest Green",
+        "Gray"
+      ],
+      "variants": [
+        {
+          "id": 47768496931068,
+          "title": "Forest Green",
+          "sku": "6015000061",
+          "price": 38995.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/AMPED27.5ForestGreen.jpg?v=1757739319"
+        },
+        {
+          "id": 47768491884796,
+          "title": "Gray",
+          "sku": "6015000060",
+          "price": 38995.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/AMPED27.5Grey.jpg?v=1757739319"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/AMPED27.5ForestGreen.jpg?v=1757739319",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/AMPED27.5ForestGreen.jpg?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_2bed4b55-3421-4fd6-be3d-5f71cbcf7acc.png?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_525c7d9c-c682-445e-8e43-0940a4ba0a25.png?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_50226de4-6384-4372-873a-812601d6127d.png?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_2a87555d-ea8f-4cf4-ad76-b9dee2575180.png?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_f6cfa627-00ff-40fd-a3b2-960c64eb19de.png?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7.png?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/9.png?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/AMPED27.5ISOForestGreen.jpg?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/AMPED27.5Grey.jpg?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_eac8e85d-f2b6-42cd-8d18-91f162c324f6.jpg?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_b0dcfb5e-0d4f-4ab6-9aa1-6d1aeefc66f3.jpg?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_30308dd6-f75e-4e9b-a4e0-c3ee3bc9b282.jpg?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_a96451c8-7352-41f3-ac92-871ce5c0d9c3.jpg?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_a2f7f74c-fac0-40d0-b5d1-f8fce516f2a8.jpg?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_6af9bb7f-be31-4dd6-a60d-f7d7bd2d20f9.jpg?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_fdd8166e-db38-4dc1-8b50-3913155afdf9.jpg?v=1757739319",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/AMPED27.5ISOGrey.jpg?v=1757739319"
+      ]
+    },
+    {
+      "id": 9013340537084,
+      "title": "27.5T E-Vibe Electric Bicycle",
+      "handle": "27-5t-e-vibe-electric-bicycle",
+      "description": "Designed to seamlessly integrate into a truly magnificent experience as you explore the outdoors, E-vibe is built to conquer. Comfortable and ergonomic geometry that goes rough on terrains but is easy on your body posture. Power the beast of endurance with a flawless 36V, 8.7 Ah battery so you can feel the power and speed of bike. E-vibe is coming with max power, max comfort & Max Vibe.",
+      "price": 28995.0,
+      "compare_at_price": null,
+      "available": true,
+      "colors": [
+        "Gray",
+        "Red"
+      ],
+      "variants": [
+        {
+          "id": 47310004158716,
+          "title": "Gray",
+          "sku": "6015000045",
+          "price": 28995.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe27Grey.jpg?v=1753781181"
+        },
+        {
+          "id": 47310004191484,
+          "title": "Red",
+          "sku": "6015000046",
+          "price": 28995.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe27BlkRed.jpg?v=1753781181"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe27Grey.jpg?v=1753781181",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe27Grey.jpg?v=1753781181",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe27BlkRed.jpg?v=1753781181",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Grey_1.jpg?v=1753781181",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Grey_2.jpg?v=1753781181",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Grey_3.jpg?v=1753781181",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Grey_4.jpg?v=1753781181",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Grey_5.jpg?v=1753781181",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Grey_6.jpg?v=1753781181",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Grey.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Grey_8.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe27ISOGrey.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Blk_Red_1.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Blk_Red_2.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Blk_Red_3.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Blk_Red_4.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Blk_Red_5.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Blk_Red_6.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Blk_Red.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Vibe_27_Blk_Red_8.jpg?v=1761297128",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe27ISOBlkRed.jpg?v=1761297128"
+      ]
+    },
+    {
+      "id": 9040944365820,
+      "title": "27.5T E-Vibe IC Electric Bicycle",
+      "handle": "27-5t-e-vibe-ic-electric-bicycle",
+      "description": "Designed to seamlessly integrate into a truly magnificent experience as you explore the outdoors, E-vibe IC is built to conquer. Comfortable and ergonomic geometry that goes rough on terrains but is easy on your body posture. Power the beast of endurance with a flawless 36V, 8.7 Ah battery so you can feel the power and speed of bike. E-vibe IC is coming with max power, max comfort & Max Vibe.",
+      "price": 30295.0,
+      "compare_at_price": null,
+      "available": true,
+      "colors": [
+        "Gray",
+        "Red"
+      ],
+      "variants": [
+        {
+          "id": 47399447593212,
+          "title": "Gray",
+          "sku": "6015000051",
+          "price": 30295.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe_27_IC_Grey_1.jpg?v=1755496535"
+        },
+        {
+          "id": 47399447625980,
+          "title": "Red",
+          "sku": "6015000052",
+          "price": 30295.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe27ICBlkRed.jpg?v=1754377216"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe27ICBlkRed.jpg?v=1754377216",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe27ICBlkRed.jpg?v=1754377216",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/e-Vibe_27_IC_Grey_1.jpg?v=1755496535"
+      ]
+    },
+    {
+      "id": 8570936852732,
+      "title": "27.5T Zeeta Electric Bicycle",
+      "handle": "27-5-zeeta-electric-bicycle",
+      "description": "Designed to seamlessly integrate into a truly magnificent experience as you explore the outdoors, Zeeta is built to conquer. Comfortable and ergonomic geometry that goes rough on terrains but is easy on your body posture. Power the beast of endurance with a flawless 36V, 5.2 Ah battery so you can feel the power and speed of bike.",
+      "price": 31995.0,
+      "compare_at_price": null,
+      "available": false,
+      "colors": [
+        "Grey",
+        "Forest Green"
+      ],
+      "variants": [
+        {
+          "id": 45889487732988,
+          "title": "Grey",
+          "sku": "6015000033",
+          "price": 31995.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_27_Grey.jpg?v=1740994071"
+        },
+        {
+          "id": 45889487765756,
+          "title": "Forest Green",
+          "sku": "6015000034",
+          "price": 31995.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_27_Forest_Green.jpg?v=1740993974"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_27_Forest_Green.jpg?v=1740993974",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_27_Forest_Green.jpg?v=1740993974",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_27_Grey.jpg?v=1740994071",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_3.jpg?v=1741591210",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_76e214f1-953b-4df4-9be3-e053810d538b.jpg?v=1741591210",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_3.jpg?v=1741591210",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_fc540efc-0b14-4b1f-8448-edba0ab7f6c4.jpg?v=1741591210",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_0434fa4e-5a9b-4f8b-b0f0-0cda80c994e6.jpg?v=1741591210",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_82bfa38b-be01-4c08-ba53-e8684c7a6571.jpg?v=1741591210",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_2.jpg?v=1741591210",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_7285ed06-2f6d-4216-b54d-350afaa41079.jpg?v=1741591210",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_4.jpg?v=1741591243",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_10e83d53-117b-4c94-9eae-c502119c331f.jpg?v=1741591243",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_4.jpg?v=1741591243",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_718b8ee8-9d66-4c2c-bd69-fd1068ec8f8c.jpg?v=1741591243",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_d4c9f99d-2858-45e4-9a71-40a550d50ecb.jpg?v=1741591215",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_26ef5602-9932-408d-a222-fe4d507aafcf.jpg?v=1741591215",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_3.jpg?v=1741591215",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_40298f39-0502-4271-b14a-54eaa23b4744.jpg?v=1741591215"
+      ]
+    },
+    {
+      "id": 8091887436028,
+      "title": "27.5T Zeeta Max Electric Bicycle",
+      "handle": "27-5-zeeta-max-electric-bicycle",
+      "description": "Designed to seamlessly integrate into a truly magnificent experience as you explore the outdoors, Zeeta Max is built to conquer. Comfortable and ergonomic geometry that goes rough on terrains but is easy on your body posture. Power the beast of endurance with a flawless 36V, 7.5 Ah battery so you can feel the power and speed of bike. Zeeta Max is coming with max power & max comfort.",
+      "price": 36995.0,
+      "compare_at_price": null,
+      "available": false,
+      "colors": [
+        "Blue",
+        "Grey",
+        "Sage Green"
+      ],
+      "variants": [
+        {
+          "id": 44461594607868,
+          "title": "Blue",
+          "sku": "6015000019",
+          "price": 36995.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMaxElectricBlue.jpg?v=1688558406"
+        },
+        {
+          "id": 44461594640636,
+          "title": "Grey",
+          "sku": "6015000020",
+          "price": 36995.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMaxGray.jpg?v=1688558502"
+        },
+        {
+          "id": 45972766753020,
+          "title": "Sage Green",
+          "sku": "6015000027",
+          "price": 36995.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMax26TSageGreen.jpg?v=1722578266"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMaxElectricBlue.jpg?v=1688558406",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMaxElectricBlue.jpg?v=1688558406",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMaxGray.jpg?v=1688558502",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMax26TSageGreen.jpg?v=1722578266",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_1.jpg?v=1741588493",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_9436b9fb-b41a-447a-877a-8ba690f10626.jpg?v=1741588493",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_a1fcab88-6989-4b27-83ac-3c6ef665be3d.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_1.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_0a840b75-d546-43e7-b6e2-cdd05a5baff8.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_ae9b6a53-7faa-4b75-9e2a-caeada357768.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_79c4c02e-aaff-4fb3-9668-aacf88589f6f.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_cc4c4231-9d28-4dac-b282-9fef0fb17a3f.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_9a1c3fd7-7dff-424d-b5a1-fd26af6a7688.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_6ac985f0-4c27-48e5-9a00-a1a7e7983e0c.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_ee25c205-b002-482a-84e6-d661b9dad493.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_31500b3b-56f6-41cb-9c3a-7d3013b25cc9.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_f59944d4-4d80-443a-8860-e23ea21d4576.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_bf379fbd-5a81-4164-b557-e9e0b0aadcb3.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_8b953bea-025f-4c34-a38e-e8d52b6c6154.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/10.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_2.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_dd6c313f-edcf-4f61-b022-6ef0bed63d35.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_bcc709d5-7462-4268-a0aa-24959ddcc1ca.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_2.jpg?v=1741588535",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_abe3e2cd-9714-49db-af4c-1b0dd788257d.jpg?v=1741588502",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_a25f5f65-463c-400f-ab76-4196cc942ab9.jpg?v=1741588503",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_a50879d6-cbdb-45b9-a7fb-c8059bb8ad5d.jpg?v=1741588502",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_2912f4e3-8e8a-4f55-87f8-d3066166632e.jpg?v=1741588503"
+      ]
+    },
+    {
+      "id": 9004125225212,
+      "title": "27.5T Zeeta Max IC Electric Bicycle",
+      "handle": "27-5t-zeeta-max-ic-electric-bicycle",
+      "description": "Designed to seamlessly integrate into a truly magnificent experience as you explore the outdoors, Zeeta Max IC is built to conquer. Comfortable and ergonomic geometry that goes rough on terrains but is easy on your body posture. Power the beast of endurance with a flawless 36V, 8.7 Ah battery so you can feel the power and speed of bike. Zeeta Max IC is coming with max power & max comfort.",
+      "price": 37395.0,
+      "compare_at_price": null,
+      "available": false,
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "variants": [
+        {
+          "id": 47279899246844,
+          "title": "Blue",
+          "sku": "6015000044",
+          "price": 37395.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMax27ICDDElecBlue.jpg?v=1750933347"
+        },
+        {
+          "id": 47279899279612,
+          "title": "Grey",
+          "sku": "6015000043",
+          "price": 37395.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMax27ICDDGrey.jpg?v=1750933348"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMax27ICDDElecBlue.jpg?v=1750933347",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMax27ICDDElecBlue.jpg?v=1750933347",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaMax27ICDDGrey.jpg?v=1750933348",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Elec_Blue_1.jpg?v=1753782600",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Elec_Blue_3.jpg?v=1753782600",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Elec_Blue_2.jpg?v=1753782393",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Elec_Blue_4.jpg?v=1753782393",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Elec_Blue_5.jpg?v=1753782393",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Elec_Blue_6.jpg?v=1753782393",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Elec_Blue_7.jpg?v=1753782393",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Elec_Blue_8.jpg?v=1753782392",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Elec_Blue_9.jpg?v=1753782393",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Grey_1.jpg?v=1753782400",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Grey_2.jpg?v=1753782401",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Grey_3.jpg?v=1753782401",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Grey_4.jpg?v=1753782401",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Grey_5.jpg?v=1753782401",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Grey_6.jpg?v=1753782401",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Grey_7.jpg?v=1753782401",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Grey_8.jpg?v=1753782401",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Max_26_IC_DD_Grey_9.jpg?v=1753782401"
+      ]
+    },
+    {
+      "id": 8086249013500,
+      "title": "27.5T Zeeta Plus Electric Bicycle",
+      "handle": "27-5-zeeta-plus-electric-bicycle",
+      "description": "Designed to seamlessly integrate into a truly magnificent experience as you explore the outdoors, Zeeta Plus is built to conquer. Comfortable and ergonomic geometry that goes rough on terrains but is easy on your body posture. Power the beast of endurance with a flawless 36V, 6Ah battery so you can feel the power and speed of bike.",
+      "price": 32995.0,
+      "compare_at_price": null,
+      "available": false,
+      "colors": [
+        "Grey",
+        "Forest Green"
+      ],
+      "variants": [
+        {
+          "id": 44442097352956,
+          "title": "Grey",
+          "sku": "6015000049",
+          "price": 32995.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaPlus27TMatteGrey.jpg?v=1687341453"
+        },
+        {
+          "id": 44442097385724,
+          "title": "Forest Green",
+          "sku": "6015000018",
+          "price": 32995.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaPlus27TMatteForestGreen.jpg?v=1687341455"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaPlus27TMatteGrey.jpg?v=1687341453",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaPlus27TMatteGrey.jpg?v=1687341453",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ZeetaPlus27TMatteForestGreen.jpg?v=1687341455",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_36731a70-5a85-4024-b5c8-3ef9b305db4f.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_0b6d481a-239a-456b-a89b-5a8136ebd801.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_ea4110be-dd85-408e-9376-64ca01f24656.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_4fecd291-2be3-45cb-b79f-dcaf372769ec.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_94f6a33b-661a-4f60-9d72-bff088fa565f.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_abcc715d-db88-4e14-9131-50d4fc732bde.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_9.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_de32f69c-d21a-4a2b-bc34-b09e0dce28f7.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_d2040295-af29-4ef7-a27b-8032ee90e105.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_5ef0c915-8884-42fa-a9de-f7013b11d278.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_8a82cc14-6079-4aed-a5be-c29db41412ef.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_7460de7f-4e3e-4ab5-b3a0-b93d20fc4996.jpg?v=1741587918",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_3851558b-148e-4553-9233-23ba30697cbd.jpg?v=1741587911",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_8f6b18a1-5bfb-476e-b643-018747f68afe.jpg?v=1741587911",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7.jpg?v=1741587911",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8.jpg?v=1741587911"
+      ]
+    },
+    {
+      "id": 8609542406396,
+      "title": "700C Zeeta Plus Electric Bicycle",
+      "handle": "700c-zeeta-plus-electric-bicycle",
+      "description": "Designed to seamlessly integrate into a truly magnificent experience as you explore the outdoors, Zeeta Plus 700C is built to conquer. Comfortable and ergonomic geometry that goes rough on terrains but is easy on your body posture. Power the beast of endurance with a flawless 36V, 6Ah battery so you can feel the power and speed of bike.",
+      "price": 33795.0,
+      "compare_at_price": null,
+      "available": false,
+      "colors": [
+        "Grey",
+        "Forest Green"
+      ],
+      "variants": [
+        {
+          "id": 45972805878012,
+          "title": "Grey",
+          "sku": "6015000032",
+          "price": 33795.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Plus_700_Grey.jpg?v=1717494044"
+        },
+        {
+          "id": 45972805910780,
+          "title": "Forest Green",
+          "sku": "6015000029",
+          "price": 33795.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Plus_700_ForGreen.jpg?v=1717494044"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Plus_700_ForGreen.jpg?v=1717494044",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Plus_700_ForGreen.jpg?v=1717494044",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Zeeta_Plus_700_Grey.jpg?v=1717494044",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_7.jpg?v=1741589990",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_b1479f9d-e02c-48c0-988d-b4986e3891d4.jpg?v=1741589990",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_7.jpg?v=1741589990",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_dda1da13-410c-4bbe-8fd0-445e69c0e0c7.jpg?v=1741589990",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_2.jpg?v=1741589990",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_09da53b1-8bcb-4d0c-8944-cdd99d386e11.jpg?v=1741589990",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_1.jpg?v=1741589990",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_ac770c55-fada-4b3b-8816-eb3d6ac8ed3b.jpg?v=1741589990",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_8.jpg?v=1741589992",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_169307b6-a54e-4ace-a065-71b0fe6b8137.jpg?v=1741589992",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_8.jpg?v=1741589992",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_b990f720-358b-4808-8c76-364bbd7c0242.jpg?v=1741589992",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_3.jpg?v=1741589992",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_719b9648-d6dd-4ed6-b54a-ba50fad83f5b.jpg?v=1741589992",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_10.jpg?v=1741589992",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_ceaba815-45f0-4a3d-b089-fc74d969cda3.jpg?v=1741589992"
+      ]
+    },
+    {
+      "id": 8807897628924,
+      "title": "ETB 200 Electric Bicycle",
+      "handle": "etb-200-electric-bicycle",
+      "description": "Stryder ETB 200 E- bicycle combines durability, style, and performance. Built with a robust steel frame adorned with water decals, it’s designed for long-lasting use with a touch of elegance. Equipped with dual disc brakes, it ensures reliable braking with an automatic power cut-off feature for enhanced safety. The wide 2.10 tires provide excellent stability and optimized speed on various terrains. Powered by a 36V x 250W BLDC motor and a removable, splash-proof 36V x 7.8AH Hailong battery, this cycle achieves a range of up to 40 km under ideal conditions. Additional accessories, including a headlight, bring convenience to every ride.",
+      "price": 40995.0,
+      "compare_at_price": null,
+      "available": false,
+      "colors": [
+        "Grey",
+        "Blue"
+      ],
+      "variants": [
+        {
+          "id": 46633760686332,
+          "title": "Grey",
+          "sku": "6015000042",
+          "price": 40995.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ETB-20027DDMBlkDMCGry.jpg?v=1730174741"
+        },
+        {
+          "id": 46633760719100,
+          "title": "Blue",
+          "sku": "6015000041",
+          "price": 40995.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ETB-20027DDMBlkTeal.jpg?v=1730177002"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ETB-20027DDMBlkDMCGry.jpg?v=1730174741",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ETB-20027DDMBlkDMCGry.jpg?v=1730174741",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ETB-20027DDMBlkTeal.jpg?v=1730177002",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_1edff3ba-c990-4df1-95dd-889ebf9ef651.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_a7bc3138-71a1-4427-948a-40ffeca63776.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_198c6480-6c7d-4851-965a-bba28b4d5f80.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_d99de4a0-5cf8-4a3e-86d1-5e559813b248.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_8339ab84-549e-42cb-91aa-dbeb523a1b5c.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_40d210ed-7739-4d97-af0a-8892d2b89102.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_3ee1b9d3-d144-47ec-952d-6aaac6c8f54d.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Last_Image_73226885-93f7-4206-87bf-c0ab392c13f0.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_d9868424-2d2e-4f6d-b64e-58aec8a3c3a2.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_2aa8fa82-6861-48d0-8def-6ee755bc8ec0.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_70c3c435-7dc2-4cd3-91a6-6b17ff7097bd.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_61e52724-f441-4b8e-8853-fbcc9462569f.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_fdc30ddf-e06f-4f23-bf26-68e654a6b57a.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_c197e986-8f49-42eb-a6fe-ab2aad0f3791.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_ce103344-b6e1-4165-a743-7692bc56fdd1.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Last_Image_ad7fde44-eff6-48c8-ba00-f50d3e764277.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Poster.png?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/First.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ETB-200_27_DD_ISO_2_MBlk_Teal.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ETB-200_27_DD_LH_ISO_MBlk_Teal.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/First_bb316503-81bd-4819-ad0e-84bd21d4321a.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ETB-200_27_DD_LH_ISO_MBlk_DMCGry.jpg?v=1747129443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/ETB-200_27_DD_ISO_2_MBlk_DMCGry.jpg?v=1747129443"
+      ]
+    },
+    {
+      "id": 7619488514300,
+      "title": "Stryder 26T Voltic Go Electric Bicycle",
+      "handle": "27-5-voltic-go",
+      "description": "26T Voltic GO is an electric bicycle (E-Bike) from Stryder, that is indigenously developed for Indian terrains. This steel unisex framed e-bike is coupled with 250W BLDC connected to 48V Li-ion Batteries. Stryder Voltic Go comes with key features like 5 Ride mode, Auto Power-cut, Key enabled On/Off, and Inside frame battery. This single-speed e-bike can go up to 60* km in Hybrid mode and has the best in a class economy of 6 paise per Km. This electric MTB covers a 2* yrs warranty on the Motor & battery.",
+      "price": 37495.0,
+      "compare_at_price": null,
+      "available": true,
+      "colors": [
+        "Teal",
+        "Purple"
+      ],
+      "variants": [
+        {
+          "id": 42839533191420,
+          "title": "Teal",
+          "sku": "6015000037",
+          "price": 37495.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Voltic_Go_26_Teal.jpg?v=1724560603"
+        },
+        {
+          "id": 46395949220092,
+          "title": "Purple",
+          "sku": "6015000038",
+          "price": 37495.0,
+          "compare_at_price": null,
+          "available": true,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Voltic_Go_26_Purple_White.jpg?v=1724561649"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Voltic_Go_26_Teal.jpg?v=1724560603",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Voltic_Go_26_Teal.jpg?v=1724560603",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Voltic_Go_26_Purple_White.jpg?v=1724561649",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_7905e22a-90c5-4549-83d3-2b0f7ca2d788.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_9eb64aef-a5b8-4d2b-a83b-05c11620a4de.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_2528725f-f0cf-4387-af1e-9e210819550b.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_24b3ebcc-8b71-4ac9-a690-db56a8c345bf.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_5a638416-4a34-4b00-b8ff-52e01a4d08a8.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_1203594a-2692-45c7-8317-ee8a919ee73c.jpg?v=1741589173",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_241ba20b-0eee-4f51-a0ef-701e7d4a52e1.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/9.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_236a7d15-7dc9-45a9-82bc-5b3f6eeebe82.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_db4874e2-47e6-41f5-b19e-bf6cc921b495.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_9eeaee2a-2190-46b9-b14c-6f1b39a86e93.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_738ed44d-21ed-487b-acd1-59eb89991e1d.jpg?v=1741589171",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_65ba2814-b4d3-46e3-af65-fb342bb67776.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_fb57c9a7-91f5-4634-860e-15e6cf36506e.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_ec24be4f-78e9-4c4a-8ba2-f60c42887faf.jpg?v=1741589172",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/9_7a6207d7-2f6f-4761-9f9d-560a7ca6788e.jpg?v=1741589172"
+      ]
+    },
+    {
+      "id": 8732017852668,
+      "title": "Voltic X Electric Bicycle",
+      "handle": "voltic-x-electric-bicycle",
+      "description": "Voltic X is an electric bicycle (E-Bike) from Stryder, that is indigenously developed for Indian terrains. This steel-framed e-bike is coupled with 250W BLDC connected to 48V Li-ion Batteries. Stryder Voltic X comes with key features like 3 Ride mode, Auto Power-cut, Key enabled On/Off, and Inside frame battery. This single-speed e-bike can go up to 60* km in Hybrid mode and has the best-in-class economy of 6 paise per Km. This electric MTB covers a 2* yrs warranty on the Motor & battery.",
+      "price": 38495.0,
+      "compare_at_price": null,
+      "available": false,
+      "colors": [
+        "Red",
+        "Blue"
+      ],
+      "variants": [
+        {
+          "id": 46351753740540,
+          "title": "Red",
+          "sku": "6015000036",
+          "price": 38495.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/VolticX27BlkRed.jpg?v=1723894321"
+        },
+        {
+          "id": 46351753773308,
+          "title": "Blue",
+          "sku": "6015000035",
+          "price": 38495.0,
+          "compare_at_price": null,
+          "available": false,
+          "image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Voltic_X_27_Jade_Teal.jpg?v=1723894674"
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/VolticX27BlkRed.jpg?v=1723894321",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/VolticX27BlkRed.jpg?v=1723894321",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/Voltic_X_27_Jade_Teal.jpg?v=1723894674",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_6.jpg?v=1741589442",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_035662a3-24ac-4239-82b7-87a2fe7d3145.jpg?v=1741589442",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_6.jpg?v=1741589442",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_8db1e6e9-101b-419e-aed0-9e775a2568a9.jpg?v=1741589442",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_1.jpg?v=1741589442",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_ab469c87-0031-481f-88f9-cfadbe730e11.jpg?v=1741589442",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_6.jpg?v=1741589441",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_2d8d3b88-142a-4c71-94c4-d58934de9eed.jpg?v=1741589443",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/1_5.jpg?v=1741589453",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/2_82fe0fc6-58e7-42ae-8aa8-db82e9289ea5.jpg?v=1741589454",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/3_5.jpg?v=1741589454",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/4_9a94f2b1-2dc8-4578-972e-a7dcf8b8a7b6.jpg?v=1741589453",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/5_0b0cc044-7b6c-42c7-918f-738b1c293080.jpg?v=1741589454",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/6_825348a8-5212-4f49-8814-4fe944057c68.jpg?v=1741589454",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/7_5.jpg?v=1741589454",
+        "https://cdn.shopify.com/s/files/1/0628/5547/9548/files/8_11aa9696-6101-45f6-9e9a-6e0d721c0341.jpg?v=1741589454"
+      ]
+    }
+  ]
+}

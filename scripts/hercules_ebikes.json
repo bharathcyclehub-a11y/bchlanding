@@ -1,9 +1,31 @@
 [
   {
+    "title": "Hercules Brute",
+    "url": "https://hercules.in/all-bikes/hercules-brute/",
+    "description": "",
+    "price": "₹29,999",
+    "specifications": {
+      "Riders age": "13+",
+      "Frame": "Steel Frame",
+      "Fork": "Suspension Fork with MLO",
+      "Rims": "Double Wall Alloy Rims",
+      "Tires": "29T x 2.4 MTB Tan Wall Tires",
+      "Brakes": "Dual Disc Brakes",
+      "Battery": "8Ah LFP Removable Battery",
+      "Motor": "36V 250W Rear Hub Motor",
+      "Light & Horn": "Integrated Light & Horn",
+      "Display": "Integrated Throttle Display"
+    },
+    "images": [
+      "https://hercules.in/wp-content/uploads/2026/02/brute2.png"
+    ],
+    "inStock": true
+  },
+  {
     "title": "Hercules Yuvolt",
     "url": "https://hercules.in/all-bikes/hercules-yuvolt/",
     "description": "",
-    "price": "₹21,999",
+    "price": "₹23,999",
     "specifications": {
       "Riders age": "13+",
       "Frame": "Steel Frame",
@@ -53,7 +75,7 @@
     "title": "Hercules Shurveer",
     "url": "https://hercules.in/all-bikes/hercules-shurveer/",
     "description": "",
-    "price": "₹20,999",
+    "price": "₹22,999",
     "specifications": {
       "Riders age": "13+",
       "Frame": "Steel - Welded",
@@ -79,7 +101,7 @@
     "title": "Hercules Hardstyle Pro",
     "url": "https://hercules.in/all-bikes/hercules-hardstyle-pro/",
     "description": "",
-    "price": "₹26,999",
+    "price": "₹27,999",
     "specifications": {
       "Riders age": "13+",
       "Frame": "Steel",
@@ -103,7 +125,7 @@
     "title": "Hercules Hardstyle",
     "url": "https://hercules.in/all-bikes/hercules-hardstyle/",
     "description": "",
-    "price": "₹20,999",
+    "price": "₹22,999",
     "specifications": {
       "Riders age": "13+",
       "Frame": "Rigid",

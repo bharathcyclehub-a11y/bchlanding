@@ -651,7 +651,7 @@ function StickyFooter() {
 // ─── MAIN PAGE ────────────────────────────────────────────────────
 export default function ViperLandingPage() {
   return (
-    <div className="bg-[#0a0a0a]">
+    <div className="viper-theme bg-[#0a0a0a]">
       <AutoPopup />
       <HeroSection />
       <AuthorityBar />

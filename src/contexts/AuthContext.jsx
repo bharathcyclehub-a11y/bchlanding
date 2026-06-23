@@ -1,30 +1,20 @@
 /**
- * Authentication Context Provider
+ * Authentication Context Provider (Supabase Auth)
  *
- * Provides Firebase Authentication state and methods throughout the app
+ * Provides authentication state + methods for the admin panel.
  *
- * Features:
- * - User authentication state
- * - Login/logout methods
- * - Firebase ID token management
- * - Admin role verification
- * - Automatic token refresh
+ * Admin verification is done SERVER-SIDE: after sign-in we send the Supabase
+ * access token to GET /api/admin/verify, which validates the token and checks
+ * the admin role server-side (the source of truth). isAdmin reflects that
+ * server response — not anything the client could forge. The data-write APIs
+ * independently re-authorize every request via the same server middleware.
  */
 
 import { createContext, useContext, useState, useEffect } from 'react';
-import {
-  signInWithEmailAndPassword,
-  signOut,
-  onAuthStateChanged,
-  setPersistence,
-  browserLocalPersistence
-} from 'firebase/auth';
-import { auth } from '../config/firebase';
+import { supabase } from '../config/supabase';
 
-// Create context
 const AuthContext = createContext({});
 
-// Custom hook to use auth context
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
@@ -33,10 +23,45 @@ export const useAuth = () => {
   return context;
 };
 
-/**
- * AuthProvider Component
- * Wrap your app with this to provide authentication state
- */
+// Pull a normalized user + token out of a Supabase session.
+// NOTE: admin status is NOT trusted from here — it is confirmed server-side
+// via /api/admin/verify (see verifyAdminWithServer below).
+function deriveUser(session) {
+  const u = session?.user;
+  if (!u) return { user: null, token: null };
+
+  const meta = u.app_metadata || {};
+  const role = meta.role || null;
+
+  return {
+    user: {
+      uid: u.id,
+      email: u.email,
+      displayName: u.user_metadata?.displayName || (u.email ? u.email.split('@')[0] : ''),
+      emailVerified: !!u.email_confirmed_at,
+      role,
+    },
+    token: session?.access_token || null,
+  };
+}
+
+// Authoritative admin check — asks the backend to validate the token + role.
+async function verifyAdminWithServer(token) {
+  if (!token) return false;
+  try {
+    const res = await fetch('/api/admin/verify', {
+      method: 'GET',
+      headers: { Authorization: `Bearer ${token}` },
+      cache: 'no-store',
+    });
+    if (!res.ok) return false;
+    const data = await res.json();
+    return !!(data?.success && (data.user?.admin || data.user?.role));
+  } catch {
+    return false;
+  }
+}
+
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -44,281 +69,124 @@ export const AuthProvider = ({ children }) => {
   const [idToken, setIdToken] = useState(null);
   const [isAdmin, setIsAdmin] = useState(false);
 
-  /**
-   * Initialize authentication state
-   * Listen to Firebase auth state changes
-   */
+  // Initialize from the persisted session + subscribe to auth changes
   useEffect(() => {
-    if (!auth) {
-      console.error('❌ Firebase auth not initialized. Check your VITE_FIREBASE_* env variables in .env.local');
-      setLoading(false);
-      setError('Firebase not configured. Please check environment variables.');
-      return;
-    }
+    let mounted = true;
 
-    // Set persistence to LOCAL (survive page reloads)
-    setPersistence(auth, browserLocalPersistence)
-      .then(() => {
-        // Auth persistence set to LOCAL
-      })
+    const apply = async (session) => {
+      const { user: u, token } = deriveUser(session);
+      const admin = await verifyAdminWithServer(token);
+      if (!mounted) return;
+      setUser(u ? { ...u, admin } : null);
+      setIdToken(token);
+      setIsAdmin(admin);
+      setLoading(false);
+    };
+
+    supabase.auth.getSession()
+      .then(({ data }) => apply(data.session))
       .catch((err) => {
-        console.error('❌ Failed to set auth persistence:', err);
+        console.error('❌ Failed to load session:', err);
+        if (mounted) { setError(err.message); setLoading(false); }
       });
 
-    // Listen to auth state changes
-    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
-      try {
-        if (firebaseUser) {
-          // User is signed in
-          // User authenticated
-
-          // Get ID token
-          const token = await firebaseUser.getIdToken();
-          setIdToken(token);
-
-          // Get ID token result to check custom claims
-          const tokenResult = await firebaseUser.getIdTokenResult();
-          const adminClaim = tokenResult.claims.admin || false;
-          const roleClaim = tokenResult.claims.role || null;
-
-          setIsAdmin(adminClaim);
-
-          // Set user state
-          setUser({
-            uid: firebaseUser.uid,
-            email: firebaseUser.email,
-            displayName: firebaseUser.displayName || firebaseUser.email.split('@')[0],
-            emailVerified: firebaseUser.emailVerified,
-            photoURL: firebaseUser.photoURL,
-            admin: adminClaim,
-            role: roleClaim
-          });
-
-          // Verify with backend
-          await verifyAdminWithBackend(token);
-
-        } else {
-          // User is signed out
-          // User signed out
-          setUser(null);
-          setIdToken(null);
-          setIsAdmin(false);
-        }
-      } catch (err) {
-        console.error('❌ Auth state change error:', err);
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
+    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
+      apply(session);
     });
 
-    // Cleanup subscription
-    return () => unsubscribe();
+    return () => {
+      mounted = false;
+      sub?.subscription?.unsubscribe();
+    };
   }, []);
 
   /**
-   * Refresh ID token periodically
-   * Tokens expire after 1 hour, refresh every 50 minutes
-   */
-  useEffect(() => {
-    if (!user) return;
-
-    const refreshInterval = setInterval(async () => {
-      try {
-        const currentUser = auth.currentUser;
-        if (currentUser) {
-          const token = await currentUser.getIdToken(true); // Force refresh
-          setIdToken(token);
-          // Token refreshed
-        }
-      } catch (err) {
-        console.error('❌ Token refresh failed:', err);
-      }
-    }, 50 * 60 * 1000); // 50 minutes
-
-    return () => clearInterval(refreshInterval);
-  }, [user]);
-
-  /**
-   * Verify admin role with backend
-   * This ensures the custom claim is actually valid
-   */
-  const verifyAdminWithBackend = async (token) => {
-    try {
-      // Use /api directly - works in both dev (port 5175) and production
-      const response = await fetch('/api/admin/verify', {
-        method: 'GET',
-        headers: {
-          'Authorization': `Bearer ${token}`
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Admin verification failed');
-      }
-
-      const data = await response.json();
-      // Admin verified
-
-    } catch (err) {
-      // Expected to fail if user doesn't have admin role - not an error
-      // User is not admin or token expired
-      setIsAdmin(false);
-    }
-  };
-
-  /**
-   * Login with email and password
+   * Login with email + password.
+   * Admin status is checked client-side from the session's app_metadata.
    */
   const login = async (email, password) => {
     try {
       setError(null);
       setLoading(true);
 
-      const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      const token = await userCredential.user.getIdToken();
+      const { data, error: signInError } = await supabase.auth.signInWithPassword({ email, password });
 
-      // Check if user has admin claim
-      const tokenResult = await userCredential.user.getIdTokenResult();
-      const adminClaim = tokenResult.claims.admin || false;
-
-      if (!adminClaim) {
-        // User exists but is not an admin
-        await signOut(auth);
-        throw new Error('You do not have admin privileges. Please contact support.');
+      if (signInError) {
+        let msg = 'Login failed. Please try again.';
+        if (/invalid login credentials/i.test(signInError.message)) msg = 'Invalid email or password.';
+        else if (/email not confirmed/i.test(signInError.message)) msg = 'Email not confirmed. Contact support.';
+        else if (signInError.message) msg = signInError.message;
+        setError(msg);
+        return { success: false, error: msg };
       }
 
-      // Login successful
+      const token = data.session?.access_token;
+      const admin = await verifyAdminWithServer(token);
+      if (!admin) {
+        await supabase.auth.signOut();
+        const msg = 'You do not have admin privileges. Please contact support.';
+        setError(msg);
+        return { success: false, error: msg };
+      }
 
-      return {
-        success: true,
-        user: userCredential.user,
-        token
-      };
-
+      return { success: true, user: data.user, token };
     } catch (err) {
       console.error('❌ Login failed:', err);
-
-      // Handle specific error codes
-      let errorMessage = 'Login failed. Please try again.';
-
-      if (err.code === 'auth/invalid-credential') {
-        errorMessage = 'Invalid email or password.';
-      } else if (err.code === 'auth/user-not-found') {
-        errorMessage = 'No account found with this email.';
-      } else if (err.code === 'auth/wrong-password') {
-        errorMessage = 'Incorrect password.';
-      } else if (err.code === 'auth/too-many-requests') {
-        errorMessage = 'Too many failed attempts. Please try again later.';
-      } else if (err.code === 'auth/network-request-failed') {
-        errorMessage = 'Network error. Please check your internet connection.';
-      } else if (err.message.includes('admin privileges')) {
-        errorMessage = err.message;
-      }
-
-      setError(errorMessage);
-
-      return {
-        success: false,
-        error: errorMessage
-      };
+      const msg = err.message || 'Login failed. Please try again.';
+      setError(msg);
+      return { success: false, error: msg };
     } finally {
       setLoading(false);
     }
   };
 
-  /**
-   * Logout
-   */
   const logout = async () => {
     try {
-      await signOut(auth);
+      await supabase.auth.signOut();
       setUser(null);
       setIdToken(null);
       setIsAdmin(false);
-      // Logout successful
-
       return { success: true };
-
     } catch (err) {
       console.error('❌ Logout failed:', err);
       setError(err.message);
-
-      return {
-        success: false,
-        error: err.message
-      };
+      return { success: false, error: err.message };
     }
   };
 
   /**
-   * Get current ID token
-   * Force refresh if needed
+   * Get the current access token. Supabase auto-refreshes; pass forceRefresh
+   * to force a refresh when needed.
    */
   const getIdToken = async (forceRefresh = false) => {
-    try {
-      const currentUser = auth.currentUser;
-      if (!currentUser) {
-        throw new Error('No user is signed in');
-      }
-
-      const token = await currentUser.getIdToken(forceRefresh);
-      // Only update state when force-refreshing to avoid unnecessary re-renders
-      if (forceRefresh) {
-        setIdToken(token);
-      }
+    if (forceRefresh) {
+      const { data, error: refErr } = await supabase.auth.refreshSession();
+      if (refErr) throw refErr;
+      const token = data.session?.access_token || null;
+      setIdToken(token);
       return token;
-
-    } catch (err) {
-      console.error('❌ Failed to get ID token:', err);
-      throw err;
     }
+    const { data } = await supabase.auth.getSession();
+    const token = data.session?.access_token || null;
+    if (token && token !== idToken) setIdToken(token);
+    return token;
   };
 
-  /**
-   * Refresh custom claims
-   * Call this after admin role is granted
-   */
+  // Kept for API compatibility — re-reads admin status from the refreshed session.
   const refreshClaims = async () => {
     try {
-      const currentUser = auth.currentUser;
-      if (!currentUser) return;
-
-      // Force token refresh to get new claims
-      const token = await currentUser.getIdToken(true);
+      const { data } = await supabase.auth.refreshSession();
+      const { user: u, token } = deriveUser(data.session);
+      const admin = await verifyAdminWithServer(token);
+      setUser(u ? { ...u, admin } : null);
+      setIsAdmin(admin);
       setIdToken(token);
-
-      const tokenResult = await currentUser.getIdTokenResult(true);
-      const adminClaim = tokenResult.claims.admin || false;
-      const roleClaim = tokenResult.claims.role || null;
-
-      setIsAdmin(adminClaim);
-
-      setUser(prev => ({
-        ...prev,
-        admin: adminClaim,
-        role: roleClaim
-      }));
-
-      // Claims refreshed
-
     } catch (err) {
       console.error('❌ Failed to refresh claims:', err);
     }
   };
 
-  // Context value
-  const value = {
-    user,
-    loading,
-    error,
-    idToken,
-    isAdmin,
-    login,
-    logout,
-    getIdToken,
-    refreshClaims
-  };
+  const value = { user, loading, error, idToken, isAdmin, login, logout, getIdToken, refreshClaims };
 
   return (
     <AuthContext.Provider value={value}>

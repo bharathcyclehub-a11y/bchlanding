@@ -4,7 +4,7 @@
  * GET /api/admin/verify
  * Verifies that the authenticated user has admin privileges
  *
- * Requires: Authorization header with Firebase ID token
+ * Requires: Authorization header with a Supabase access token
  */
 
 import { requireAdmin } from '../_lib/auth-middleware.js';

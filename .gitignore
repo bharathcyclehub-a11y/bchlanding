@@ -39,3 +39,16 @@ local-backend/
 
 .vercel
 .env*.local
+
+.vercel
+
+# Personal/temp media — not site assets
+WhatsApp*.ogg
+WhatsApp*.mp4
+public/WhatsApp*
+tmp-*.png
+
+# Secrets & local dev logs (never commit)
+scripts/supabase/_dbpass.txt
+scripts/supabase/_devlog.txt
+scripts/supabase/_*.txt

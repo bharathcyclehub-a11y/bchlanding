@@ -1,5 +1,5 @@
-import { updateLead, getLeadById, deleteLead } from '../_lib/firestore-service.js';
-import { verifyIdToken } from '../_lib/firebase-admin.js';
+import { updateLead, getLeadById, deleteLead } from '../_lib/db-service.js';
+import { verifyIdToken } from '../_lib/supabase-admin.js';
 
 // Fields allowed for admin updates
 const ADMIN_UPDATE_FIELDS = ['name', 'email', 'phone', 'status', 'notes'];
@@ -26,11 +26,20 @@ export default async function handler(req, res) {
     if (req.method === 'POST' || req.method === 'PATCH') {
       const token = req.headers.authorization?.split('Bearer ')[1];
 
-      // Unauthenticated POST: allow limited self-updates (test-ride flow)
+      // Unauthenticated POST: allow limited self-updates (test-ride flow only).
       if (!token) {
         const lead = await getLeadById(id);
         if (!lead) {
           return res.status(404).json({ success: false, message: 'Lead not found' });
+        }
+
+        // Anti-IDOR guard: an unauthenticated caller may only touch a lead that was
+        // just created (test-ride quiz flow updates it within seconds) and is not yet
+        // paid. This blocks tampering with established/paid leads (e.g. Viper bookings).
+        const createdMs = lead.createdAt ? new Date(lead.createdAt).getTime() : 0;
+        const ageMinutes = createdMs ? (Date.now() - createdMs) / 60000 : Infinity;
+        if (lead.payment?.status === 'PAID' || ageMinutes > 30) {
+          return res.status(403).json({ success: false, message: 'This lead can no longer be updated without authentication' });
         }
 
         const updateData = {};

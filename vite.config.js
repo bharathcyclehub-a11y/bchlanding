@@ -28,11 +28,14 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+            // Keep React, react-dom AND its scheduler/store deps in ONE chunk —
+            // splitting scheduler out breaks react-dom (unstable_scheduleCallback undefined).
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')
+              || id.includes('scheduler') || id.includes('use-sync-external-store')) {
               return 'react-vendor';
             }
-            if (id.includes('firebase')) {
-              return 'firebase-vendor';
+            if (id.includes('@supabase')) {
+              return 'supabase-vendor';
             }
             if (id.includes('framer-motion')) {
               return 'animation-vendor';
@@ -57,7 +60,7 @@ export default defineConfig({
 
   // Performance optimizations
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom'],
+    include: ['react', 'react-dom', 'react-router-dom', 'jspdf'],
     // Force esbuild to optimize these dependencies
     esbuildOptions: {
       target: 'es2015'

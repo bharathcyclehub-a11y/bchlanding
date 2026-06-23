@@ -2,7 +2,7 @@
  * Authenticated API Utility
  *
  * This module provides utilities for making authenticated API calls
- * to the backend with Firebase ID token
+ * to the backend with the Supabase access token.
  *
  * Usage:
  * import { authenticatedFetch } from './utils/auth-api';
@@ -13,11 +13,11 @@
  * });
  */
 
-import { auth } from '../config/firebase';
+import { supabase } from '../config/supabase';
 
 /**
  * Make an authenticated API request
- * Automatically includes Firebase ID token in Authorization header
+ * Automatically includes the Supabase access token in the Authorization header
  *
  * @param {string} url - API endpoint URL
  * @param {Object} options - Fetch options
@@ -37,12 +37,12 @@ export async function authenticatedFetch(url, options = {}) {
       // Use provided getIdToken function (from useAuth hook)
       idToken = await options.getIdToken();
     } else {
-      // Fallback: Get token directly from Firebase auth
-      const currentUser = auth.currentUser;
-      if (!currentUser) {
+      // Fallback: get the token directly from the Supabase session
+      const { data } = await supabase.auth.getSession();
+      idToken = data.session?.access_token;
+      if (!idToken) {
         throw new Error('User is not authenticated');
       }
-      idToken = await currentUser.getIdToken();
     }
 
     // Prepare headers

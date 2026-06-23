@@ -6,7 +6,7 @@
  */
 
 import { verifyAdmin } from '../_lib/auth-middleware.js';
-import { FirestoreService } from '../_lib/firestore-service.js';
+import { DbService } from '../_lib/db-service.js';
 
 export default async function handler(req, res) {
   // CORS headers
@@ -19,7 +19,7 @@ export default async function handler(req, res) {
   }
 
   const { id } = req.query;
-  const firestoreService = new FirestoreService();
+  const firestoreService = new DbService();
 
   // GET - Get single product (public)
   if (req.method === 'GET') {

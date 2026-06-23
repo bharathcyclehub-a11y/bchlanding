@@ -801,16 +801,99 @@ function FinalCTA({ onCTAClick }) {
 }
 
 // ─── Main Page Export ─────────────────────────────────────────────
+// ─── Hero Carousel — side-scroll between the Viper hero and the store hero ───
+function HeroCarousel({ onCTAClick }) {
+  const [active, setActive] = useState(0);
+  const SLIDES = 2;
+  const touch = useRef(null);
+
+  const goTo = useCallback((i) => setActive(Math.max(0, Math.min(SLIDES - 1, i))), []);
+
+  const onTouchStart = (e) => { touch.current = { x: e.touches[0].clientX, y: e.touches[0].clientY }; };
+  const onTouchEnd = (e) => {
+    if (!touch.current) return;
+    const dx = e.changedTouches[0].clientX - touch.current.x;
+    const dy = e.changedTouches[0].clientY - touch.current.y;
+    // Horizontal swipe (and not a vertical scroll) → change slide
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) setActive((p) => Math.max(0, Math.min(SLIDES - 1, p + (dx < 0 ? 1 : -1))));
+    touch.current = null;
+  };
+
+  return (
+    <div className="relative h-screen min-h-[600px] max-h-[900px] bg-black overflow-hidden"
+      onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
+      <div
+        className="flex h-full transition-transform duration-500 ease-out will-change-transform"
+        style={{ transform: `translateX(-${active * 100}%)` }}
+      >
+        {/* Slide 1 — Viper hero → links to the Viper LANDING page (not the PDP) */}
+        <div className="relative w-full h-full shrink-0 snap-start">
+          <Link to="/viper-kids" aria-label="Explore the EMotorad Viper" className="group block absolute inset-0">
+            <img
+              src="/viper-hero-kid-dark.webp"
+              alt="A young rider in full gear on the EMotorad Viper"
+              className="absolute inset-0 w-full h-full object-cover object-[30%_center] lg:object-center"
+              fetchpriority="high"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-black/40 lg:bg-gradient-to-l lg:from-black/75 lg:via-black/10 lg:to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 pb-20 sm:pb-24 px-6 flex flex-col items-center text-center gap-3 sm:gap-4
+                            lg:inset-y-0 lg:right-0 lg:inset-x-auto lg:w-[52%] lg:pb-0 lg:pr-16 lg:items-end lg:justify-center lg:text-right">
+              <span className="text-gray-300 text-[10px] sm:text-xs font-semibold tracking-[0.28em] uppercase [text-shadow:0_2px_12px_rgba(0,0,0,0.9)]">EMotorad · For Kids</span>
+              <h2 className="font-display uppercase tracking-wide text-white text-4xl sm:text-6xl lg:text-7xl leading-[0.95] [text-shadow:0_2px_24px_rgba(0,0,0,0.85)]">
+                Meet the <span className="text-primary">Viper</span>
+              </h2>
+              <p className="text-gray-200 text-sm sm:text-lg max-w-md leading-relaxed [text-shadow:0_2px_14px_rgba(0,0,0,0.9)]">
+                The kids’ e-cycle they’ll remember — speed-locked at 25 km/h, road-legal, and built to turn heads.
+              </p>
+              <div className="flex items-center gap-2 [text-shadow:0_2px_12px_rgba(0,0,0,0.9)]">
+                <span className="text-amber-400 text-sm tracking-tight">★★★★★</span>
+                <span className="text-gray-200 text-xs sm:text-sm font-medium">4.7 · loved by 300+ Bangalore families</span>
+              </div>
+              <span className="mt-1 inline-flex items-center gap-2 bg-primary text-white font-bold text-sm sm:text-base rounded-full px-8 py-3.5 shadow-lg shadow-primary/30 group-hover:bg-primary-dark transition-colors">
+                Explore the Viper
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </span>
+            </div>
+          </Link>
+        </div>
+
+        {/* Slide 2 — the main store hero */}
+        <div className="relative w-full h-full shrink-0 snap-start">
+          <PremiumHero onCTAClick={onCTAClick} />
+        </div>
+      </div>
+
+      {/* Dot indicators */}
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex gap-2.5">
+        {Array.from({ length: SLIDES }).map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            aria-label={`Go to slide ${i + 1}`}
+            className={`h-2 rounded-full transition-all ${active === i ? 'w-7 bg-primary' : 'w-2 bg-white/50 hover:bg-white/80'}`}
+          />
+        ))}
+      </div>
+
+      {/* Prev / Next arrows (desktop) */}
+      <button onClick={() => goTo(active - 1)} aria-label="Previous slide"
+        className={`hidden lg:flex absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 text-white text-2xl items-center justify-center transition ${active === 0 ? 'opacity-0 pointer-events-none' : ''}`}>‹</button>
+      <button onClick={() => goTo(active + 1)} aria-label="Next slide"
+        className={`hidden lg:flex absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 text-white text-2xl items-center justify-center transition ${active === SLIDES - 1 ? 'opacity-0 pointer-events-none' : ''}`}>›</button>
+    </div>
+  );
+}
+
 export default function MainLandingPage() {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
   const openContact = useCallback(() => setIsContactFormOpen(true), []);
 
   return (
     <div>
-      {/* 1. Premium Hero */}
-      <PremiumHero onCTAClick={openContact} />
+      {/* 1. HERO CAROUSEL — Viper hero + store hero, side-scroll between them */}
+      <HeroCarousel onCTAClick={openContact} />
 
-      {/* 2. Brands Marquee */}
+      {/* 3. Brands Marquee */}
       <BrandsMarquee />
 
       {/* 3. How It Works (lazy) */}

@@ -1,0 +1,129 @@
+[
+  {
+    "title": "Hercules Yuvolt",
+    "url": "https://hercules.in/all-bikes/hercules-yuvolt/",
+    "description": "",
+    "price": "₹21,999",
+    "specifications": {
+      "Riders age": "13+",
+      "Frame": "Steel Frame",
+      "Fork": "Rigid Fork",
+      "Tires": "26T X 1.5T Cotton",
+      "Brakes": "Rod Brakes",
+      "Carrier": "Steel",
+      "Chain Cover": "Steel",
+      "Battery": "6AH LFP Removable",
+      "Motor": "36V 250W Rear Hub Motor",
+      "Throttle": "Throttle with Battery Indicator",
+      "Mudguard": "Steel"
+    },
+    "images": [
+      "https://hercules.in/wp-content/uploads/2026/01/yuvolt.png"
+    ],
+    "inStock": true
+  },
+  {
+    "title": "Hercules Rogue",
+    "url": "https://hercules.in/all-bikes/hercules-rogue/",
+    "description": "",
+    "price": "₹26,999",
+    "specifications": {
+      "Riders age": "13+",
+      "Frame": "Steel",
+      "Fork": "Front Suspension",
+      "Rims": "Double Wall Alloy",
+      "Tires": "24T Nylon",
+      "Brakes": "Dual Disc Brake",
+      "Carrier": "N/A",
+      "Chain Cover": "N/A",
+      "Battery": "Removable 6Ah LFP",
+      "Mileage/Charge": "Upto 25+kms on Throttle Mode & 30+kms on Pedal Assist",
+      "Max Speed": "Upto 25kms/hr",
+      "Motor": "36V 2S0W",
+      "Display": "Throttle Display on Handlebar",
+      "Speed": "Single",
+      "Mudguard": "N/A"
+    },
+    "images": [
+      "https://hercules.in/wp-content/uploads/2025/06/IMG_3196_Rogue_1_optimized.png"
+    ],
+    "inStock": true
+  },
+  {
+    "title": "Hercules Shurveer",
+    "url": "https://hercules.in/all-bikes/hercules-shurveer/",
+    "description": "",
+    "price": "₹20,999",
+    "specifications": {
+      "Riders age": "13+",
+      "Frame": "Steel - Welded",
+      "Fork": "Rigid Fork - Welded",
+      "Rims": "Steel",
+      "Tires": "28T x 1.5T - Cotton Tires",
+      "Pedals": "Rubber Pedal with Anti Rotation Arrestor",
+      "Brakes": "Rod Brakes (Integral with Handlebar)",
+      "Chain Cover": "Steel",
+      "Battery": "Removable - 6 Ah LFP Battery",
+      "Mileage/Charge": "Upto 25+kms on Throttle Mode & 30+kms on Pedal Assist",
+      "Max Speed": "Upto 25kms/hr",
+      "Motor": "36V /250W-Rear Hub Motor",
+      "Speed": "Single",
+      "Mudguard": "Steel"
+    },
+    "images": [
+      "https://hercules.in/wp-content/uploads/2025/03/DSC005022.png"
+    ],
+    "inStock": true
+  },
+  {
+    "title": "Hercules Hardstyle Pro",
+    "url": "https://hercules.in/all-bikes/hercules-hardstyle-pro/",
+    "description": "",
+    "price": "₹26,999",
+    "specifications": {
+      "Riders age": "13+",
+      "Frame": "Steel",
+      "Fork": "Front Suspension",
+      "Rims": "Double Wall Alloy",
+      "Tires": "27.5T x 2.1T Nylon",
+      "Brakes": "Dual Disc Brake",
+      "Battery": "8Ah Removable LFP Battery",
+      "Mileage/Charge": "Upto 30+kms on Throttle Mode & 35+kms on Pedal Assist",
+      "Max Speed": "Upto 25kms/hr",
+      "Motor": "36V-250W - BLDC",
+      "Display": "Battery Indicator on Throttle",
+      "Speed": "Single"
+    },
+    "images": [
+      "https://hercules.in/wp-content/uploads/2025/03/DSC00430.png"
+    ],
+    "inStock": true
+  },
+  {
+    "title": "Hercules Hardstyle",
+    "url": "https://hercules.in/all-bikes/hercules-hardstyle/",
+    "description": "",
+    "price": "₹20,999",
+    "specifications": {
+      "Riders age": "13+",
+      "Frame": "Rigid",
+      "Fork": "6 AH",
+      "Rims": "Steel",
+      "Tires": "Dual Disc Brake",
+      "Pedals": "Battery Indicator on Throttle",
+      "Brakes": "36V 250W Speevo Peak Torque 40NM",
+      "Battery": "25/35 kms",
+      "Mileage/Charge": "Upto 25+kms on Throttle Mode & 30+kms on Pedal Assist",
+      "Max Speed": "Upto 25kms/hr",
+      "Motor": "Anti Skid Plastic Pedal",
+      "Display": "Single",
+      "Speed": "Detachable Battery"
+    },
+    "images": [
+      "https://hercules.in/wp-content/uploads/2024/12/IMG_8059.png",
+      "https://hercules.in/wp-content/uploads/2024/12/IMG_8091.png",
+      "https://hercules.in/wp-content/uploads/2024/12/IMG_8093.png"
+    ],
+    "inStock": true
+  }
+]

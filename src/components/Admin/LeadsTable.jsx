@@ -1,6 +1,30 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Phone, Mail, Calendar, Package, CreditCard, MapPin, FileText } from 'lucide-react';
+import { X, Phone, Mail, Calendar, Package, CreditCard, MapPin, FileText, MessageCircle, Download } from 'lucide-react';
+
+// Build a pre-filled WhatsApp confirmation message + link to the customer's number.
+// Tailors the text for Viper pre-bookings vs other leads.
+function waConfirmationUrl(lead) {
+  const digits = String(lead?.phone || '').replace(/\D/g, '');
+  const to = digits.length === 10 ? `91${digits}` : digits; // assume India if 10-digit
+  const first = (lead?.name || 'there').trim().split(/\s+/)[0];
+  let msg;
+  if (lead?.category === 'Pre-Booking') {
+    const forKid = lead?.childName ? ` for ${lead.childName}` : '';
+    msg =
+`Hi ${first}, your EMotorad Viper pre-booking${forKid} is confirmed.
+
+Booking ID: ${lead?.bookingId || '-'}
+Reservation: Rs. 999 received (refundable token)
+Status: Reserved in the limited batch
+Expected delivery: by 31 July
+
+We'll be in touch with the next steps. Thank you for choosing Bharath Cycle Hub.`;
+  } else {
+    msg = `Hi ${first}! Thank you for booking with Bharath Cycle Hub. We've received your details and will contact you shortly.`;
+  }
+  return `https://wa.me/${to}?text=${encodeURIComponent(msg)}`;
+}
 
 /**
  * Responsive Leads Table Component
@@ -18,6 +42,7 @@ export default function LeadsTable({
   handleDeleteLead
 }) {
   const [selectedLead, setSelectedLead] = useState(null);
+  const [downloadingBill, setDownloadingBill] = useState(false);
 
   // Handle row click/tap to open detail modal
   const handleRowClick = (lead) => {
@@ -26,6 +51,30 @@ export default function LeadsTable({
 
   const closeModal = () => {
     setSelectedLead(null);
+  };
+
+  // Generate + download the branded PDF bill for this lead
+  const handleDownloadBill = async () => {
+    if (!selectedLead) return;
+    setDownloadingBill(true);
+    try {
+      const { downloadViperReceipt } = await import('../../utils/receipt');
+      await downloadViperReceipt({
+        bookingId: selectedLead.bookingId,
+        paymentId: selectedLead.payment?.transactionId,
+        name: selectedLead.name,
+        childName: selectedLead.childName,
+        buyingFor: selectedLead.buyingFor,
+        amount: selectedLead.payment?.amount || 999,
+        dateStr: selectedLead.createdAt ? formatDate(selectedLead.createdAt) : undefined,
+      });
+    } catch (err) {
+      // Never fail silently — surface the real reason so the button is never a dead end.
+      console.error('Download bill failed:', err);
+      alert(`Could not generate the bill: ${err?.message || err}`);
+    } finally {
+      setDownloadingBill(false);
+    }
   };
 
   if (loading) {
@@ -92,6 +141,7 @@ export default function LeadsTable({
                   className={`
                     hover:bg-gray-50 transition-colors duration-200 cursor-pointer
                     ${lead.category === 'Test Ride' || lead.category === '99 Offer' ? 'bg-blue-50/30 border-l-4 border-blue-500' : ''}
+                    ${lead.category === 'Pre-Booking' ? 'bg-amber-50/40 border-l-4 border-amber-500' : ''}
                     ${lead.category === 'Contact' ? 'bg-red-50/30 border-l-4 border-red-500' : ''}
                   `}
                   title="Click for details"
@@ -194,8 +244,8 @@ export default function LeadsTable({
               className="bg-white w-full md:max-w-2xl md:rounded-[30px] rounded-t-[30px] max-h-[90vh] overflow-y-auto shadow-2xl"
             >
               {/* Modal Header */}
-              <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between z-10 rounded-t-[30px]">
-                <h2 className="font-display text-2xl text-dark uppercase tracking-wide">Lead Details</h2>
+              <div className="sticky top-0 bg-white border-b border-gray-200 px-5 py-3 flex items-center justify-between z-10 rounded-t-[30px]">
+                <h2 className="font-display text-xl text-dark uppercase tracking-wide">Lead Details</h2>
                 <button
                   onClick={closeModal}
                   className="p-2 hover:bg-gray-100 rounded-full transition-colors"
@@ -205,41 +255,41 @@ export default function LeadsTable({
               </div>
 
               {/* Modal Content */}
-              <div className="p-6 space-y-6">
+              <div className="p-4 space-y-3">
                 {/* Basic Info Section */}
-                <div className="bg-gray-50 rounded-[20px] p-4 space-y-3">
+                <div className="bg-gray-50 rounded-xl p-3 space-y-2">
                   <h3 className="font-bold text-dark uppercase text-sm tracking-wide border-b border-gray-200 pb-2">
                     Contact Information
                   </h3>
 
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="flex items-start gap-2.5">
+                    <div className="p-1.5 bg-primary/10 rounded-md">
+                      <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                       </svg>
                     </div>
                     <div>
                       <p className="text-xs text-gray-text uppercase font-bold">Name</p>
-                      <p className="text-lg font-bold text-dark">{selectedLead.name}</p>
+                      <p className="text-base font-bold text-dark">{selectedLead.name}</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Phone className="w-5 h-5 text-primary" />
+                  <div className="flex items-start gap-2.5">
+                    <div className="p-1.5 bg-primary/10 rounded-md">
+                      <Phone className="w-4 h-4 text-primary" />
                     </div>
                     <div>
                       <p className="text-xs text-gray-text uppercase font-bold">Phone</p>
-                      <a href={`tel:${selectedLead.phone}`} className="text-lg font-bold text-primary hover:underline">
+                      <a href={`tel:${selectedLead.phone}`} className="text-base font-bold text-primary hover:underline">
                         {selectedLead.phone}
                       </a>
                     </div>
                   </div>
 
                   {selectedLead.email && (
-                    <div className="flex items-start gap-3">
-                      <div className="p-2 bg-primary/10 rounded-lg">
-                        <Mail className="w-5 h-5 text-primary" />
+                    <div className="flex items-start gap-2.5">
+                      <div className="p-1.5 bg-primary/10 rounded-md">
+                        <Mail className="w-4 h-4 text-primary" />
                       </div>
                       <div>
                         <p className="text-xs text-gray-text uppercase font-bold">Email</p>
@@ -250,9 +300,9 @@ export default function LeadsTable({
                     </div>
                   )}
 
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Calendar className="w-5 h-5 text-primary" />
+                  <div className="flex items-start gap-2.5">
+                    <div className="p-1.5 bg-primary/10 rounded-md">
+                      <Calendar className="w-4 h-4 text-primary" />
                     </div>
                     <div>
                       <p className="text-xs text-gray-text uppercase font-bold">Date</p>
@@ -261,27 +311,35 @@ export default function LeadsTable({
                   </div>
                 </div>
 
+                {/* Booking ID */}
+                {selectedLead.bookingId && (
+                  <div className="bg-amber-50 border border-amber-300 rounded-xl p-3 text-center">
+                    <p className="text-xs text-amber-700 uppercase font-bold tracking-wide mb-1">Booking ID</p>
+                    <p className="text-xl font-mono font-bold text-amber-900 tracking-wider break-all">{selectedLead.bookingId}</p>
+                  </div>
+                )}
+
                 {/* Category & Source */}
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-gray-50 rounded-[20px] p-4">
+                  <div className="bg-gray-50 rounded-xl p-3">
                     <p className="text-xs text-gray-text uppercase font-bold mb-2">Category</p>
                     {getCategoryBadge(selectedLead.category || 'General', selectedLead)}
                   </div>
-                  <div className="bg-gray-50 rounded-[20px] p-4">
+                  <div className="bg-gray-50 rounded-xl p-3">
                     <p className="text-xs text-gray-text uppercase font-bold mb-2">Source</p>
                     <p className="text-sm text-dark font-medium">{selectedLead.source || 'unknown'}</p>
                   </div>
                 </div>
 
                 {/* Payment Info */}
-                <div className="bg-gray-50 rounded-[20px] p-4 space-y-3">
+                <div className="bg-gray-50 rounded-xl p-3 space-y-2">
                   <h3 className="font-bold text-dark uppercase text-sm tracking-wide border-b border-gray-200 pb-2">
                     Payment Information
                   </h3>
 
                   <div className="flex items-center gap-3">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <CreditCard className="w-5 h-5 text-primary" />
+                    <div className="p-1.5 bg-primary/10 rounded-md">
+                      <CreditCard className="w-4 h-4 text-primary" />
                     </div>
                     <div className="flex-1">
                       <p className="text-xs text-gray-text uppercase font-bold">Status</p>
@@ -292,9 +350,9 @@ export default function LeadsTable({
                   </div>
 
                   {selectedLead.payment?.transactionId && (
-                    <div className="flex items-start gap-3">
-                      <div className="p-2 bg-primary/10 rounded-lg">
-                        <FileText className="w-5 h-5 text-primary" />
+                    <div className="flex items-start gap-2.5">
+                      <div className="p-1.5 bg-primary/10 rounded-md">
+                        <FileText className="w-4 h-4 text-primary" />
                       </div>
                       <div>
                         <p className="text-xs text-gray-text uppercase font-bold">Transaction ID</p>
@@ -304,8 +362,8 @@ export default function LeadsTable({
                   )}
 
                   {selectedLead.payment?.amount && (
-                    <div className="flex items-start gap-3">
-                      <div className="p-2 bg-primary/10 rounded-lg">
+                    <div className="flex items-start gap-2.5">
+                      <div className="p-1.5 bg-primary/10 rounded-md">
                         <span className="text-lg font-bold text-primary">₹</span>
                       </div>
                       <div>
@@ -318,7 +376,7 @@ export default function LeadsTable({
 
                 {/* Message (from contact forms) */}
                 {selectedLead.message && (
-                  <div className="bg-gray-50 rounded-[20px] p-4 space-y-3">
+                  <div className="bg-gray-50 rounded-xl p-3 space-y-2">
                     <h3 className="font-bold text-dark uppercase text-sm tracking-wide border-b border-gray-200 pb-2">
                       Message
                     </h3>
@@ -328,7 +386,7 @@ export default function LeadsTable({
 
                 {/* Requirements/Quiz Answers */}
                 {selectedLead.quizAnswers && Object.keys(selectedLead.quizAnswers).length > 0 && (
-                  <div className="bg-gray-50 rounded-[20px] p-4 space-y-3">
+                  <div className="bg-gray-50 rounded-xl p-3 space-y-2">
                     <h3 className="font-bold text-dark uppercase text-sm tracking-wide border-b border-gray-200 pb-2">
                       Requirements
                     </h3>
@@ -347,7 +405,7 @@ export default function LeadsTable({
 
                 {/* Interested Product */}
                 {selectedLead.quizAnswers?.interestedProduct && (
-                  <div className="bg-primary/5 rounded-[20px] p-4 border-2 border-primary/20">
+                  <div className="bg-primary/5 rounded-xl p-3 border-2 border-primary/20">
                     <div className="flex items-center gap-3">
                       <div className="p-2 bg-primary/20 rounded-lg">
                         <Package className="w-6 h-6 text-primary" />
@@ -361,25 +419,46 @@ export default function LeadsTable({
                 )}
 
                 {/* Actions */}
-                <div className="flex gap-3 pt-4 border-t border-gray-200">
-                  <button
-                    onClick={() => {
-                      handleDeleteLead(selectedLead.id, selectedLead.name);
-                      closeModal();
-                    }}
-                    className="flex-1 px-6 py-3 rounded-full border-2 border-red-500 text-red-600 hover:bg-red-50 transition-all duration-300 font-bold text-sm uppercase tracking-wide flex items-center justify-center gap-2"
+                <div className="space-y-3 pt-4 border-t border-gray-200">
+                  {/* Download the branded PDF bill (Viper pre-bookings) */}
+                  {selectedLead.bookingId && (
+                    <button
+                      onClick={handleDownloadBill}
+                      disabled={downloadingBill}
+                      className="w-full px-5 py-2.5 rounded-full bg-amber-500 text-white hover:bg-amber-600 transition-all duration-300 font-bold text-sm uppercase tracking-wide flex items-center justify-center gap-2 disabled:opacity-70"
+                    >
+                      <Download className="w-5 h-5" /> {downloadingBill ? 'Preparing bill…' : 'Download Bill (PDF)'}
+                    </button>
+                  )}
+                  {/* Primary: open WhatsApp pre-filled with a confirmation to the customer */}
+                  <a
+                    href={waConfirmationUrl(selectedLead)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full px-5 py-2.5 rounded-full bg-green-500 text-white hover:bg-green-600 transition-all duration-300 font-bold text-sm uppercase tracking-wide flex items-center justify-center gap-2"
                   >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                    </svg>
-                    Delete Lead
-                  </button>
-                  <button
-                    onClick={closeModal}
-                    className="flex-1 px-6 py-3 rounded-full bg-gray-200 text-dark hover:bg-gray-300 transition-all duration-300 font-bold text-sm uppercase tracking-wide"
-                  >
-                    Close
-                  </button>
+                    <MessageCircle className="w-5 h-5" /> WhatsApp Confirmation
+                  </a>
+                  <div className="flex gap-3">
+                    <button
+                      onClick={() => {
+                        handleDeleteLead(selectedLead.id, selectedLead.name);
+                        closeModal();
+                      }}
+                      className="flex-1 px-5 py-2.5 rounded-full border-2 border-red-500 text-red-600 hover:bg-red-50 transition-all duration-300 font-bold text-sm uppercase tracking-wide flex items-center justify-center gap-2"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                      </svg>
+                      Delete Lead
+                    </button>
+                    <button
+                      onClick={closeModal}
+                      className="flex-1 px-5 py-2.5 rounded-full bg-gray-200 text-dark hover:bg-gray-300 transition-all duration-300 font-bold text-sm uppercase tracking-wide"
+                    >
+                      Close
+                    </button>
+                  </div>
                 </div>
               </div>
             </motion.div>

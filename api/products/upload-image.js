@@ -1,11 +1,13 @@
 /**
  * Product Image Upload API
- * POST /api/products/upload-image - Upload image to Firebase Storage (admin only)
+ * POST /api/products/upload-image - Upload image to Supabase Storage (admin only)
  */
 
 import { verifyAdmin } from '../_lib/auth-middleware.js';
-import { admin } from '../_lib/firebase-admin.js';
+import { getSupabase } from '../_lib/supabase-admin.js';
 import formidable from 'formidable';
+
+const STORAGE_BUCKET = 'product-images';
 
 // Disable Next.js body parser for file uploads
 export const config = {
@@ -88,34 +90,26 @@ export default async function handler(req, res) {
       });
     }
 
-    // Get Firebase Storage bucket
-    const bucket = admin.storage().bucket();
-
     // Generate unique filename
     const timestamp = Date.now();
     const randomStr = Math.random().toString(36).substring(2, 8);
     const extension = imageFile.originalFilename.split('.').pop();
     const filename = `products/${timestamp}-${randomStr}.${extension}`;
 
-    // Upload file to Firebase Storage
-    const file = bucket.file(filename);
+    // Upload file to Supabase Storage
+    const supabase = getSupabase();
+    const bucket = supabase.storage.from(STORAGE_BUCKET);
     const fs = await import('fs');
     const fileBuffer = fs.readFileSync(imageFile.filepath);
 
-    // Single call: save + make public via predefinedAcl (no separate makePublic needed)
-    await file.save(fileBuffer, {
-      predefinedAcl: 'publicRead',
-      metadata: {
-        contentType: imageFile.mimetype,
-        metadata: {
-          uploadedBy: adminUser.uid,
-          uploadedAt: new Date().toISOString(),
-        },
-      },
+    const { error: upErr } = await bucket.upload(filename, fileBuffer, {
+      contentType: imageFile.mimetype,
+      upsert: true,
     });
+    if (upErr) throw new Error(upErr.message);
 
     // Get public URL
-    const publicUrl = `https://storage.googleapis.com/${bucket.name}/${filename}`;
+    const { data: { publicUrl } } = bucket.getPublicUrl(filename);
 
     console.log(`✅ Image uploaded: ${filename}`);
 

@@ -17,8 +17,9 @@
  * - "filename" : Traditional filename matching via imageMap
  */
 
-import { bulkImportProducts } from '../_lib/firestore-service.js';
+import { bulkImportProducts } from '../_lib/db-service.js';
 import { verifyAdmin } from '../_lib/auth-middleware.js';
+import { getSupabase } from '../_lib/supabase-admin.js';
 import XLSX from 'xlsx';
 import formidable from 'formidable';
 import { extractEmbeddedImages, uploadExtractedImages } from '../_lib/excel-image-extractor.js';
@@ -260,10 +261,10 @@ export default async function handler(req, res) {
 
       if (rowImageFiles.length > 0) {
         console.log(`📋 Row-order matching: ${rowImageFiles.length} images`);
-        const { admin: firebaseAdmin } = await import('../_lib/firebase-admin.js');
-        const bucket = firebaseAdmin.storage().bucket();
+        const supabase = getSupabase();
+        const bucket = supabase.storage.from('product-images');
 
-        // Upload in parallel batches of 10 — single API call per image
+        // Upload in parallel batches of 10
         const BATCH_SIZE = 10;
         for (let b = 0; b < rowImageFiles.length; b += BATCH_SIZE) {
           const batch = rowImageFiles.slice(b, b + BATCH_SIZE);
@@ -275,17 +276,14 @@ export default async function handler(req, res) {
               const randomStr = Math.random().toString(36).substring(2, 8);
               const ext = (imgFile.originalFilename || 'jpg').split('.').pop();
               const filename = `products/${timestamp}-${randomStr}.${ext}`;
-              const storageFile = bucket.file(filename);
 
-              await storageFile.save(imgBuffer, {
-                predefinedAcl: 'publicRead',
-                metadata: {
-                  contentType: imgFile.mimetype || 'image/jpeg',
-                  metadata: { source: 'row-order-import' },
-                },
+              const { error: upErr } = await bucket.upload(filename, imgBuffer, {
+                contentType: imgFile.mimetype || 'image/jpeg',
+                upsert: true,
               });
+              if (upErr) throw new Error(upErr.message);
 
-              imageMap[i] = `https://storage.googleapis.com/${bucket.name}/${filename}`;
+              imageMap[i] = bucket.getPublicUrl(filename).data.publicUrl;
               fs.unlinkSync(imgFile.filepath);
             } catch (err) {
               console.warn(`⚠️ Failed to upload row-order image ${i}:`, err.message);

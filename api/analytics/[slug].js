@@ -16,7 +16,7 @@ import {
     getEngagementStats,
     getTrackingSetting,
     setTrackingSetting
-} from '../_lib/firestore-service.js';
+} from '../_lib/db-service.js';
 
 export default async function handler(req, res) {
     // Set permissive CORS for public tracking endpoints (visitor/engagement POST)

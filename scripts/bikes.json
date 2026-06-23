@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-02-10T17:45:09.631339+00:00",
-  "count": 14,
+  "fetched_at": "2026-06-17T09:24:14.634714+00:00",
+  "count": 13,
   "source": "https://www.emotorad.com/api/bikes/all-bikes",
   "bikes": [
     {
       "id": "679c60a396fb10bcf79b8a12",
       "name": "G1 Cargo E-Cycle",
       "slug": "xcape-g1",
-      "price": 99999,
+      "price": 69999,
       "mrp": 99999,
       "description": "The G1 isn’t just an e-cycle—it’s a powerhouse of durability and performance, designed to handle heavy loads and long rides with ease. Its high-tensile longtail steel frame supports up to 150 kg, while its dual 48V 10.2Ah removable batteries provide an impressive range of up to 100 km on the pedal assist. Powered by a 250W rear hub motor and equipped with 24\"x3.0\" front and 20\"x3.0\" rear tyres for superior stability, the Cargo G1 delivers smooth, safe rides across any terrain. With features like 80mm front suspension, 180mm mechanical disc brakes, and a multifunctional display, it’s built for practicality, reliability, and everyday adventures.",
       "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/Cargo/OrangeNew/1.jpg",
@@ -73,7 +73,7 @@
       "id": "6793903deb4a15d6185be91e",
       "name": "Doodle Pro",
       "slug": "doodle-pro",
-      "price": 56999,
+      "price": 55999,
       "mrp": 79999,
       "description": "The Doodle Pro isn’t just an e-bike—it’s your gateway to endless adventure. With its foldable design, powerful 36V motor, and a range of up to 60 km on PAS, it’s built to take you further, faster. Equipped with 7-speed Shimano gears, front suspension, and bright front and rear lights, it's compact, easy-to-carry frame makes travelling a breeze. Unfold freedom and ride the future.",
       "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/doodle-pro/Native+Pop/Artboard+1.jpg",
@@ -139,7 +139,7 @@
       "id": "66f2be4a4015fd82191dbbe4",
       "name": "T-Rex Pro",
       "slug": "t-rex-pro",
-      "price": 49999,
+      "price": 54999,
       "mrp": 74999,
       "description": "T-Rex Pro is the perfect blend of innovation and performance, featuring a first-of-its-kind integrated handlebar display, a durable aluminium alloy frame, and a powerful 13Ah battery. With advanced features like front suspension, integrated front and rear lights, indicators, hazard lights, and ambiance lighting, the T-Rex Pro ensures a smooth, safe, and enjoyable ride across all terrains.",
       "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex+pro/Orange/Artboard+1.jpg",
@@ -226,7 +226,7 @@
       "name": "Lil E",
       "slug": "lile",
       "price": 24999,
-      "mrp": 34999,
+      "mrp": 29999,
       "description": "Lil E is an incredibly peppy thing with the oomph to get you from one place to the next, even up inclines. Oh, and it folds up into a tiny footprint!",
       "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LilENew/5.2ah/Blue/1.jpg",
       "gallery_images": [
@@ -283,7 +283,7 @@
       "id": "658d75ae05a371a821407b4e",
       "name": "T-Rex Air",
       "slug": "t-rex-air",
-      "price": 37499,
+      "price": 36999,
       "mrp": 47999,
       "description": "Introducing T-Rex Air – the raddest wheels in town! It's not just an electric cycle; it's simply two-wheeled power. With a dash of dino-inspired flair and a whisper-quiet electric hum, T-Rex Air takes you on a journey where fun meets futuristic. Glide through the streets with the wind in your hair, and let the T-Rex Air bring a dash of daring to your everyday adventures. It's not just an electric cycle; it's a roar on wheels – get ready to pedal into the world with style and smiles!",
       "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex-air/product+images/red/T-REX+Red+%26+White.jpg",
@@ -382,71 +382,11 @@
       "popularity": 58
     },
     {
-      "id": "6544a7d5897107b23599ba8f",
-      "name": "T-Rex+ V3",
-      "slug": "t-rex+",
-      "price": 45999,
-      "mrp": 59999,
-      "description": "With T-Rex+ bring out your A game in travel, whether you are climbing up or crisscrossing the streets next to your home.",
-      "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/red/Artboard+1.jpg",
-      "gallery_images": [
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/red/Artboard+1.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/red/Artboard+2.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/red/Artboard+3.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/red/Artboard+4.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/red/Artboard+5.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/red/Artboard+6.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/olive/Artboard+1.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/olive/Artboard+2.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/olive/Artboard+3.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/olive/Artboard+4.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/olive/Artboard+5.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/t-rex%2B+v3/olive/Artboard+6.jpg"
-      ],
-      "card_images": [
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/T-REX+%2B+new.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/T-REX+%2B+olive.png"
-      ],
-      "colors": [
-        {
-          "name": "Crimson Black",
-          "hex": "linear-gradient(to bottom left, #df1f26  50%, #262729 50%)",
-          "in_stock": true
-        },
-        {
-          "name": "Olive Fade",
-          "hex": "#AEAE65",
-          "in_stock": true
-        }
-      ],
-      "in_stock": true,
-      "specs": {
-        "Bike Type": "Hardtail MTB E-bike",
-        "Frame": "Aluminium Alloy 6061 Frame",
-        "Front Fork": "100 mm Travel with lockout",
-        "Brakes": "Mechanical disc brakes with auto cut off",
-        "Gears": "7-Speed Shimano Altus Gear",
-        "Front Wheel": "Aluminium Alloy, 36H Hub with Quick Release",
-        "Tyre": "26\" x 2.25\" | 27.5\" x 2.25\" | 29\" x 2.25\" Nylon Tyres",
-        "Rim": "Double Wall Aluminium Alloy Rims",
-        "Motor": "EMotorad 36V 250W Rear Hub Motor",
-        "Battery": "36V 10.2 Ah Lithium-ion Removable Battery",
-        "Display": "Cluster i8 Stem Integrated Display",
-        "Light": "Front and Rear light with integrated horn",
-        "Charger": "2A",
-        "Range": "Up to 40 Km on Throttle | Up to 50 Km on PAS",
-        "Charging time": "4-5 Hours"
-      },
-      "category": "bike",
-      "card_description": "Beast of all terrains. Made to push boundaries while promising comfort out of the comfort zone.",
-      "popularity": 57
-    },
-    {
       "id": "66123f08886d1a984d1b5015",
       "name": "Legend 07 MSD Edition",
       "slug": "x1-pro-legend-07",
-      "price": 34999,
-      "mrp": 34999,
+      "price": 32999,
+      "mrp": 39999,
       "description": "It's not just any electric cycle; it's an X1 that laughs at rough terrain and says, \"Is that all you've got, gravel?\" This electric cycle is so tough; it's like a Transformer that turns from city slicker to off-road adventurer in the blink of an eye.",
       "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/legend+07/productImages/blue/Artboard+1.jpg",
       "gallery_images": [
@@ -481,9 +421,9 @@
       ],
       "card_images": [
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/msd+blue.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/msd_yellow_cart.jpg",
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/x1+legend+card+b.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/x1+legend+card+w.jpg"
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/legend+07/productImages/geared/Blue/MSD_Blue_9.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/legend+07/productImages/geared/black/MSD_Blue_9.jpg"
       ],
       "colors": [
         {
@@ -492,39 +432,23 @@
           "in_stock": true
         },
         {
-          "name": "Mahi's Yellow",
-          "hex": "#F8D257",
-          "in_stock": false
-        },
-        {
           "name": "Champion Black",
           "hex": "black",
           "in_stock": true
         },
         {
-          "name": "Pearl White",
-          "hex": "linear-gradient(to bottom left, #ECECEC  50%, #C18764  50%)",
-          "in_stock": false
+          "name": "Bleed Blue",
+          "hex": "#1550A3",
+          "in_stock": true
+        },
+        {
+          "name": "Champion Black",
+          "hex": "black",
+          "in_stock": true
         }
       ],
       "in_stock": true,
-      "specs": {
-        "Bike Type": "Hardtail MTB E-bike",
-        "Frame": "High Tensile Steel Frame",
-        "Front Fork": "Front Fork Suspension with 100 mm Travel",
-        "Brakes": "Mechanical Disc Brakes with Auto Cut-off",
-        "Gears": "Single Speed",
-        "Tyre": "27.5” x 2.1” Nylon Tyres",
-        "Rim": "Double Wall Aluminium Alloy Rims",
-        "Handlebar": "31.8*1.42*660 mm",
-        "Motor": "EMotorad 36V 250W Rear Hub Motor",
-        "Battery": "36V 7.65 Ah Li-Ion Removable Battery",
-        "Display": "Cluster C1 Display",
-        "Light": "Front Light with Integrated Horn",
-        "Charger": "2A",
-        "Range": "Upto 35 KM on PAS | 30 Km on Throttle",
-        "Charging time": "3-4 hrs"
-      },
+      "specs": {},
       "category": "bike",
       "card_description": "Adventure perfect partner to make all your journeys and stories epic.",
       "popularity": 55
@@ -559,18 +483,20 @@
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/STX/STX-W/STX_W.png",
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/STX/STX-M/STX_M.png",
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/STX/black/STX-M_Black_Product.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/STX/grey/STX-M_Grey_Product.png"
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/STX/grey/STX-M_Grey_Product.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/STX_web_Beige.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/STX_web_Blue.jpg"
       ],
       "colors": [
         {
           "name": "Yellow",
           "hex": "yellow",
-          "in_stock": true
+          "in_stock": false
         },
         {
           "name": "Yellow",
           "hex": "yellow",
-          "in_stock": true
+          "in_stock": false
         },
         {
           "name": "Black",
@@ -581,9 +507,19 @@
           "name": "Grey",
           "hex": "grey",
           "in_stock": false
+        },
+        {
+          "name": "Beige",
+          "hex": "#E6D1B2",
+          "in_stock": true
+        },
+        {
+          "name": "Teal Blue",
+          "hex": "#2ba6b6",
+          "in_stock": true
         }
       ],
-      "in_stock": false,
+      "in_stock": true,
       "specs": {},
       "category": "bike",
       "card_description": "Fuel your passion for adventure and cut through traffic with the sleek, all-day electric city bike.",
@@ -593,7 +529,7 @@
       "id": "63fef7af38ced178e34e5b0a",
       "name": "X2",
       "slug": "x2",
-      "price": 28499,
+      "price": 31999,
       "mrp": 34999,
       "description": "Introducing X2, the ultimate electric cycle for all you thrill-seeking, city-hopping, and adventure-loving folks! With its super snazzy frame and a 250w rear hub motor, it's the turbo boost your ride's been craving! Time to zip, zap, and zoom!",
       "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/mesh+black/1.jpg",
@@ -606,25 +542,20 @@
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/mesh+black/6.jpg",
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/mesh+black/7.jpg",
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/mesh+black/8.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/red/X2+Red.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/red/Artboard+2.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/red/Artboard+3.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/red/Artboard+4.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/red/Artboard+5.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/red/Artboard+6.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/red/Artboard+7.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/green/X2+Blue.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/green/Artboard+2.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/green/Artboard+3.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/green/Artboard+4.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/green/Artboard+5.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/green/Artboard+6.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/green/Artboard+7.jpg"
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+red/1.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+red/2.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+red/3.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+red/4.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+red/5.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+red/6.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+red/7.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+red/8.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+red/9.jpg"
       ],
       "card_images": [
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/mesh+black/X2meshblack.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/X2-red.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/X2-blue.jpg"
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+red/x2red.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x2/product+images/new+blue/x2blue.png"
       ],
       "colors": [
         {
@@ -633,13 +564,13 @@
           "in_stock": true
         },
         {
-          "name": "Furious Red",
-          "hex": "linear-gradient(to bottom left, #EE4C46  50%, #383c3e 50%)",
+          "name": "Lava Red",
+          "hex": "#C22030",
           "in_stock": true
         },
         {
-          "name": "Sea Green",
-          "hex": "linear-gradient(to bottom left, #C1DAD9 50%, #383c3e 50%)",
+          "name": "Obsidian Blue",
+          "hex": "#708B9D",
           "in_stock": true
         }
       ],
@@ -666,10 +597,96 @@
       "popularity": 52
     },
     {
+      "id": "68653121c1e99424312667c9",
+      "name": "Ranger",
+      "slug": "ranger",
+      "price": 58999,
+      "mrp": 74999,
+      "description": "Ranger is more than just an e-cycle; it’s the ultimate companion for your adventures as well as daily commutes! Powered by a 250w motor, it hits speeds up to 25 km/hr, while the 48V 12.75 Ah Li-Ion removable battery gives you a range of up to 75 km on PAS. Its 20\" x 4.0\" Nylon tyres conquer any terrain, and the front suspension fork ensures a smooth ride. With 5 levels of pedal assist, a bright LCD display, and mechanical disc brakes for ultimate control, the Ranger is built for thrill-seekers and city cruisers alike.",
+      "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/1.jpg",
+      "gallery_images": [
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/1.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/2.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/3.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/4.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/5.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/6.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/7.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/8.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/9.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/1.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/2.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/3.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/4.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/5.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/6.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/7.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/8.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/9.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+1.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+2.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+3.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+4.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+5.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+6.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+7.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+8.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+9.png"
+      ],
+      "card_images": [
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/CitrusBlue.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/SunstormYellow.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/rangerGreen.png"
+      ],
+      "colors": [
+        {
+          "name": "Citrus Blue",
+          "hex": "#29a9ee",
+          "in_stock": true
+        },
+        {
+          "name": "Sunstorm Yellow",
+          "hex": "#fdc445",
+          "in_stock": true
+        },
+        {
+          "name": "Green",
+          "hex": "green",
+          "in_stock": true
+        }
+      ],
+      "in_stock": true,
+      "specs": {
+        "Frame": "High Tensile Steel Frame",
+        "Tyre": "20\" x 4.0\" Nylon Tyres",
+        "Front Fork": "Double Crown 120mm Travel",
+        "Brakes": "Mechanical disc brakes with auto cut off",
+        "Rim": "Double Wall Aluminium Alloy Rims",
+        "Front Wheel": "Aluminium Alloy, 36H Hub",
+        "Drivetrain": "Shimano Tourney TZ500 - 7 Speed",
+        "Seat Height": "870MM",
+        "Handlebar": "Highrise Handelbar",
+        "Motor": "EMotorad 48V 250W Rear Hub Motor",
+        "Battery": "48V 12.75 Ah Li-Ion Removable Battery",
+        "Display": "Cluster C6+ Display",
+        "Pedal Assist": "5 Levels of Pedal Assist",
+        "E-brakes": "Auto Cut-off E-Brakes",
+        "Light": "Front and Rear Light with Integrated horn",
+        "Indicators": "Indicator with Hazard light option",
+        "Charger": "2A",
+        "Charging Time": "5-7 hours | 80% in 4.6 Hours",
+        "Range": "Upto 75 KM on PAS | Upto 60 KM on Throttle",
+        "Max Weight Capacity": "upto 110KG"
+      },
+      "category": "bike",
+      "card_description": "The ultimate companion for your adventures as well as daily commutes!",
+      "popularity": 50
+    },
+    {
       "id": "63feefa538ced178e34e5b07",
       "name": "X1",
       "slug": "x1",
-      "price": 26499,
+      "price": 25999,
       "mrp": 29999,
       "description": "It's not just any electric cycle; it's an X1 that laughs at rough terrain and says, \"Is that all you've got, gravel?\" This electric cycle is so tough; it's like a Transformer that turns from city slicker to off-road adventurer in the blink of an eye.",
       "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x1/product+images/new_colours/7.65Ah/BLUE/B1.jpg",
@@ -775,7 +792,9 @@
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/x1b.jpg",
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/x1+blue++with+mudguard_light.png",
         "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/x1+red++with+mudguard_light.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/x1+grey++with+mudguard_light.png"
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/x1+grey++with+mudguard_light.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/x1+skyblue++with+mudguard_light.png",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/x1+beige++with+mudguard_light.png"
       ],
       "colors": [
         {
@@ -832,6 +851,16 @@
           "name": "Phantom Grey",
           "hex": "#828282",
           "in_stock": true
+        },
+        {
+          "name": "Sky Blue Firestream",
+          "hex": "#A6E9DD",
+          "in_stock": true
+        },
+        {
+          "name": "Beige Desert Hawk",
+          "hex": "#A49A83",
+          "in_stock": true
         }
       ],
       "in_stock": true,
@@ -856,168 +885,10 @@
       "popularity": 50
     },
     {
-      "id": "68653121c1e99424312667c9",
-      "name": "Ranger",
-      "slug": "ranger",
-      "price": 56999,
-      "mrp": 74999,
-      "description": "Ranger is more than just an e-cycle; it’s the ultimate companion for your adventures as well as daily commutes! Powered by a 250w motor, it hits speeds up to 25 km/hr, while the 48V 12.75 Ah Li-Ion removable battery gives you a range of up to 75 km on PAS. Its 20\" x 4.0\" Nylon tyres conquer any terrain, and the front suspension fork ensures a smooth ride. With 5 levels of pedal assist, a bright LCD display, and mechanical disc brakes for ultimate control, the Ranger is built for thrill-seekers and city cruisers alike.",
-      "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/1.jpg",
-      "gallery_images": [
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/1.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/2.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/3.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/4.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/5.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/6.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/7.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/8.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Citrus+Blue/9.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/1.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/2.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/3.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/4.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/5.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/6.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/7.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/8.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Medium/Sunstorm+Yellow/9.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+1.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+2.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+3.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+4.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+5.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+6.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+7.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+8.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/Green/Artboard+9.png"
-      ],
-      "card_images": [
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/CitrusBlue.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/ranger/SunstormYellow.png",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/rangerGreen.png"
-      ],
-      "colors": [
-        {
-          "name": "Citrus Blue",
-          "hex": "#29a9ee",
-          "in_stock": true
-        },
-        {
-          "name": "Sunstorm Yellow",
-          "hex": "#fdc445",
-          "in_stock": true
-        },
-        {
-          "name": "Green",
-          "hex": "green",
-          "in_stock": true
-        }
-      ],
-      "in_stock": true,
-      "specs": {
-        "Frame": "High Tensile Steel Frame",
-        "Tyre": "20\" x 4.0\" Nylon Tyres",
-        "Front Fork": "Double Crown 120mm Travel",
-        "Brakes": "Mechanical disc brakes with auto cut off",
-        "Rim": "Double Wall Aluminium Alloy Rims",
-        "Front Wheel": "Aluminium Alloy, 36H Hub",
-        "Drivetrain": "Shimano Tourney TZ500 - 7 Speed",
-        "Seat Height": "870MM",
-        "Handlebar": "Highrise Handelbar",
-        "Motor": "EMotorad 48V 250W Rear Hub Motor",
-        "Battery": "48V 12.75 Ah Li-Ion Removable Battery",
-        "Display": "Cluster C6+ Display",
-        "Pedal Assist": "5 Levels of Pedal Assist",
-        "E-brakes": "Auto Cut-off E-Brakes",
-        "Light": "Front and Rear Light with Integrated horn",
-        "Indicators": "Indicator with Hazard light option",
-        "Charger": "2A",
-        "Charging Time": "5-7 hours | 80% in 4.6 Hours",
-        "Range": "Upto 75 KM on PAS | Upto 60 KM on Throttle",
-        "Max Weight Capacity": "upto 110KG"
-      },
-      "category": "bike",
-      "card_description": "The ultimate companion for your adventures as well as daily commutes!",
-      "popularity": 50
-    },
-    {
-      "id": "63fefa0938ced178e34e5b0b",
-      "name": "X3",
-      "slug": "x3",
-      "price": 39999,
-      "mrp": 44999,
-      "description": "Introducing the zippy X3. With its unique mojo, puncture-resistant tires, and a snazzy 250W rear motor, this wild electric cycle rules the concrete jungle and off-road terrain.",
-      "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/gold/X3+Gold.jpg",
-      "gallery_images": [
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/gold/X3+Gold.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/gold/Artboard+2.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/gold/Artboard+4.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/gold/Artboard+5.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/gold/Artboard+6.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/gold/Artboard+7.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/silver/X3+Silver+(1).jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/silver/Artboard+2+(1).jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/silver/Artboard+4+(1).jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/silver/Artboard+5+(1).jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/silver/Artboard+6+(1).jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/silver/Artboard+7+(1).jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/black/X3+Black+(1).jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/black/Artboard+2.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/black/Artboard+4.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/black/Artboard+5.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/black/Artboard+6.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/x3/product+images/black/Artboard+7.jpg"
-      ],
-      "card_images": [
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/x3Gold.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/X3+Silver.jpg",
-        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/cardandcartImages/X3+Black.jpg"
-      ],
-      "colors": [
-        {
-          "name": "Champagne Gold",
-          "hex": "#E5DFCB",
-          "in_stock": false
-        },
-        {
-          "name": "Moonlight Silver",
-          "hex": "#DBDBDB",
-          "in_stock": false
-        },
-        {
-          "name": "Glossy black",
-          "hex": "#35353A",
-          "in_stock": false
-        }
-      ],
-      "in_stock": true,
-      "specs": {
-        "Bike Type": "Hardtail MTB E-bike",
-        "Frame": "High Tensile Steel Frame",
-        "Front Fork": "Front Fork Suspension with 60 mm Travel",
-        "Brakes": "Mechanical Disc Brakes with Auto Cut-off",
-        "Gears": "Single Speed",
-        "Tyre": "700X45C 60 TPI Puncture Resistance upto 3mm",
-        "Rim": "Double Wall Aluminium Alloy Rims",
-        "Handlebar": "31.8*1.42*660 mm",
-        "Motor": "EMotorad 36V 250W Rear Hub Motor",
-        "Battery": "36V 7.0Ah Li-Ion Frame Integrated Battery with Panasonic Cells",
-        "Display": "Cluster C3 Colour Display",
-        "Light": "Front Light with Integrated Horn (Optional)",
-        "Charger": "2A",
-        "Range": "Up to 40 KM on PAS | Up to 30 Km on Throttle",
-        "Charging time": "3-4 hours"
-      },
-      "category": "bike",
-      "card_description": "Gravel or smooth, you groove on every road. Elegant and energetic on all rides, day to night.",
-      "popularity": 35
-    },
-    {
       "id": "68c940d1f0d80c177b482eb8",
       "name": "Dope",
       "slug": "dope",
-      "price": 20499,
+      "price": 19999,
       "mrp": 25999,
       "description": "The Dope is more than just a kids’ cycle, it’s their first taste of the electric ride revolution! With a high tensile steel frame, 24” tyres, and a safe yet thrilling 250W motor, it balances excitement with security. A removable 5.2Ah battery, V-brakes with auto cut-off, suspension fork, and integrated display make it the most complete e-bike for kids aged 8–12.",
       "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/dope/Sea+Green/Artboard+1.jpg",
@@ -1069,7 +940,7 @@
         {
           "name": "Sea Green",
           "hex": "#20b2aa",
-          "in_stock": false
+          "in_stock": true
         },
         {
           "name": "Inferno Black",
@@ -1084,7 +955,7 @@
         {
           "name": "Racer Red",
           "hex": "#eb444a",
-          "in_stock": false
+          "in_stock": true
         }
       ],
       "in_stock": true,
@@ -1103,7 +974,7 @@
         "Pedal Assist": "3 Pedal Assist Modes",
         "E-Brakes": "Auto Cut-off E-Brakes",
         "Front Light:": "Integrated Front Light with Horn (Optional)",
-        "Max Speed": "17 km/h",
+        "Max Speed": "15 km/h",
         "Range": "Up to 22 km on PAS | Up to 20 km on Throttle",
         "Charging Time": "2–3 Hours",
         "Charger": "2A",
@@ -1119,8 +990,8 @@
       "id": "68e044d8f0d80c177b485243",
       "name": "T-Rex Smart",
       "slug": "t-rex-smart",
-      "price": 37999,
-      "mrp": 59999,
+      "price": 45999,
+      "mrp": 74999,
       "description": "Meet your all-rounder e-cycle, equipped with a 250W rear hub motor and 36V 12.75Ah removable battery that powers your commute up to 50 km on PAS and 40 km on Throttle. With 3 riding modes and a high-tensile steel frame, the T-Rex Smart Bluetooth is the perfect balance of muscle and smart tech. Connected via the Amiigo NXT App, you get access to safety controls, service alerts, ride stats, and a growing rider community - right from your phone.",
       "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/T-Rex+Smart/without+GPS/Blue/B1.jpg",
       "gallery_images": [
@@ -1166,12 +1037,12 @@
         {
           "name": "White",
           "hex": "#ECECEC",
-          "in_stock": true
+          "in_stock": false
         },
         {
           "name": "Silver",
           "hex": "silver",
-          "in_stock": true
+          "in_stock": false
         }
       ],
       "in_stock": true,
@@ -1202,6 +1073,88 @@
       },
       "category": "bike",
       "card_description": "With 3 riding modes and a high-tensile steel frame, the T-Rex Smart Bluetooth is the perfect balance of muscle and smart tech.",
+      "popularity": 0
+    },
+    {
+      "id": "699d8351932abdcf5bf33fac",
+      "name": "Lil E Junior",
+      "slug": "lile-junior",
+      "price": 19999,
+      "mrp": 24999,
+      "description": "Designed for teens, this lightweight machine is always up for action. Its foldable design adds an extra layer of convenience, making it easy to carry and store wherever you want. With premium features and stylish aesthetics, it’s the ultimate ride for your next adventure.",
+      "main_image": "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Red/1.jpg",
+      "gallery_images": [
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Red/1.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Red/2.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Red/3.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Red/4.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Red/5.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Red/6.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Red/7.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Red/8.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Blue/1.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Blue/2.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Blue/3.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Blue/4.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Blue/5.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Blue/6.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Blue/7.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Blue/8.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/grey/1.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/grey/2.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/grey/3.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/grey/4.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/grey/5.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/grey/6.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/grey/7.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/grey/8.jpg"
+      ],
+      "card_images": [
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Red/1.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/Blue/1.jpg",
+        "https://ar-euro.s3.ap-south-1.amazonaws.com/india-webiste-17-02-24/productpage/LileJr/grey/1.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Red",
+          "hex": "red",
+          "in_stock": true
+        },
+        {
+          "name": "Blue",
+          "hex": "blue",
+          "in_stock": true
+        },
+        {
+          "name": "Grey",
+          "hex": "grey",
+          "in_stock": false
+        }
+      ],
+      "in_stock": true,
+      "specs": {
+        "Bike Type": "Foldable kick Scooter",
+        "Frame": "1 Years",
+        "Tyre": "Rear - 6\" X 1.5\" | Front - 7\" X 1.5\"",
+        "Brakes": "Motor Integrated E-Brakes and Foot Brake",
+        "Climbing Gradient": "11 degree",
+        "Motor": "EMotorad 100W Rear Hub Motor",
+        "Battery": "1 Years",
+        "Display": "Cluster C8ks Display",
+        "Throttle": "Thumb Throttle",
+        "Ebrakes": "Yes",
+        "Rear Light / Tail Light": "Yes",
+        "Charger": "5A",
+        "Charging Time": "3-4 hours",
+        "Range": "Upto 8kms",
+        "Motor shell, Hub motor, Controller": "1 Years",
+        "Electronic handlebar controls and electrical connections, Battery Charger": "6 Months",
+        "Paintwork (excluding accidental or deliberate damage)": "1 Year",
+        "Lights and lighting system": "6 months",
+        "Max Weight Capacity": "upto 50KG"
+      },
+      "category": "bike",
+      "card_description": "Designed for teens, this lightweight machine is always up for action.",
       "popularity": 0
     }
   ]

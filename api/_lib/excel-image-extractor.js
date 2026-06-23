@@ -10,7 +10,9 @@
 
 import JSZip from 'jszip';
 import { parseStringPromise } from 'xml2js';
-import { admin } from './firebase-admin.js';
+import { getSupabase } from './supabase-admin.js';
+
+const STORAGE_BUCKET = 'product-images';
 
 const MAX_IMAGE_SIZE = 5 * 1024 * 1024; // 5MB per image
 const ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'bmp'];
@@ -176,17 +178,18 @@ export async function extractEmbeddedImages(xlsxBuffer) {
 }
 
 /**
- * Upload extracted image buffers to Firebase Storage.
+ * Upload extracted image buffers to Supabase Storage.
  * @param {Array<{buffer: Buffer, ext: string, rowIndex: number}>} images
  * @returns {Promise<{imageMap: Object, uploaded: number, failed: number}>}
  */
 export async function uploadExtractedImages(images) {
-  const bucket = admin.storage().bucket();
+  const supabase = getSupabase();
+  const bucket = supabase.storage.from(STORAGE_BUCKET);
   const imageMap = {};
   let uploaded = 0;
   let failed = 0;
 
-  // Upload in parallel batches of 10 — single API call per image (no separate makePublic)
+  // Upload in parallel batches of 10
   const BATCH_SIZE = 10;
   for (let i = 0; i < images.length; i += BATCH_SIZE) {
     const batch = images.slice(i, i + BATCH_SIZE);
@@ -195,21 +198,14 @@ export async function uploadExtractedImages(images) {
         const timestamp = Date.now();
         const randomStr = Math.random().toString(36).substring(2, 8);
         const filename = `products/${timestamp}-${randomStr}.${img.ext}`;
-        const file = bucket.file(filename);
 
-        // Single call: save + make public via predefinedAcl (no separate makePublic needed)
-        await file.save(img.buffer, {
-          predefinedAcl: 'publicRead',
-          metadata: {
-            contentType: MIME_MAP[img.ext] || 'image/jpeg',
-            metadata: {
-              source: 'excel-embedded',
-              extractedAt: new Date().toISOString(),
-            },
-          },
+        const { error: upErr } = await bucket.upload(filename, img.buffer, {
+          contentType: MIME_MAP[img.ext] || 'image/jpeg',
+          upsert: true,
         });
+        if (upErr) throw upErr;
 
-        const publicUrl = `https://storage.googleapis.com/${bucket.name}/${filename}`;
+        const { data: { publicUrl } } = bucket.getPublicUrl(filename);
 
         // Support multiple images per row — store as array
         if (!imageMap[img.rowIndex]) {

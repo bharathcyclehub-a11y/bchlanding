@@ -1005,7 +1005,7 @@ export default function ProductForm({ product, categories = [], onClose }) {
                         />
                       </div>
                       <p className="text-[10px] text-gray-text mt-1">
-                        Uploading {galleryUploadProgress.done} of {galleryUploadProgress.total} images to Firebase Storage...
+                        Uploading {galleryUploadProgress.done} of {galleryUploadProgress.total} images to Supabase Storage...
                       </p>
                     </div>
                   )}

@@ -1,204 +1,110 @@
 {
-  "fetched_at": "2026-02-11T06:54:44.424888+00:00",
+  "fetched_at": "2026-06-17T09:40:28.566266+00:00",
   "source": "https://aoki.co.in/products.json",
-  "count": 10,
+  "count": 13,
   "products": [
     {
-      "id": 8166174752941,
-      "name": "Cadence GL",
-      "slug": "aoki-cadence-gl",
-      "description": "Frame\nDrivetrain\nRange\nFrame\nUltralight Aluminium Alloy Frame\nTyres\nPremium 35*700C Urban\nBrakes\nMechanical Disk Brakes\nSuspension\n700*40C ALLOY FORK with No Suspension\nRims\nAlloy Double Wall\nGear System\nCarbon Belt Drive System\nDerailleur\nSingle Gear Belt Drive Mechanism\nMotor\nHigh Powered 250W BLDC Motor\nRange\n70 KM on Pedal Assist Mode and 50 KM on Throttle\nBattery\n36V 10.4AH Li Ion(Samsung Cells) Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
+      "id": 8540754542765,
+      "name": "Lynx HT (Lunar Grey)",
+      "slug": "lynx-ht-lunar-grey",
+      "description": "Frame\nDrivetrain\nRange\nFrame\nLightweight, Corrosion Resistant Aluminium 6061 Seamless Frame\nTyres\n27.5 * 2.40 Premium Tyres\nBrakes\nLogan Hydraulic Disc Brakes\nSuspension\nLightweight Alloy Suspension with 100 mm Travel\nRims\nAlloy Double Wall Rims\nGear System\nShimano Cues 9 Speed Gear System\nDerailleur\nShimano Cues\nShifter\nShimano Cues\nMotor\n36V 250W High Torque BLDC Hub Drive Motor\nRange\n70 KM on Pedal Assist Mode and 55 KM on Throttle\nBattery\n36V 12.6AH Li Ion(Samsung Cells) Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
       "product_type": "Compact Power, Endless Possibilities",
       "vendor": "My Store",
       "tags": [
-        "Compact Power",
-        "Endless Possibilities",
+        "Adventure Awaits",
+        "sd_preorder",
         "spo-cs-disabled",
         "spo-default",
         "spo-enabled",
         "spo-notify-me-disabled"
       ],
-      "price": 58999.0,
-      "compare_price": 69999.0,
-      "in_stock": true,
-      "variants": [
-        {
-          "id": 44416020218029,
-          "title": "Default Title",
-          "sku": "",
-          "price": 58999.0,
-          "compare_at_price": 69999.0,
-          "available": true
-        }
-      ],
-      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_II.jpg?v=1770614882",
-      "gallery_images": [
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_II.jpg?v=1770614882",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_III.png?v=1770614882",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/frame_view_ef5448ab-229f-4bd9-8318-c1fd958bdb9a.png?v=1770614882",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/sizenfit.png?v=1770614882",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/front_and_back_lights.png?v=1770614882",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/carbon_belt.png?v=1770614882",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/display_7bb2a04f-66b0-4ab9-bee2-2befb8548bb1.png?v=1770614882",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/batteru.png?v=1770614882",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/brakes_72af7a02-222d-445a-9633-5d339afb087a.png?v=1770614882",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/motoer.png?v=1770614882",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/tyres.png?v=1770614882"
-      ],
-      "created_at": "2025-04-30T16:19:30+05:30",
-      "updated_at": "2026-02-11T12:19:52+05:30",
-      "published_at": "2026-02-09T11:51:58+05:30"
-    },
-    {
-      "id": 8476201222317,
-      "name": "Sherpa Z1 (Ice Blue)",
-      "slug": "sherpa-z1-ice-blue",
-      "description": "Frame\nDrivetrain\nRange\nFrame\nHi Tensile Seamless Steel Frame\nTyres\n27.5 * 2.10 Premium Tyres\nBrakes\nFront & Rear Disc Brakes\nSuspension\nFront & Rear Dual Suspension\nRims\nAlloy Double Wall Rims\nGear System\nShimano 9 Speed Gear System\nDerailleur\nShimano TY300\nShifter\nLLTWOO SL-V4009\nMotor\n36V 250W High Torque BLDC Hub Drive Motor\nRange\n50 KM on Pedal Assist Mode and 40 KM on Throttle\nBattery\n36V 10.0AH Li Ion (Samsung Cells) In Tube Integrated Battery\nTop Speed\n25Km/H",
-      "product_type": "Compact Power, Endless Possibilities",
-      "vendor": "My Store",
-      "tags": [
-        "Compact Power",
-        "Endless Possibilities",
-        "spo-cs-disabled",
-        "spo-default",
-        "spo-enabled",
-        "spo-notify-me-disabled"
-      ],
-      "price": 34999.0,
-      "compare_price": 45999.0,
-      "in_stock": true,
-      "variants": [
-        {
-          "id": 45637022482605,
-          "title": "Default Title",
-          "sku": "5",
-          "price": 34999.0,
-          "compare_at_price": 45999.0,
-          "available": true
-        }
-      ],
-      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/4.png?v=1768992077",
-      "gallery_images": [
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/4.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/2.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/1.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/6_62bb7659-6f5e-4608-a80c-b2a38b253494.jpg?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/2_2f82da00-96c2-41bc-842f-b0917d96042b.jpg?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/4_f165ec60-011f-4dd9-8f1a-9a1018e7f299.jpg?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0942_copy.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/3_35b6ec05-b417-4c35-872d-e9ab18cfbb6f.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0910_copy.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0909_copy.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0926_copy.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0934_copy.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0937_copy.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0922_copy.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0962_copy_Large_165f3344-8320-41e1-ac31-2fe3675a8996.jpg?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0957_copy.png?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0941_copy_Large_1322079a-8fca-4b19-84da-01ead6410336.jpg?v=1768992077"
-      ],
-      "created_at": "2026-01-21T16:07:58+05:30",
-      "updated_at": "2026-02-11T12:19:52+05:30",
-      "published_at": "2026-01-21T16:11:59+05:30"
-    },
-    {
-      "id": 8476200206509,
-      "name": "Sherpa M1 (Alpine Orange)",
-      "slug": "sherpa-m1-copy",
-      "description": "Frame\nDrivetrain\nRange\nFrame\nLightweight, Corrosion Resistant Aluminium 6061 Seamless Frame\nTyres\n27.5 * 2.10 Premium Tyres\nBrakes\nFront & Rear Disc Brakes\nSuspension\nLightweight Alloy Suspension with 100 mm Travel\nRims\nAlloy Double Wall Rims\nGear System\nShimano 9 Speed Gear System\nDerailleur\nShimano TY300\nShifter\nLTWOO SL-V5009\nMotor\n36V 250W High Torque BLDC Hub Drive Motor\nRange\n50 KM on Pedal Assist Mode and 40 KM on Throttle\nBattery\n36V 10.4AH Li Ion(Samsung Cells) Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
-      "product_type": "Compact Power, Endless Possibilities",
-      "vendor": "My Store",
-      "tags": [
-        "Compact Power",
-        "Endless Possibilities",
-        "spo-cs-disabled",
-        "spo-default",
-        "spo-enabled",
-        "spo-notify-me-disabled"
-      ],
-      "price": 44999.0,
-      "compare_price": 56999.0,
-      "in_stock": true,
-      "variants": [
-        {
-          "id": 45637019205805,
-          "title": "Default Title",
-          "sku": "",
-          "price": 44999.0,
-          "compare_at_price": 56999.0,
-          "available": true
-        }
-      ],
-      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1013_copy.png?v=1768991739",
-      "gallery_images": [
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1013_copy.png?v=1768991739",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1010_copy.png?v=1768991739",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1004_copy.png?v=1768991739",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1003_copy.png?v=1768991778",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A0954_copy_Large_61c1abae-f968-4aff-b6f8-1283b2ef9b89.jpg?v=1768991778",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A1015_copy_Large_6689a7a9-790f-47d8-9bf3-7c2d1c98d3bd.jpg?v=1768991778",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0962_copy_2.png?v=1768991778",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1016_copy.png?v=1768991778",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1019_copy.png?v=1768991778",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1024_copy_2.png?v=1768991778",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0949_copy.png?v=1768991778",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1025_copy.png?v=1768991778"
-      ],
-      "created_at": "2026-01-21T16:04:11+05:30",
-      "updated_at": "2026-02-11T12:19:52+05:30",
-      "published_at": "2026-01-21T16:06:26+05:30"
-    },
-    {
-      "id": 8476183691437,
-      "name": "Flex GO (Ember)",
-      "slug": "aoki-flex-go-ember",
-      "description": "Frame\nDrivetrain\nRange\nFrame\nA Foldable, Lightweight Aluminium 6061 Frame\nTyres\n20 * 4.0 Premium Tyres\nBrakes\nFront & Rear Disc Brakes\nSuspension\nLightweight Alloy Suspension with 100 mm Travel\nRims\nAlloy Double Wall Rims\nGear System\nShimano 7 Speed Gear System\nDerailleur\nShimano RD-TY300\nShifter\nShimano TX50-7S\nMotor\n48V 250W High Torque BLDC Hub Drive Motor\nRange\n70 KM on Pedal Assist Mode and 55 KM on Throttle\nBattery\n48V 12.8AH Li Ion Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
-      "product_type": "Compact Power, Endless Possibilities",
-      "vendor": "My Store",
-      "tags": [
-        "Compact Power",
-        "Endless Possibilities",
-        "spo-cs-disabled",
-        "spo-default",
-        "spo-enabled",
-        "spo-notify-me-disabled"
-      ],
-      "price": 59999.0,
+      "price": 62999.0,
       "compare_price": 70999.0,
       "in_stock": true,
       "variants": [
         {
-          "id": 45636954652845,
+          "id": 45872512991405,
           "title": "Default Title",
           "sku": "",
-          "price": 59999.0,
+          "price": 62999.0,
           "compare_at_price": 70999.0,
           "available": true
         }
       ],
-      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1066_copy_2.png?v=1768988098",
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Listing_image_lynx.png?v=1777455594",
       "gallery_images": [
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1066_copy_2.png?v=1768988098",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1049_copy.png?v=1768988098",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1076_copy.png?v=1768988098",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/4_f43d6fcd-276d-4739-9c91-ce7f2e88e633.jpg?v=1768988098",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1163_copy.png?v=1768988098",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1061_copy.png?v=1768988098",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1053_copy.png?v=1768988098",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1070_copy.png?v=1768988098",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1051_copy.png?v=1768988098",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1074_copy.png?v=1768988098",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1041_copy_handle.png?v=1768988098"
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Listing_image_lynx.png?v=1777455594",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib16.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib10.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib17.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib9.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib14.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib15.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aoki13.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib1.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib2.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib7.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib5.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib18.png?v=1774860936",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/aokib11.png?v=1774860936"
       ],
-      "created_at": "2026-01-21T14:20:50+05:30",
-      "updated_at": "2026-02-11T12:19:52+05:30",
-      "published_at": "2026-01-21T15:05:54+05:30"
+      "created_at": "2026-03-30T14:19:29+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
+      "published_at": "2026-03-30T14:25:59+05:30"
     },
     {
-      "id": 8165323866285,
-      "name": "Flex GO",
-      "slug": "aoki-flex-go-best-foldable-electric-cycle",
-      "description": "Frame\nDrivetrain\nRange\nFrame\nA Foldable, Lightweight Aluminium 6061 Frame\nTyres\n20 * 4.0 Premium Tyres\nBrakes\nFront & Rear Disc Brakes\nSuspension\nLightweight Alloy Suspension with 100 mm Travel\nRims\nAlloy Double Wall Rims\nGear System\nShimano 7 Speed Gear System\nDerailleur\nShimano RD-TY300\nShifter\nShimano TX50-7S\nMotor\n48V 250W High Torque BLDC Hub Drive Motor\nRange\n70 KM on Pedal Assist Mode and 55 KM on Throttle\nBattery\n48V 12.8AH Li Ion Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
+      "id": 8018977063085,
+      "name": "Lynx HT (Carbon Black)",
+      "slug": "aoki-lynx-ht",
+      "description": "Frame\nDrivetrain\nRange\nFrame\nLightweight, Corrosion Resistant Aluminium 6061 Seamless Frame\nTyres\n27.5 * 2.40 Premium Tyres\nBrakes\nLogan Hydraulic Disc Brakes\nSuspension\nLightweight Alloy Suspension with 100 mm Travel\nRims\nAlloy Double Wall Rims\nGear System\nShimano Cues 9 Speed Gear System\nDerailleur\nShimano Cues\nShifter\nShimano Cues\nMotor\n36V 250W High Torque BLDC Hub Drive Motor\nRange\n70 KM on Pedal Assist Mode and 55 KM on Throttle\nBattery\n36V 12.6AH Li Ion(Samsung Cells) Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
+      "product_type": "Compact Power, Endless Possibilities",
+      "vendor": "My Store",
+      "tags": [
+        "Adventure Awaits",
+        "sd_preorder",
+        "spo-cs-disabled",
+        "spo-default",
+        "spo-enabled",
+        "spo-notify-me-disabled"
+      ],
+      "price": 62999.0,
+      "compare_price": 70999.0,
+      "in_stock": true,
+      "variants": [
+        {
+          "id": 44058899087533,
+          "title": "Default Title",
+          "sku": "",
+          "price": 62999.0,
+          "compare_at_price": 70999.0,
+          "available": true
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/lynx_ht_black.png?v=1777455601",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/lynx_ht_black.png?v=1777455601",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_10.png?v=1774860644",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_16.png?v=1774860644",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_18.png?v=1774860644",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_15.png?v=1774860644",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_14.png?v=1774860644",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_17.png?v=1774860644",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_13.png?v=1774860644",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_2_27627c38-716e-40ad-8cfc-6a3ae6fe5e59.png?v=1777380972",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_3_be7798be-4b00-44cb-9701-a5c1a6e130b1.png?v=1777380972",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_8_d17b3c83-f350-4ac5-a073-b1fe3c111c44.png?v=1777381001",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/AOKI_6_8228648e-b18d-4944-9de0-ca6663cc16f0.png?v=1777381001",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Lynx_IMG3.png?v=1777380851"
+      ],
+      "created_at": "2025-01-16T17:42:36+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
+      "published_at": "2026-03-30T14:19:59+05:30"
+    },
+    {
+      "id": 8317029744813,
+      "name": "Street Ghost",
+      "slug": "street-ghost",
+      "description": "Frame\nDrivetrain\nRange\nFrame\nLightweight, Corrosion Resistant Aluminium 6061 Frame\nTyres\n20 * 4.0 Premium Tyres\nBrakes\nHydraulic Disc Brakes\nSuspension\nFront & Hydraulic Dual Rear Suspension\nRims\nAlloy Double Wall Rims\nGear System\nShimano 7 Speed Gear System\nDerailleur\nShimano TZ500\nShifter\nShimano TX50-7R\nMotor\n48V 250W High Torque BLDC Hub Drive Motor\nRange\n105 KM on Pedal Assist Mode and 80 KM on Throttle\nBattery\n48V 15.6AH Highly Efficient Li Ion Portable Battery\nTop Speed\n25Km/H",
       "product_type": "Compact Power, Endless Possibilities",
       "vendor": "My Store",
       "tags": [
@@ -209,80 +115,44 @@
         "spo-enabled",
         "spo-notify-me-disabled"
       ],
-      "price": 59999.0,
-      "compare_price": 70999.0,
+      "price": 65999.0,
+      "compare_price": 73999.0,
       "in_stock": true,
       "variants": [
         {
-          "id": 44414295507117,
+          "id": 44912661987501,
           "title": "Default Title",
           "sku": "",
-          "price": 59999.0,
-          "compare_at_price": 70999.0,
+          "price": 65999.0,
+          "compare_at_price": 73999.0,
           "available": true
         }
       ],
-      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Main_Frame.jpg?v=1765000278",
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_db0b1057-c935-4ad0-9dcf-e5fa2fb4148b.png?v=1772025654",
       "gallery_images": [
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Main_Frame.jpg?v=1765000278",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1081_copy_Large_679f76d2-5ff6-4855-957b-77eb31dcecb3.jpg?v=1765010734",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1087_copy_Large_2298c6c8-8450-44d1-96be-c829435ec9e1.jpg?v=1765010733",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1094_copy_Large_3cc4192e-4d1d-41de-b65f-42fc510fb302.jpg?v=1765010733",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1108_copy_Large_fdc6c41f-d2f1-4f13-b509-f0acf568cb79.jpg?v=1765010733",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1134_copy_Large_5025a785-4c00-4f9a-81c8-9915f57d602e.jpg?v=1765010733",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1139_copy_Large_a9c020b0-74e7-4b74-8462-3cb6263b9fc9.jpg?v=1765010734",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1146_copy_Large_e88d4cc1-bdfd-4030-8c63-82c83fe5720d.jpg?v=1765010733",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1119_copy_Large_8ac6e2a6-8060-46ac-b924-0a8e21c3a778.jpg?v=1765010734"
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_db0b1057-c935-4ad0-9dcf-e5fa2fb4148b.png?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/dual_rear_suspension.png?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Front_rear_indicators.png?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/frame_view_60b219c7-bc4b-4829-85b4-2f9979e72736.png?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Hydraulic_Brakes.png?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/sizenfit_bde9ebb6-4d56-4d04-b153-1b7ad73fb2ce.png?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/gear_6f98f227-1fbd-4c9c-8f30-23614afdaf59.png?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Display_e1a7a2f6-2f07-4252-8287-a16105a2a931.png?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/battery_12dd1c88-cb85-48ab-aee2-0d6477dc1be9.png?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Motor_29aaf63d-5774-4318-a1fb-548c1b82272c.png?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/1_72656d44-b503-4ba1-8b63-b90d4c3f850c.jpg?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/3_93498aff-e09c-4687-a766-e670ffde038f.jpg?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/5_f3aacada-2560-4caf-b046-4b06175ba38f.jpg?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/6_75d2a6bb-65e6-4dab-917f-7546039412c6.jpg?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/7_ff7c6863-2211-4efb-b533-207f5c8a1ea7.jpg?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/8_d94fa527-413e-4c01-b184-c2303140284d.jpg?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/9_d35a7ebd-fa42-4156-a187-7733f1245e53.jpg?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/10_ccf0ec8f-b269-4304-92fd-c2026a5321c1.jpg?v=1772025654",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/11_f7e4b197-58f4-40f5-b3e9-3938e162c4d0.jpg?v=1772025654"
       ],
-      "created_at": "2025-04-29T13:35:09+05:30",
-      "updated_at": "2026-02-11T12:19:52+05:30",
-      "published_at": "2026-01-21T13:32:53+05:30"
-    },
-    {
-      "id": 8475771338925,
-      "name": "Street Mamba (Midnight Blue)",
-      "slug": "street-mamba-copy",
-      "description": "Frame\nDrivetrain\nRange\nFrame\nLightweight, Corrosion Resistant Aluminium 6061 Frame\nTyres\n20 * 4.0 Premium Tyres\nBrakes\nHydraulic Disc Brakes\nSuspension\nFront & Rear Dual Suspension\nRims\nAlloy Double Wall Rims\nGear System\nShimano 7 Speed Gear System\nDerailleur\nShimano TZ500\nShifter\nShimano TX50-7R\nMotor\n48V 250W High Torque BLDC Hub Drive Motor\nRange\n105 KM on Pedal Assist Mode and 80 KM on Throttle\nBattery\n48V 15.6AH Highly Efficient Li Ion Portable Battery\nTop Speed\n25Km/H",
-      "product_type": "Compact Power, Endless Possibilities",
-      "vendor": "My Store",
-      "tags": [
-        "Compact Power",
-        "Endless Possibilities",
-        "spo-cs-disabled",
-        "spo-default",
-        "spo-enabled",
-        "spo-notify-me-disabled"
-      ],
-      "price": 59999.0,
-      "compare_price": 70999.0,
-      "in_stock": true,
-      "variants": [
-        {
-          "id": 45634357985453,
-          "title": "Default Title",
-          "sku": "",
-          "price": 59999.0,
-          "compare_at_price": 70999.0,
-          "available": true
-        }
-      ],
-      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_4e7c58d2-d59a-45e9-b78f-cf1bd2a9c1e7.png?v=1768899439",
-      "gallery_images": [
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_4e7c58d2-d59a-45e9-b78f-cf1bd2a9c1e7.png?v=1768899439",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Frame_View_391b76d4-e208-4f66-ba6f-aa7f0e9ec445.png?v=1768899439",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/battery_108ebfa2-5ab4-4049-ae82-3e272c785f7c.png?v=1768899439",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Display_0ee2cdd8-3846-4e7d-b2f5-54e904ad3dc6.png?v=1768899439",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Indicators.png?v=1768899439",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Gear_cd324cf1-3961-4f7c-9aa0-81990d85a0d7.png?v=1768899439",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/disc_brakes.png?v=1768899439",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Motor_cadfe45d-3196-42ea-87e9-a3e93c54662b.png?v=1768899439",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/size_fit_54c6f079-348e-4bd8-846f-1639c9138514.png?v=1768899439",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/tyre_5d7f3837-de1c-4684-9926-894814196cdc.png?v=1768899439",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Read_Indicators.png?v=1768899439"
-      ],
-      "created_at": "2026-01-20T14:16:56+05:30",
-      "updated_at": "2026-02-11T12:19:52+05:30",
-      "published_at": "2026-01-20T14:27:26+05:30"
+      "created_at": "2025-09-15T13:19:08+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
+      "published_at": "2026-02-27T11:56:18+05:30"
     },
     {
       "id": 8470138388653,
@@ -299,16 +169,16 @@
         "spo-enabled",
         "spo-notify-me-disabled"
       ],
-      "price": 59999.0,
-      "compare_price": 70999.0,
+      "price": 68999.0,
+      "compare_price": 74999.0,
       "in_stock": true,
       "variants": [
         {
           "id": 45593600819373,
           "title": "Default Title",
           "sku": "",
-          "price": 59999.0,
-          "compare_at_price": 70999.0,
+          "price": 68999.0,
+          "compare_at_price": 74999.0,
           "available": true
         }
       ],
@@ -328,12 +198,292 @@
         "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Led_indicators.png?v=1768372506"
       ],
       "created_at": "2026-01-14T11:59:16+05:30",
-      "updated_at": "2026-02-11T12:19:52+05:30",
-      "published_at": "2026-01-14T12:05:15+05:30"
+      "updated_at": "2026-06-17T15:10:29+05:30",
+      "published_at": "2026-02-24T15:58:33+05:30"
+    },
+    {
+      "id": 8476201222317,
+      "name": "Sherpa Z1 (Ice Blue)",
+      "slug": "sherpa-z1-ice-blue",
+      "description": "Frame\nDrivetrain\nRange\nFrame\nHi Tensile Seamless Steel Frame\nTyres\n27.5 * 2.10 Premium Tyres\nBrakes\nFront & Rear Disc Brakes\nSuspension\nFront & Rear Dual Suspension\nRims\nAlloy Double Wall Rims\nGear System\nShimano 9 Speed Gear System\nDerailleur\nShimano TY300\nShifter\nLLTWOO SL-V4009\nMotor\n36V 250W High Torque BLDC Hub Drive Motor\nRange\n50 KM on Pedal Assist Mode and 40 KM on Throttle\nBattery\n36V 10.0AH Li Ion (Samsung Cells) In Tube Integrated Battery\nTop Speed\n25Km/H",
+      "product_type": "Compact Power, Endless Possibilities",
+      "vendor": "My Store",
+      "tags": [
+        "Compact Power",
+        "Endless Possibilities",
+        "spo-cs-disabled",
+        "spo-default",
+        "spo-enabled",
+        "spo-notify-me-disabled"
+      ],
+      "price": 36999.0,
+      "compare_price": 45999.0,
+      "in_stock": true,
+      "variants": [
+        {
+          "id": 45637022482605,
+          "title": "Default Title",
+          "sku": "",
+          "price": 36999.0,
+          "compare_at_price": 45999.0,
+          "available": true
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/BannerII.png?v=1774862523",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/BannerII.png?v=1774862523",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Display_495b3942-b461-480e-9328-503dd2a4af2d.png?v=1774862523",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_05c3c61d-41c4-4598-80f1-c45b22077e3e.png?v=1774862523",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Battery_85bad261-ee18-4b02-bb64-878fd02d7b3b.png?v=1774862523",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/sizenfit_ded4261e-4a0d-4cf0-b6de-71aa08546585.png?v=1774862523",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Sus_ension.png?v=1774862523",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/disc_brakes_1baea736-9e68-44eb-acb5-d37b1121f39d.png?v=1774862523",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Shimano.png?v=1774862523",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/motor_3870cce2-8ff3-41cf-8616-f62fb5c04be7.png?v=1774862523",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/tyrew.png?v=1774862523",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_III_9fc076e0-ac40-445b-9c4e-ee266b71bad9.png?v=1774862523"
+      ],
+      "created_at": "2026-01-21T16:07:58+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
+      "published_at": "2026-02-24T15:57:57+05:30"
+    },
+    {
+      "id": 8166174752941,
+      "name": "Cadence GL (Arctic White)",
+      "slug": "aoki-cadence-gl",
+      "description": "Frame\nDrivetrain\nRange\nFrame\nUltralight Aluminium Alloy Frame\nTyres\nPremium 35*700C Urban\nBrakes\nMechanical Disk Brakes\nSuspension\n700*40C ALLOY FORK with No Suspension\nRims\nAlloy Double Wall\nGear System\nCarbon Belt Drive System\nDerailleur\nSingle Gear Belt Drive Mechanism\nMotor\nHigh Powered 250W BLDC Motor\nRange\n70 KM on Pedal Assist Mode and 50 KM on Throttle\nBattery\n36V 10.4AH Li Ion(Samsung Cells) Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
+      "product_type": "Compact Power, Endless Possibilities",
+      "vendor": "My Store",
+      "tags": [
+        "Compact Power",
+        "Endless Possibilities",
+        "spo-cs-disabled",
+        "spo-default",
+        "spo-enabled",
+        "spo-notify-me-disabled"
+      ],
+      "price": 61999.0,
+      "compare_price": 69999.0,
+      "in_stock": true,
+      "variants": [
+        {
+          "id": 44416020218029,
+          "title": "Default Title",
+          "sku": "",
+          "price": 61999.0,
+          "compare_at_price": 69999.0,
+          "available": true
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_II.jpg?v=1770614882",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_II.jpg?v=1770614882",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_III.png?v=1770614882",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/frame_view_ef5448ab-229f-4bd9-8318-c1fd958bdb9a.png?v=1770614882",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/sizenfit.png?v=1770614882",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/front_and_back_lights.png?v=1770614882",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/carbon_belt.png?v=1770614882",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/display_7bb2a04f-66b0-4ab9-bee2-2befb8548bb1.png?v=1770614882",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/batteru.png?v=1770614882",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/brakes_72af7a02-222d-445a-9633-5d339afb087a.png?v=1770614882",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/motoer.png?v=1770614882",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/tyres.png?v=1770614882"
+      ],
+      "created_at": "2025-04-30T16:19:30+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
+      "published_at": "2026-02-09T11:51:58+05:30"
+    },
+    {
+      "id": 8476200206509,
+      "name": "Sherpa M1 (Alpine Orange)",
+      "slug": "sherpa-m1-orange",
+      "description": "Frame\nDrivetrain\nRange\nFrame\nLightweight, Corrosion Resistant Aluminium 6061 Seamless Frame\nTyres\n27.5 * 2.10 Premium Tyres\nBrakes\nFront & Rear Disc Brakes\nSuspension\nLightweight Alloy Suspension with 100 mm Travel\nRims\nAlloy Double Wall Rims\nGear System\nShimano 9 Speed Gear System\nDerailleur\nShimano TY300\nShifter\nLTWOO SL-V5009\nMotor\n36V 250W High Torque BLDC Hub Drive Motor\nRange\n50 KM on Pedal Assist Mode and 40 KM on Throttle\nBattery\n36V 10.4AH Li Ion(Samsung Cells) Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
+      "product_type": "Compact Power, Endless Possibilities",
+      "vendor": "My Store",
+      "tags": [
+        "Compact Power",
+        "Endless Possibilities",
+        "spo-cs-disabled",
+        "spo-default",
+        "spo-enabled",
+        "spo-notify-me-disabled"
+      ],
+      "price": 56999.0,
+      "compare_price": 56999.0,
+      "in_stock": false,
+      "variants": [
+        {
+          "id": 45637019205805,
+          "title": "Default Title",
+          "sku": "",
+          "price": 56999.0,
+          "compare_at_price": 56999.0,
+          "available": false
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/design_view.png?v=1774862309",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/design_view.png?v=1774862309",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/battery_fef33cdc-1967-4860-acea-91ac732051d4.png?v=1774862309",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/display_75d34941-bced-4018-a424-5bae239a6e66.png?v=1774862309",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/gear_315c75f9-60b8-48bc-a846-2bb9ba95d627.png?v=1774862309",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/frame_view_1d892666-c295-43d3-b6ad-060630c82edc.png?v=1774862309",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/sizenfit_efae1305-1fc9-47ae-ac3a-ebba301f0ac1.png?v=1774862309",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/disc_brakes_5413643e-a1a4-4b7c-9891-acd947e2ab2d.png?v=1774862309",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/motor_8e8514f3-489c-45c7-b18c-cb470dcc2637.png?v=1774862309",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/tyers.png?v=1774862309",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/banner_1_7ae7cce9-14a7-4256-b1d4-9bbf87baf119.png?v=1774862309"
+      ],
+      "created_at": "2026-01-21T16:04:11+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
+      "published_at": "2026-01-21T16:06:26+05:30"
+    },
+    {
+      "id": 8476183691437,
+      "name": "Flex GO (Ember)",
+      "slug": "aoki-flex-go-ember",
+      "description": "Frame\nDrivetrain\nRange\nFrame\nA Foldable, Lightweight Aluminium 6061 Frame\nTyres\n20 * 4.0 Premium Tyres\nBrakes\nFront & Rear Disc Brakes\nSuspension\nLightweight Alloy Suspension with 100 mm Travel\nRims\nAlloy Double Wall Rims\nGear System\nShimano 7 Speed Gear System\nDerailleur\nShimano RD-TY300\nShifter\nShimano TX50-7S\nMotor\n48V 250W High Torque BLDC Hub Drive Motor\nRange\n70 KM on Pedal Assist Mode and 55 KM on Throttle\nBattery\n48V 12.8AH Li Ion Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
+      "product_type": "Compact Power, Endless Possibilities",
+      "vendor": "My Store",
+      "tags": [
+        "Compact Power",
+        "Endless Possibilities",
+        "spo-cs-disabled",
+        "spo-default",
+        "spo-enabled",
+        "spo-notify-me-disabled"
+      ],
+      "price": 62999.0,
+      "compare_price": 70999.0,
+      "in_stock": true,
+      "variants": [
+        {
+          "id": 45636954652845,
+          "title": "Default Title",
+          "sku": "",
+          "price": 62999.0,
+          "compare_at_price": 70999.0,
+          "available": true
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_I_bb797bdf-ac9b-4f15-8c59-9a1598360e9b.png?v=1774862682",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_I_bb797bdf-ac9b-4f15-8c59-9a1598360e9b.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_3af7123e-76b5-4c3a-aff5-8afd2f7d63f4.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Battery_31baf0cb-fb54-494d-be01-565d3baed8fe.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Led_Indicatoes.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Sizenfit_a0c68e9f-70f7-45d3-8c3e-dbca5cf4aaf7.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Display_cdb7fe51-5368-45ec-8610-d07be0d38f0c.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/gear_26e02a0a-f587-4309-a055-daf67f64e005.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Disc_Brakes_a29d3652-3c6f-4567-9a76-a5ed30e96dfd.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Frame_View_f8a5e3c7-6a40-4440-b57c-690f78c76b01.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/motor_b2f516fe-bd62-46a0-9a82-132e68ce0882.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1163_copy.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/tyres_ea153abf-0000-4f3d-84da-f2d2b91fe6d1.png?v=1774862682",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_III_7e4bde4b-01f6-4c1b-b7e8-f0fa2e814782.png?v=1774862682"
+      ],
+      "created_at": "2026-01-21T14:20:50+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
+      "published_at": "2026-01-21T15:05:54+05:30"
+    },
+    {
+      "id": 8165323866285,
+      "name": "Flex GO (BLACK)",
+      "slug": "aoki-flex-go-best-foldable-electric-cycle",
+      "description": "Frame\nDrivetrain\nRange\nFrame\nA Foldable, Lightweight Aluminium 6061 Frame\nTyres\n20 * 4.0 Premium Tyres\nBrakes\nFront & Rear Disc Brakes\nSuspension\nLightweight Alloy Suspension with 100 mm Travel\nRims\nAlloy Double Wall Rims\nGear System\nShimano 7 Speed Gear System\nDerailleur\nShimano RD-TY300\nShifter\nShimano TX50-7S\nMotor\n48V 250W High Torque BLDC Hub Drive Motor\nRange\n70 KM on Pedal Assist Mode and 55 KM on Throttle\nBattery\n48V 12.8AH Li Ion Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
+      "product_type": "Compact Power, Endless Possibilities",
+      "vendor": "My Store",
+      "tags": [
+        "Compact Power",
+        "Endless Possibilities",
+        "spo-cs-disabled",
+        "spo-default",
+        "spo-enabled",
+        "spo-notify-me-disabled"
+      ],
+      "price": 62999.0,
+      "compare_price": 70999.0,
+      "in_stock": true,
+      "variants": [
+        {
+          "id": 44414295507117,
+          "title": "Default Title",
+          "sku": "",
+          "price": 62999.0,
+          "compare_at_price": 70999.0,
+          "available": true
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Main_Frame.jpg?v=1775736698",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Main_Frame.jpg?v=1775736698",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_27eaa6f8-da5e-4558-92a0-ad13076cbf68.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/display_c81afc62-9032-4ac7-a064-3529d329fc75.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Battery_II.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Led_Indicators_1.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/sizenfit_e30ae233-393e-4d25-9773-e9291bd63c12.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Frame_View_6e4c4761-4fe4-4341-8105-b20be14d812e.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Gear_e715eaa4-403d-49ed-a63f-fd64c42a8de8.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/motor_c918eee1-34df-4fea-afda-8e2765313a03.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Disc_Brakes_709b9220-4560-4f3e-9489-76c8745bf452.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_III_1c1e65f0-b095-451d-83bf-5e9631da52b2.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/tyre_4fd968e1-2c40-44cc-912f-8e3b65a935d6.png?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_1139_copy_Large_a9c020b0-74e7-4b74-8462-3cb6263b9fc9.jpg?v=1775736691",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_Option.png?v=1775736691"
+      ],
+      "created_at": "2025-04-29T13:35:09+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
+      "published_at": "2026-01-21T13:32:53+05:30"
+    },
+    {
+      "id": 8475771338925,
+      "name": "Street Mamba (Midnight Blue)",
+      "slug": "street-mamba-blue",
+      "description": "Frame\nDrivetrain\nRange\nFrame\nLightweight, Corrosion Resistant Aluminium 6061 Frame\nTyres\n20 * 4.0 Premium Tyres\nBrakes\nHydraulic Disc Brakes\nSuspension\nFront & Rear Dual Suspension\nRims\nAlloy Double Wall Rims\nGear System\nShimano 7 Speed Gear System\nDerailleur\nShimano TZ500\nShifter\nShimano TX50-7R\nMotor\n48V 250W High Torque BLDC Hub Drive Motor\nRange\n105 KM on Pedal Assist Mode and 80 KM on Throttle\nBattery\n48V 15.6AH Highly Efficient Li Ion Portable Battery\nTop Speed\n25Km/H",
+      "product_type": "Compact Power, Endless Possibilities",
+      "vendor": "My Store",
+      "tags": [
+        "Compact Power",
+        "Endless Possibilities",
+        "spo-cs-disabled",
+        "spo-default",
+        "spo-enabled",
+        "spo-notify-me-disabled"
+      ],
+      "price": 68999.0,
+      "compare_price": 74999.0,
+      "in_stock": false,
+      "variants": [
+        {
+          "id": 45634357985453,
+          "title": "Default Title",
+          "sku": "",
+          "price": 68999.0,
+          "compare_at_price": 74999.0,
+          "available": false
+        }
+      ],
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_4e7c58d2-d59a-45e9-b78f-cf1bd2a9c1e7.png?v=1768899439",
+      "gallery_images": [
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_4e7c58d2-d59a-45e9-b78f-cf1bd2a9c1e7.png?v=1768899439",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Frame_View_391b76d4-e208-4f66-ba6f-aa7f0e9ec445.png?v=1768899439",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/battery_108ebfa2-5ab4-4049-ae82-3e272c785f7c.png?v=1768899439",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Display_0ee2cdd8-3846-4e7d-b2f5-54e904ad3dc6.png?v=1768899439",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Indicators.png?v=1768899439",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Gear_cd324cf1-3961-4f7c-9aa0-81990d85a0d7.png?v=1768899439",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/disc_brakes.png?v=1768899439",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Motor_cadfe45d-3196-42ea-87e9-a3e93c54662b.png?v=1768899439",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/size_fit_54c6f079-348e-4bd8-846f-1639c9138514.png?v=1768899439",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/tyre_5d7f3837-de1c-4684-9926-894814196cdc.png?v=1768899439",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Read_Indicators.png?v=1768899439"
+      ],
+      "created_at": "2026-01-20T14:16:56+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
+      "published_at": "2026-01-20T14:27:26+05:30"
     },
     {
       "id": 8317022929069,
-      "name": "Sherpa Z1",
+      "name": "Sherpa Z1 (Grey)",
       "slug": "sherpa-z1",
       "description": "Frame\nDrivetrain\nRange\nFrame\nHi Tensile Seamless Steel Frame\nTyres\n27.5 * 2.10 Premium Tyres\nBrakes\nFront & Rear Disc Brakes\nSuspension\nFront & Rear Dual Suspension\nRims\nAlloy Double Wall Rims\nGear System\nShimano 9 Speed Gear System\nDerailleur\nShimano TY300\nShifter\nLLTWOO SL-V4009\nMotor\n36V 250W High Torque BLDC Hub Drive Motor\nRange\n50 KM on Pedal Assist Mode and 40 KM on Throttle\nBattery\n36V 10.0AH Li Ion (Samsung Cells) In Tube Integrated Battery\nTop Speed\n25Km/H",
       "product_type": "Compact Power, Endless Possibilities",
@@ -346,37 +496,39 @@
         "spo-enabled",
         "spo-notify-me-disabled"
       ],
-      "price": 34999.0,
+      "price": 45999.0,
       "compare_price": 45999.0,
-      "in_stock": true,
+      "in_stock": false,
       "variants": [
         {
           "id": 44912608903341,
           "title": "Default Title",
-          "sku": "5",
-          "price": 34999.0,
+          "sku": "",
+          "price": 45999.0,
           "compare_at_price": 45999.0,
-          "available": true
+          "available": false
         }
       ],
-      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/MainFrame_df897a33-da0f-4c31-9b09-8fb0c7ecc7d0.jpg?v=1764944995",
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_ba776349-62fa-4715-82d2-a3f0bf7fc0b3.png?v=1774862937",
       "gallery_images": [
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/MainFrame_df897a33-da0f-4c31-9b09-8fb0c7ecc7d0.jpg?v=1764944995",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0941_copy_Large_1322079a-8fca-4b19-84da-01ead6410336.jpg?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0962_copy_Large_165f3344-8320-41e1-ac31-2fe3675a8996.jpg?v=1768992077",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0978_copy_Large_d6042a48-5ffa-44a0-93c7-736bd8f09b87.jpg?v=1765011450",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0979_copy_Large_e99955c2-ab2d-461b-a192-63e466207bdc.jpg?v=1765011450",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0981_copy_Large_f4ebede4-5e19-41ec-9f45-ec2574ecbc57.jpg?v=1765011449",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0995_copy_Large_770f6300-4f80-4bbe-b66b-75d471c93e61.jpg?v=1765011450",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/IMG_0998_copy_Large_1c4dacd3-6012-484b-8915-759dc277d11e.jpg?v=1765011450"
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_ba776349-62fa-4715-82d2-a3f0bf7fc0b3.png?v=1774862937",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Frame_View_dd56d92d-20b6-48f1-9aab-c1b6a80db1fa.png?v=1774862937",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/NFC_Card.png?v=1774862937",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/battery_cfb44527-8d2e-45f8-8b28-97f5b44b99e1.png?v=1774862937",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/sizenfit_2e139e2c-f3a2-4b68-aa55-52ecd21bde6e.png?v=1774862937",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Disc_brakes_f0b7efa6-54ba-4d50-becf-f956409942e6.png?v=1774862937",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Motor_e7bb7981-cc7a-4c0d-8b6c-64b4377ed33b.png?v=1774862937",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Shimano_GeAR.png?v=1774862937",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Banner_New.png?v=1774862937",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Tyres_9c15426d-d575-4f33-8e1a-010786c8b73d.png?v=1774862937"
       ],
       "created_at": "2025-09-15T13:03:57+05:30",
-      "updated_at": "2026-02-11T12:19:52+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
       "published_at": "2025-12-05T17:48:17+05:30"
     },
     {
       "id": 8317029351597,
-      "name": "Sherpa M1",
+      "name": "Sherpa M1 (Black)",
       "slug": "sherpa-m1",
       "description": "Frame\nDrivetrain\nRange\nFrame\nLightweight, Corrosion Resistant Aluminium 6061 Seamless Frame\nTyres\n27.5 * 2.10 Premium Tyres\nBrakes\nFront & Rear Disc Brakes\nSuspension\nLightweight Alloy Suspension with 100 mm Travel\nRims\nAlloy Double Wall Rims\nGear System\nShimano 9 Speed Gear System\nDerailleur\nShimano TY300\nShifter\nLTWOO SL-V5009\nMotor\n36V 250W High Torque BLDC Hub Drive Motor\nRange\n50 KM on Pedal Assist Mode and 40 KM on Throttle\nBattery\n36V 10.4AH Li Ion(Samsung Cells) Removable, Lock Secured In Tube Battery\nTop Speed\n25Km/H",
       "product_type": "Compact Power, Endless Possibilities",
@@ -389,7 +541,7 @@
         "spo-enabled",
         "spo-notify-me-disabled"
       ],
-      "price": 44999.0,
+      "price": 47999.0,
       "compare_price": 56999.0,
       "in_stock": true,
       "variants": [
@@ -397,25 +549,26 @@
           "id": 44912659136685,
           "title": "Default Title",
           "sku": "",
-          "price": 44999.0,
+          "price": 47999.0,
           "compare_at_price": 56999.0,
           "available": true
         }
       ],
-      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/MainFrame.jpg?v=1764944869",
+      "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/design_view_659759ae-5e7e-4798-9b85-125c0f92ef8f.png?v=1774862780",
       "gallery_images": [
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/MainFrame.jpg?v=1764944869",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A0935_copy_Large_ea738f95-db4b-4cd2-8afa-bedf9d8e9579.jpg?v=1765011167",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A0954_copy_Large_61c1abae-f968-4aff-b6f8-1283b2ef9b89.jpg?v=1768991778",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A0984_1_Large_5dc622d2-3269-47a3-bbcb-8ca1eced3afc.jpg?v=1765011167",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A1015_copy_Large_6689a7a9-790f-47d8-9bf3-7c2d1c98d3bd.jpg?v=1768991778",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A1020_copy_Large_dcbab38a-6ad3-4c30-b043-6e3dcd5cc922.jpg?v=1765011167",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A0991_copy_Large_4624c2aa-0740-4d3a-aaaf-e7d75fefe387.jpg?v=1765011167",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A0998_copy_Large_25cb1060-1d4f-46b5-a9aa-419af9604b9f.jpg?v=1765011167",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A3020_copy_Large_714881fc-2598-4daa-b2e7-b5a07ff2a1b3.jpg?v=1765011167"
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/design_view_659759ae-5e7e-4798-9b85-125c0f92ef8f.png?v=1774862780",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/frame_view_6a830f36-fc9b-4f32-a40a-2956959f4fcd.png?v=1774862780",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/display_nfc.png?v=1774862780",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/battery_e3a46a11-ab80-455c-9619-977ad4c254c3.png?v=1774862780",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/sizefit.png?v=1774862780",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/disc_brakes_2b9a8c22-3f2e-4422-a06d-590bc349eb43.png?v=1774862780",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/shimano_7ddc3433-a502-448a-b138-5cd7cd2f5109.png?v=1774862780",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/Motor_aaccc3f6-56ee-4d8d-b43b-d0bc83c8b9f5.png?v=1774862780",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/tyres_f81cfd86-7795-40ec-905d-27556e29a8f0.png?v=1774862780",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/banner_1_893b0854-ca55-40ba-8d7a-2047e9e4d772.png?v=1774862780"
       ],
       "created_at": "2025-09-15T13:17:52+05:30",
-      "updated_at": "2026-02-11T12:19:52+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
       "published_at": "2025-12-05T17:48:10+05:30"
     },
     {
@@ -433,37 +586,34 @@
         "spo-enabled",
         "spo-notify-me-disabled"
       ],
-      "price": 59999.0,
-      "compare_price": 70999.0,
-      "in_stock": true,
+      "price": 68999.0,
+      "compare_price": 74999.0,
+      "in_stock": false,
       "variants": [
         {
           "id": 45595121254573,
-          "title": "Grey",
+          "title": "Default Title",
           "sku": "",
-          "price": 59999.0,
-          "compare_at_price": 70999.0,
-          "available": true,
-          "options": [
-            "Grey"
-          ]
+          "price": 68999.0,
+          "compare_at_price": 74999.0,
+          "available": false
         }
       ],
       "main_image": "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/MainFrame_1cdb0e75-48d0-4b21-8035-e5acc81312e9.jpg?v=1764945377",
       "gallery_images": [
         "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/MainFrame_1cdb0e75-48d0-4b21-8035-e5acc81312e9.jpg?v=1764945377",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9490_Large_4005d8e0-4bac-4184-b72f-c4d69c0026a3.jpg?v=1765011828",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9547_Large_a67fb46d-c7e9-446c-b4ac-39ef0716db02.jpg?v=1765011828",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9558_Large_a9312d77-5b53-417c-87c5-0bbd2d88e15f.jpg?v=1765011828",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9581_Large_a4a7bf4e-4845-4a7b-9547-19cd2bf96aa3.jpg?v=1765011829",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9585_Large_5ad9b77a-9b31-4a6a-a723-ee35701b15f8.jpg?v=1765011828",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9594_Large_fa7af4ce-54e9-46fe-ad12-48d255e243a1.jpg?v=1765011828",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9604_Large_50cbd61b-c8f7-479b-bbd9-57b093cac416.jpg?v=1765011828",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9622_Large_393069d5-e7c1-4db5-ac7e-23758343fbe4.jpg?v=1765011828",
-        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9644_Large_92b24f77-f981-45ac-9516-ddb2e2d16a66.jpg?v=1765011830"
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9490_Large_4005d8e0-4bac-4184-b72f-c4d69c0026a3.jpg?v=1775736641",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9547_Large_a67fb46d-c7e9-446c-b4ac-39ef0716db02.jpg?v=1775736641",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9558_Large_a9312d77-5b53-417c-87c5-0bbd2d88e15f.jpg?v=1775736641",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9581_Large_a4a7bf4e-4845-4a7b-9547-19cd2bf96aa3.jpg?v=1775736641",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9585_Large_5ad9b77a-9b31-4a6a-a723-ee35701b15f8.jpg?v=1775736641",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9594_Large_fa7af4ce-54e9-46fe-ad12-48d255e243a1.jpg?v=1775736641",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9604_Large_50cbd61b-c8f7-479b-bbd9-57b093cac416.jpg?v=1775736641",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9622_Large_393069d5-e7c1-4db5-ac7e-23758343fbe4.jpg?v=1775736641",
+        "https://cdn.shopify.com/s/files/1/0678/0983/7229/files/060A9644_Large_92b24f77-f981-45ac-9516-ddb2e2d16a66.jpg?v=1775736641"
       ],
       "created_at": "2025-09-15T13:18:29+05:30",
-      "updated_at": "2026-02-11T12:19:52+05:30",
+      "updated_at": "2026-06-17T15:10:29+05:30",
       "published_at": "2025-12-05T17:46:22+05:30"
     }
   ]

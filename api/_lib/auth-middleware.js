@@ -2,7 +2,7 @@
  * Authentication Middleware for Vercel Serverless Functions
  *
  * This middleware provides:
- * 1. Firebase ID Token verification
+ * 1. Supabase access token (JWT) verification
  * 2. Role-based access control (RBAC)
  * 3. Request authentication utilities
  *
@@ -21,7 +21,7 @@
  * };
  */
 
-import { verifyIdToken } from './firebase-admin.js';
+import { verifyIdToken } from './supabase-admin.js';
 
 /**
  * Extract Bearer token from Authorization header
@@ -82,7 +82,7 @@ async function requireAuth(req, res) {
       return null;
     }
 
-    // Verify token with Firebase Admin
+    // Verify token with Supabase
     const decodedToken = await verifyIdToken(token);
 
     // Attach decoded token to request for downstream use

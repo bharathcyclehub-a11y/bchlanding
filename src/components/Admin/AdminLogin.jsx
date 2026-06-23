@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
 export default function AdminLogin({ onLogin }) {
@@ -7,6 +8,7 @@ export default function AdminLogin({ onLogin }) {
     email: '',
     password: ''
   });
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -18,7 +20,7 @@ export default function AdminLogin({ onLogin }) {
     setLoading(true);
 
     try {
-      // Login with Firebase Auth
+      // Login with Supabase Auth
       const result = await login(credentials.email, credentials.password);
 
       if (result.success) {
@@ -88,16 +90,26 @@ export default function AdminLogin({ onLogin }) {
               <label htmlFor="password" className="block text-sm font-bold text-dark mb-2 uppercase tracking-wide">
                 Password
               </label>
-              <input
-                type="password"
-                id="password"
-                value={credentials.password}
-                onChange={(e) => setCredentials(prev => ({ ...prev, password: e.target.value }))}
-                className="w-full px-4 py-3 rounded-[20px] bg-gray-bg border-2 border-dark/10 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none text-dark placeholder-gray-text transition-all duration-300"
-                placeholder="Enter password"
-                autoComplete="current-password"
-                required
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  id="password"
+                  value={credentials.password}
+                  onChange={(e) => setCredentials((prev) => ({ ...prev, password: e.target.value }))}
+                  className="w-full px-4 py-3 pr-12 rounded-[20px] bg-gray-bg border-2 border-dark/10 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none text-dark placeholder-gray-text transition-all duration-300"
+                  placeholder="Enter password"
+                  autoComplete="current-password"
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((v) => !v)}
+                  aria-label={showPassword ? 'Hide password' : 'Show password'}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-text hover:text-primary transition-colors"
+                >
+                  {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+                </button>
+              </div>
             </div>
 
             {/* Error message */}
@@ -135,7 +147,7 @@ export default function AdminLogin({ onLogin }) {
 
             {/* Help text */}
             <div className="text-center text-sm text-gray-text">
-              <p>Use your Firebase admin account credentials</p>
+              <p>Use your admin account credentials</p>
             </div>
           </form>
         </div>

@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Infinite reels marquee (round loop) */
+@keyframes reel-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* VV-T35 — honour reduced-motion preferences site-wide */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 @layer utilities {
   .scrollbar-hide {
     -ms-overflow-style: none;
@@ -17,10 +33,20 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* Bebas Neue has tight ascent metrics — prevent top clipping on all headings */
-  .font-display {
+  /* Viper pages only: premium type — Clash Display (headlines) + Satoshi (body).
+     The rest of the site keeps the default Work Sans + Bebas Neue. Scoped under
+     .viper-theme (applied on the Viper page roots) so it never leaks site-wide. */
+  .viper-theme {
+    font-family: 'Satoshi', system-ui, sans-serif;
+  }
+  .viper-theme .font-sans {
+    font-family: 'Satoshi', system-ui, sans-serif;
+  }
+  .viper-theme .font-display {
+    font-family: 'Clash Display', 'Bebas Neue', Impact, sans-serif;
     line-height: 1.2;
     padding-top: 0.1em;
+    font-weight: 440;
   }
 
   html {

@@ -16,7 +16,7 @@ import {
   getCategoryBySlug,
   updateCategory,
   deleteCategory
-} from '../_lib/firestore-service.js';
+} from '../_lib/db-service.js';
 import { verifyAdmin } from '../_lib/auth-middleware.js';
 
 export default async function handler(req, res) {

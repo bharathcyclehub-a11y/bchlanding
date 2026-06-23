@@ -28,9 +28,9 @@ try {
     process.env[key] = value;
   });
   console.log('✅ Env loaded from', envPath);
-  console.log('🔧 FIREBASE_ADMIN_PROJECT_ID:', process.env.FIREBASE_ADMIN_PROJECT_ID ? 'SET' : 'MISSING');
-  console.log('🔧 FIREBASE_ADMIN_PRIVATE_KEY:', process.env.FIREBASE_ADMIN_PRIVATE_KEY ? 'SET' : 'MISSING');
-  console.log('🔧 FIREBASE_ADMIN_CLIENT_EMAIL:', process.env.FIREBASE_ADMIN_CLIENT_EMAIL ? 'SET' : 'MISSING');
+  console.log('🔧 SUPABASE_URL:', process.env.SUPABASE_URL ? 'SET' : 'MISSING');
+  console.log('🔧 SUPABASE_SERVICE_ROLE_KEY:', process.env.SUPABASE_SERVICE_ROLE_KEY ? 'SET' : 'MISSING');
+  console.log('🔧 VITE_SUPABASE_URL:', process.env.VITE_SUPABASE_URL ? 'SET' : 'MISSING');
 } catch (err) {
   console.error('❌ Failed to load .env.local:', err.message);
 }
@@ -45,6 +45,9 @@ process.on('unhandledRejection', (reason, promise) => {
 });
 
 const app = express();
+// Razorpay webhook needs the RAW body for HMAC signature verification —
+// mount this BEFORE express.json() so the body isn't parsed/re-serialized.
+app.use('/api/razorpay/webhook', express.raw({ type: '*/*' }));
 app.use(express.json());
 app.use(express.text({ type: 'text/plain' }));
 app.use(express.urlencoded({ extended: true }));
@@ -75,6 +78,17 @@ const loadHandler = async (handlerPath) => {
 };
 
 // API Routes
+// Razorpay webhook (must be matched BEFORE the dynamic :action route)
+app.post('/api/razorpay/webhook', async (req, res) => {
+  try {
+    const handler = await loadHandler('./api/razorpay/webhook.js');
+    await handler(req, res);
+  } catch (error) {
+    console.error('❌ /api/razorpay/webhook error:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 // Razorpay (dynamic [action] handler)
 app.all('/api/razorpay/:action', async (req, res) => {
   try {
@@ -95,6 +109,17 @@ app.all('/api/lead', async (req, res) => {
     await handler(req, res);
   } catch (error) {
     console.error('❌ /api/lead error:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Public pre-booking stats (count + recent feed for Viper Kids landing page)
+app.all('/api/prebookings', async (req, res) => {
+  try {
+    const handler = await loadHandler('./api/prebookings/index.js');
+    await handler(req, res);
+  } catch (error) {
+    console.error('❌ /api/prebookings error:', error);
     res.status(500).json({ success: false, error: error.message });
   }
 });
